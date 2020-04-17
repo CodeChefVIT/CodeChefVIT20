@@ -1,0 +1,45 @@
+.bg-light{
+	background-color: transparent!important;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #000000;
+	padding-top: 30px;
+}
+footer{
+	text-align: center;
+	background: url("../images/footer-bg.jpg") center center;
+	background-size: cover;
+	height: 600px;
+	padding-top: 50px;
+}
+
+footer>div>h1{
+	margin-bottom: 20px;
+}
+.footer-button{
+	width: 400px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight : bold;
+	color: #546586!important;
+}
+.subscribe-btn{
+	margin-top: 20px;
+	width: 280px;
+	color: #293243!important;
+}
+footer>div>div.row{
+	margin-top: 60px;
+}
+.footer-icon{
+	font-size: 2em;
+	padding: 5px;
+}
+footer>div>div>div>a{
+	color: black;
+}
+
+footer>div>div>div>a:hover{
+	color:black;
+	opacity: 0.8;
+}
