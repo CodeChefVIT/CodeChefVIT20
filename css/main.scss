@@ -100,108 +100,101 @@ a{
 .cards {
   width: 100%;
   min-height: calc(100vh - 150px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 120px 0;
 
-  .container {
-    display: flex;
-  }
+  .container{
+    margin: auto;
 
-  .left {
-    background: url('../img/backs/blitz.jpg'), linear-gradient(0deg, rgba(29, 29, 29, 0.9) 33.35%, rgba(18, 18, 18, 0) 100%);
-    background-blend-mode: darken;
-    background-size: cover;
-    position: relative;
-    //height: 40em;
-    padding: 30em 2em 2em 2em;
-    margin: 1em;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(23em,1fr));
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
 
-    .content {
-      color: white;
+      h1 {
+        font-weight: 700;
+      }
 
       h6 {
         color: #2980B9;
       }
 
-    }
-  }
+      .grid-item{
 
-  .right {
-    position: relative;
-    height: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
+        &:first-child {
+          grid-row-end: span 2;
 
-    .top,.bottom {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end;
-
-      .content {
-        width: 50%;
-        background-color: #34495E;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .text {
-          position: absolute;
-          z-index: 1;
-          color: white;
-
-          h6 {
-            color: #2980B9;
+          .img-box {
+            &:after{
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              display: block;
+              background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 100%);
+            }
           }
         }
 
-        &:after {
-          content: '';
-          width: 45%;
+        .inside {
           height: 100%;
-          top: 0;
-          background: inherit;
-          position: absolute;
-          z-index: 0;
-          transform-origin: top right;
-          transform: skewX(-15deg);
+          position: relative;
+          padding-bottom: 20em;
+          overflow: hidden;
         }
+
+        .img-box {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: auto;
+          height: auto;
+          background-size: cover;
+          background-position: bottom;
+        }
+
+        .content-box {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -1px;
+          z-index: 1;
+          padding: 60px 40px 40px;
+          color: #fff;
+          }
+
+          &:not(:first-child) {
+
+            .inside {
+              padding-bottom: calc(50% - 10px);
+
+              .img-box {
+                background-position: left;
+              }
+
+              .content-box {
+                left: 40%;
+                top: -1px;
+                background: url(../img/backs/bg-feature-slant.svg) no-repeat left bottom;
+                background-size: auto 100%;
+                padding: 20px 20px 20px 15%;
+                display: flex;
+                align-items: center;
+              }
+
+            }
+
+          }
+        }
+
       }
 
-      .img {
-        box-sizing: border-box;
-        width: 60%;
-      }
     }
-
-    .top {
-      margin-bottom: 1em;
-
-      .img {
-        background: url('../img/backs/cpp_Banner.jpg');
-        background-position: center;
-        background-size: cover;
-      }
-    }
-
-    .bottom {
-      .img {
-        background: url('../img/backs/cpp_Banner.jpg');
-        background-position: center;
-        background-size: cover;
-      }
-    }
-
   }
-
-}
 
 .banner {
   position: relative;
@@ -210,6 +203,7 @@ a{
   overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
+  overflow: hidden;
 
   .left {
     background-color: #293243;
@@ -223,6 +217,7 @@ a{
 
     &::after {
       content: 'C++';
+      max-width: 100%;
       color: white;
       z-index: 0;
       position:absolute;
@@ -374,6 +369,89 @@ footer>div>div>div>a:hover{
 }
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
+  .sections {
+    padding: 4em;
 
+    .section {
+      position: relative;
+      background-color: #191919;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: #191919;
+        background-blend-mode: luminosity;
+        opacity: .7;
+        width: 100%;
+        height: 100%;
+      }
+
+
+      h6 {
+        position: relative;
+        left: 0;
+        top: 50%;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        writing-mode: horizontal-tb!important;
+        text-orientation: mixed!important;
+      }
+    }
+
+    #events {
+      background: url('../img/backs/20190908_145434.jpg');
+      background-blend-mode: darken;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #webinars {
+      background: url('../img/backs/DSC_0047.JPG');
+      background-blend-mode: color;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #projects {
+      background: url('../img/backs/DSC_0234.JPG');
+      background-blend-mode: color;
+      background-size: cover;
+      background-position: center;
+
+      h6 {
+        margin-left: auto;
+      }
+    }
+
+    #team {
+      background: url('../img/backs/team.jpg');
+      background-blend-mode: color;
+      background-size: cover;
+      background-position: center;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 578px){
+  .banner {
+
+    .left {
+      width: 100%;
+
+      &:after {
+        font-size: 20rem;
+      }
+    }
+
+    .right{
+      display: none;
+    }
+  }
 }

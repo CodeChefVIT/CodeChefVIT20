@@ -65,73 +65,64 @@ a {
 .cards {
   width: 100%;
   min-height: calc(100vh - 150px);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  padding: 120px 0; }
   .cards .container {
-    display: flex; }
-  .cards .left {
-    background: url("../img/backs/blitz.jpg"), linear-gradient(0deg, rgba(29, 29, 29, 0.9) 33.35%, rgba(18, 18, 18, 0) 100%);
-    background-blend-mode: darken;
-    background-size: cover;
-    position: relative;
-    padding: 30em 2em 2em 2em;
-    margin: 1em; }
-    .cards .left .content {
-      color: white; }
-      .cards .left .content h6 {
+    margin: auto; }
+    .cards .container .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+      grid-column-gap: 1em;
+      grid-row-gap: 1em; }
+      .cards .container .grid h1 {
+        font-weight: 700; }
+      .cards .container .grid h6 {
         color: #2980B9; }
-  .cards .right {
-    position: relative;
-    height: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em; }
-    .cards .right .top, .cards .right .bottom {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end; }
-      .cards .right .top .content, .cards .right .bottom .content {
-        width: 50%;
-        background-color: #34495E;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .cards .right .top .content .text, .cards .right .bottom .content .text {
-          position: absolute;
-          z-index: 1;
-          color: white; }
-          .cards .right .top .content .text h6, .cards .right .bottom .content .text h6 {
-            color: #2980B9; }
-        .cards .right .top .content:after, .cards .right .bottom .content:after {
+      .cards .container .grid .grid-item:first-child {
+        grid-row-end: span 2; }
+        .cards .container .grid .grid-item:first-child .img-box:after {
           content: '';
-          width: 45%;
-          height: 100%;
-          top: 0;
-          background: inherit;
           position: absolute;
-          z-index: 0;
-          transform-origin: top right;
-          transform: skewX(-15deg); }
-      .cards .right .top .img, .cards .right .bottom .img {
-        box-sizing: border-box;
-        width: 60%; }
-    .cards .right .top {
-      margin-bottom: 1em; }
-      .cards .right .top .img {
-        background: url("../img/backs/cpp_Banner.jpg");
-        background-position: center;
-        background-size: cover; }
-    .cards .right .bottom .img {
-      background: url("../img/backs/cpp_Banner.jpg");
-      background-position: center;
-      background-size: cover; }
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          display: block;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%); }
+      .cards .container .grid .grid-item .inside {
+        height: 100%;
+        position: relative;
+        padding-bottom: 20em;
+        overflow: hidden; }
+      .cards .container .grid .grid-item .img-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        background-position: bottom; }
+      .cards .container .grid .grid-item .content-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        z-index: 1;
+        padding: 60px 40px 40px;
+        color: #fff; }
+      .cards .container .grid .grid-item:not(:first-child) .inside {
+        padding-bottom: calc(50% - 10px); }
+        .cards .container .grid .grid-item:not(:first-child) .inside .img-box {
+          background-position: left; }
+        .cards .container .grid .grid-item:not(:first-child) .inside .content-box {
+          left: 40%;
+          top: -1px;
+          background: url(../img/backs/bg-feature-slant.svg) no-repeat left bottom;
+          background-size: auto 100%;
+          padding: 20px 20px 20px 15%;
+          display: flex;
+          align-items: center; }
 
 .banner {
   position: relative;
@@ -139,7 +130,8 @@ a {
   background-color: #293243;
   overflow: hidden;
   display: flex;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  overflow: hidden; }
   .banner .left {
     background-color: #293243;
     padding: 6em 4em;
@@ -149,6 +141,7 @@ a {
       color: #2980B9; }
     .banner .left::after {
       content: 'C++';
+      max-width: 100%;
       color: white;
       z-index: 0;
       position: absolute;
@@ -258,5 +251,62 @@ footer > div > div > div > a {
 footer > div > div > div > a:hover {
   color: black;
   opacity: 0.8; }
+
+@media only screen and (max-width: 992px) {
+  .sections {
+    padding: 4em; }
+    .sections .section {
+      position: relative;
+      background-color: #191919; }
+      .sections .section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: #191919;
+        background-blend-mode: luminosity;
+        opacity: .7;
+        width: 100%;
+        height: 100%; }
+      .sections .section h6 {
+        position: relative;
+        left: 0;
+        top: 50%;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        writing-mode: horizontal-tb !important;
+        text-orientation: mixed !important; }
+    .sections #events {
+      background: url("../img/backs/20190908_145434.jpg");
+      background-blend-mode: darken;
+      background-size: cover;
+      background-position: center; }
+    .sections #webinars {
+      background: url("../img/backs/DSC_0047.JPG");
+      background-blend-mode: color;
+      background-size: cover;
+      background-position: center; }
+    .sections #projects {
+      background: url("../img/backs/DSC_0234.JPG");
+      background-blend-mode: color;
+      background-size: cover;
+      background-position: center; }
+      .sections #projects h6 {
+        margin-left: auto; }
+    .sections #team {
+      background: url("../img/backs/team.jpg");
+      background-blend-mode: color;
+      background-size: cover;
+      background-position: center; } }
+@media only screen and (max-width: 578px) {
+  .banner .left {
+    width: 100%; }
+    .banner .left:after {
+      font-size: 20rem; }
+  .banner .right {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

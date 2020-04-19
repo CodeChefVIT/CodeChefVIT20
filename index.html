@@ -13,7 +13,7 @@
   </head>
   <body>
 		<!-- navbar begins here -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top" style="background: #e8e8e8!important;">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom fixed-top" style="background: #e8e8e8!important;transition: .3s">
   			<a class="navbar-brand" href="#"><img src="img/logos/full_logo.png"></a>
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
@@ -56,64 +56,69 @@
 
 			</div>
 
-			<div class="hanger">
-				<h2>Scroll Down</h2>
-			</div>
+      <a href="#">
+        <div class="hanger">
+          <h2>About us</h2>
+        </div>
+      </a>
 
 
 		</div>
 
 		<div class="cards">
+      <div class="container">
+        <div class="grid">
 
-			<div class="container">
+          <a href="#" class="grid-item">
+            <div class="inside">
+              <div class="img-box" style="background-image: url('img/backs/blitz.jpg');"></div>
 
-      <a href="#" class="left">
-        <div >
-					<div class="content">
-						<h6>Events</h6>
-						<h2>Codechef Bitz</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-      </a>
-
-				<div class="right">
-
-					<div class="top">
-						<div class="img">
-						</div>
-
-						<div class="content">
-              <div class="text">
-                <h6>Webinars</h6>
-                <h2>Codechef Bitz</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="content-box">
+                <div class="text">
+                  <h6>Events</h6>
+                  <h2>Codechef Blitz</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
               </div>
-						</div>
-					</div>
 
-					<div class="bottom">
-						<div class="img">
+            </div>
+          </a>
 
-						</div>
+          <a href="#" class="grid-item">
+            <div class="inside">
+              <div class="img-box" style="background-image: url('img/backs/cpp_Banner.jpg');"></div>
 
-						<div class="content">
-              <div class="text">
-                <h6>Webinars</h6>
-                <h2>Codechef Bitz</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="content-box">
+                <div class="text">
+                  <h6>Webinars</h6>
+                  <h2>C++17: Templates</h2>
+                  <p>By Navyaa Sharma</p>
+                </div>
               </div>
-						</div>
-					</div>
-					</div>
+            </div>
+          </a>
 
-				</div>
-			</div>
+          <a href="#" class="grid-item">
+            <div class="inside">
+              <div class="img-box" style="background-image: url('img/backs/blog.png');"></div>
+
+              <div class="content-box">
+                <div class="text">
+                  <h6>Blogs</h6>
+                  <h2>Asynchronous Programming In Node JS</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+		</div>
 
 
 		</div>
 
-    <a href="">
+    <a href="#">
       <div class="banner">
 
         <div class="right">
@@ -126,7 +131,7 @@
           <p>By Navyaa Sharma</p>
         </div>
 
-      </div>
+      </div>    <!--banner-->
     </a>
 
 		<div class="sections">
@@ -182,6 +187,21 @@
 		</footer>
 
     <!-- Optional JavaScript -->
+
+    <<script type="text/javascript">
+      var element = document.querySelector('nav');
+      window.addEventListener('scroll',function(){
+        var value = window.scrollY;
+        if(value > 50) {
+          element.style.boxShadow = "0 2px 15px grey";
+        }
+        else{
+          element.style.boxShadow = "none";
+        }
+      })
+    </script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
