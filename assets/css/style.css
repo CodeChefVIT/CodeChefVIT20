@@ -266,6 +266,39 @@ nav>.navbar-brand>img{
 	padding-bottom: 20px;
 }
 
+/**
+* Blogs starts from here
+*/
+.blogs {
+  margin: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .blogs .read-more[data-v-6ad3d82e] {
+    text-align: right;
+    padding: 1em; }
+  .blogs .rtb-col[data-v-6ad3d82e] {
+    box-shadow: 8px 10px 9px 0px lightgrey;
+    overflow: hidden; }
+  .blogs h2[data-v-6ad3d82e] {
+    margin: 1em; }
+  .blogs .author[data-v-6ad3d82e] {
+    margin: 0 2em;
+    font-style: italic;
+    color: #2980B9; }
+  .blogs .excerpt[data-v-6ad3d82e] {
+    margin: 0 2em; }
+
+	#rtb-modal .row, #rtb .row {
+		justify-content: center;
+	}
+
+		#rtb #rtb-modal .col, #rtb #rtb-modal .col-1, #rtb #rtb-modal .col-2, #rtb #rtb-modal .col-3, #rtb #rtb-modal .col-4, #rtb #rtb-modal .col-5, #rtb #rtb-modal .col-6, #rtb #rtb-modal .col-7, #rtb #rtb-modal .col-8, #rtb #rtb-modal .col-9, #rtb #rtb-modal .col-10, #rtb #rtb-modal .col-11, #rtb #rtb-modal .col-12, #rtb #rtb-modal .col-auto, #rtb #rtb-modal .col-lg, #rtb #rtb-modal .col-lg-1, #rtb #rtb-modal .col-lg-2, #rtb #rtb-modal .col-lg-3, #rtb #rtb-modal .col-lg-4, #rtb #rtb-modal .col-lg-5, #rtb #rtb-modal .col-lg-6, #rtb #rtb-modal .col-lg-7, #rtb #rtb-modal .col-lg-8, #rtb #rtb-modal .col-lg-9, #rtb #rtb-modal .col-lg-10, #rtb #rtb-modal .col-lg-11, #rtb #rtb-modal .col-lg-12, #rtb #rtb-modal .col-lg-auto, #rtb #rtb-modal .col-md, #rtb #rtb-modal .col-md-1, #rtb #rtb-modal .col-md-2, #rtb #rtb-modal .col-md-3, #rtb #rtb-modal .col-md-4, #rtb #rtb-modal .col-md-5, #rtb #rtb-modal .col-md-6, #rtb #rtb-modal .col-md-7, #rtb #rtb-modal .col-md-8, #rtb #rtb-modal .col-md-9, #rtb #rtb-modal .col-md-10, #rtb #rtb-modal .col-md-11, #rtb #rtb-modal .col-md-12, #rtb #rtb-modal .col-md-auto, #rtb #rtb-modal .col-sm, #rtb #rtb-modal .col-sm-1, #rtb #rtb-modal .col-sm-2, #rtb #rtb-modal .col-sm-3, #rtb #rtb-modal .col-sm-4, #rtb #rtb-modal .col-sm-5, #rtb #rtb-modal .col-sm-6, #rtb #rtb-modal .col-sm-7, #rtb #rtb-modal .col-sm-8, #rtb #rtb-modal .col-sm-9, #rtb #rtb-modal .col-sm-10, #rtb #rtb-modal .col-sm-11, #rtb #rtb-modal .col-sm-12, #rtb #rtb-modal .col-sm-auto, #rtb #rtb-modal .col-xl, #rtb #rtb-modal .col-xl-1, #rtb #rtb-modal .col-xl-2, #rtb #rtb-modal .col-xl-3, #rtb #rtb-modal .col-xl-4, #rtb #rtb-modal .col-xl-5, #rtb #rtb-modal .col-xl-6, #rtb #rtb-modal .col-xl-7, #rtb #rtb-modal .col-xl-8, #rtb #rtb-modal .col-xl-9, #rtb #rtb-modal .col-xl-10, #rtb #rtb-modal .col-xl-11, #rtb #rtb-modal .col-xl-12, #rtb #rtb-modal .col-xl-auto, #rtb-modal #rtb .col, #rtb-modal #rtb .col-1, #rtb-modal #rtb .col-2, #rtb-modal #rtb .col-3, #rtb-modal #rtb .col-4, #rtb-modal #rtb .col-5, #rtb-modal #rtb .col-6, #rtb-modal #rtb .col-7, #rtb-modal #rtb .col-8, #rtb-modal #rtb .col-9, #rtb-modal #rtb .col-10, #rtb-modal #rtb .col-11, #rtb-modal #rtb .col-12, #rtb-modal #rtb .col-auto, #rtb-modal #rtb .col-lg, #rtb-modal #rtb .col-lg-1, #rtb-modal #rtb .col-lg-2, #rtb-modal #rtb .col-lg-3, #rtb-modal #rtb .col-lg-4, #rtb-modal #rtb .col-lg-5, #rtb-modal #rtb .col-lg-6, #rtb-modal #rtb .col-lg-7, #rtb-modal #rtb .col-lg-8, #rtb-modal #rtb .col-lg-9, #rtb-modal #rtb .col-lg-10, #rtb-modal #rtb .col-lg-11, #rtb-modal #rtb .col-lg-12, #rtb-modal #rtb .col-lg-auto, #rtb-modal #rtb .col-md, #rtb-modal #rtb .col-md-1, #rtb-modal #rtb .col-md-2, #rtb-modal #rtb .col-md-3, #rtb-modal #rtb .col-md-4, #rtb-modal #rtb .col-md-5, #rtb-modal #rtb .col-md-6, #rtb-modal #rtb .col-md-7, #rtb-modal #rtb .col-md-8, #rtb-modal #rtb .col-md-9, #rtb-modal #rtb .col-md-10, #rtb-modal #rtb .col-md-11, #rtb-modal #rtb .col-md-12, #rtb-modal #rtb .col-md-auto, #rtb-modal #rtb .col-sm, #rtb-modal #rtb .col-sm-1, #rtb-modal #rtb .col-sm-2, #rtb-modal #rtb .col-sm-3, #rtb-modal #rtb .col-sm-4, #rtb-modal #rtb .col-sm-5, #rtb-modal #rtb .col-sm-6, #rtb-modal #rtb .col-sm-7, #rtb-modal #rtb .col-sm-8, #rtb-modal #rtb .col-sm-9, #rtb-modal #rtb .col-sm-10, #rtb-modal #rtb .col-sm-11, #rtb-modal #rtb .col-sm-12, #rtb-modal #rtb .col-sm-auto, #rtb-modal #rtb .col-xl, #rtb-modal #rtb .col-xl-1, #rtb-modal #rtb .col-xl-2, #rtb-modal #rtb .col-xl-3, #rtb-modal #rtb .col-xl-4, #rtb-modal #rtb .col-xl-5, #rtb-modal #rtb .col-xl-6, #rtb-modal #rtb .col-xl-7, #rtb-modal #rtb .col-xl-8, #rtb-modal #rtb .col-xl-9, #rtb-modal #rtb .col-xl-10, #rtb-modal #rtb .col-xl-11, #rtb-modal #rtb .col-xl-12, #rtb-modal #rtb .col-xl-auto, #rtb-modal .col, #rtb-modal .col-1, #rtb-modal .col-2, #rtb-modal .col-3, #rtb-modal .col-4, #rtb-modal .col-5, #rtb-modal .col-6, #rtb-modal .col-7, #rtb-modal .col-8, #rtb-modal .col-9, #rtb-modal .col-10, #rtb-modal .col-11, #rtb-modal .col-12, #rtb-modal .col-auto, #rtb-modal .col-lg, #rtb-modal .col-lg-1, #rtb-modal .col-lg-2, #rtb-modal .col-lg-3, #rtb-modal .col-lg-4, #rtb-modal .col-lg-5, #rtb-modal .col-lg-6, #rtb-modal .col-lg-7, #rtb-modal .col-lg-8, #rtb-modal .col-lg-9, #rtb-modal .col-lg-10, #rtb-modal .col-lg-11, #rtb-modal .col-lg-12, #rtb-modal .col-lg-auto, #rtb-modal .col-md, #rtb-modal .col-md-1, #rtb-modal .col-md-2, #rtb-modal .col-md-3, #rtb-modal .col-md-4, #rtb-modal .col-md-5, #rtb-modal .col-md-6, #rtb-modal .col-md-7, #rtb-modal .col-md-8, #rtb-modal .col-md-9, #rtb-modal .col-md-10, #rtb-modal .col-md-11, #rtb-modal .col-md-12, #rtb-modal .col-md-auto, #rtb-modal .col-sm, #rtb-modal .col-sm-1, #rtb-modal .col-sm-2, #rtb-modal .col-sm-3, #rtb-modal .col-sm-4, #rtb-modal .col-sm-5, #rtb-modal .col-sm-6, #rtb-modal .col-sm-7, #rtb-modal .col-sm-8, #rtb-modal .col-sm-9, #rtb-modal .col-sm-10, #rtb-modal .col-sm-11, #rtb-modal .col-sm-12, #rtb-modal .col-sm-auto, #rtb-modal .col-xl, #rtb-modal .col-xl-1, #rtb-modal .col-xl-2, #rtb-modal .col-xl-3, #rtb-modal .col-xl-4, #rtb-modal .col-xl-5, #rtb-modal .col-xl-6, #rtb-modal .col-xl-7, #rtb-modal .col-xl-8, #rtb-modal .col-xl-9, #rtb-modal .col-xl-10, #rtb-modal .col-xl-11, #rtb-modal .col-xl-12, #rtb-modal .col-xl-auto, #rtb .col, #rtb .col-1, #rtb .col-2, #rtb .col-3, #rtb .col-4, #rtb .col-5, #rtb .col-6, #rtb .col-7, #rtb .col-8, #rtb .col-9, #rtb .col-10, #rtb .col-11, #rtb .col-12, #rtb .col-auto, #rtb .col-lg, #rtb .col-lg-1, #rtb .col-lg-2, #rtb .col-lg-3, #rtb .col-lg-4, #rtb .col-lg-5, #rtb .col-lg-6, #rtb .col-lg-7, #rtb .col-lg-8, #rtb .col-lg-9, #rtb .col-lg-10, #rtb .col-lg-11, #rtb .col-lg-12, #rtb .col-lg-auto, #rtb .col-md, #rtb .col-md-1, #rtb .col-md-2, #rtb .col-md-3, #rtb .col-md-4, #rtb .col-md-5, #rtb .col-md-6, #rtb .col-md-7, #rtb .col-md-8, #rtb .col-md-9, #rtb .col-md-10, #rtb .col-md-11, #rtb .col-md-12, #rtb .col-md-auto, #rtb .col-sm, #rtb .col-sm-1, #rtb .col-sm-2, #rtb .col-sm-3, #rtb .col-sm-4, #rtb .col-sm-5, #rtb .col-sm-6, #rtb .col-sm-7, #rtb .col-sm-8, #rtb .col-sm-9, #rtb .col-sm-10, #rtb .col-sm-11, #rtb .col-sm-12, #rtb .col-sm-auto, #rtb .col-xl, #rtb .col-xl-1, #rtb .col-xl-2, #rtb .col-xl-3, #rtb .col-xl-4, #rtb .col-xl-5, #rtb .col-xl-6, #rtb .col-xl-7, #rtb .col-xl-8, #rtb .col-xl-9, #rtb .col-xl-10, #rtb .col-xl-11, #rtb .col-xl-12, #rtb .col-xl-auto
+		{
+			min-width: 20em;
+		}
+
+
 footer{
 	position: relative;
 	text-align: center;
@@ -316,7 +349,7 @@ footer>div>div>div>a:hover{
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .sections {
     padding: 4em; }
     .sections .section {
@@ -364,7 +397,16 @@ footer>div>div>div>a:hover{
       background: url("../images/backs/team.jpg");
       background-blend-mode: color;
       background-size: cover;
-      background-position: center; } }
+      background-position: center; }
+
+			.blogs {
+				margin-left: 1em;
+				margin-right: 1em; }
+				.blogs .container {
+					margin-left: 0;
+					margin-right: 0; }
+
+}
 
 @media only screen and (max-width: 578px) {
   .banner .left {
