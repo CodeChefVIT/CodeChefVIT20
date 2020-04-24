@@ -21,7 +21,7 @@ nav>.navbar-brand>img{
 	margin-top:-5%;
 }
 .bgimg{
-     background: url('../images/event-main.jpeg');
+     background: url('../images/projects-cover.jpeg');
     background-size:cover;
     width:100%;
     height:660px; 
@@ -40,34 +40,25 @@ nav>.navbar-brand>img{
       position: relative;
       padding-top:14%;
       float:right;
+      font-size: 1.4em;
 }
 @media(max-width: 768px){
 	.bgimg{
     	position: relative;
-
+    	height: 450px;
     }
     .context{
       text-align: center;
-      padding-top: 5%;
-      padding-left: 10%;
-      position: absolute;
-      font-size: 1.75em;
-      float: none;
+      position: relative;
+      padding-right: 5%;
+      font-size: 1.5em;
+      margin-top: -7%;
+      min-width: 300px;
     }
     .shade{
     	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    	height: 450px;
     }
-    
-    /*.bgimg::before{
-    	content: "";
-    	position: absolute;
-    	display: block;
-    	width: 100%;
-    	height: 100%;
-    	background: rgba(0,0,0,0.8);
-    	top: 0;
-    	left: 0;
-    }*/
 }
 .grid-img{
 	width: 100%;
@@ -87,7 +78,7 @@ nav>.navbar-brand>img{
 footer{
 	position: relative;
 	text-align: center;
-	background: url("../images/logo1.png") center center;
+	/*background: url("../images/logo.png") center center;*/
 	background-size: cover;
 	height: 700px;
 	background-color: #293243;
