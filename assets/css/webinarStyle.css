@@ -43,13 +43,66 @@ nav>.navbar-brand>img{
       font-size: 1.4em;
 }
 .row{
-	/*margin-top: 100px;*/
-	margin-bottom: 70px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.web{
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 120px;
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.img-responsive{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.img-overlay::before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 40%;
+}
+
+.container{
+	margin-top: 200px;
+	height: auto;
+}
+.round-button {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -30px;
+  box-sizing: border-box;
+  display:block;
+  width:80px;
+  height:80px;
+  padding-top: 25px;
+  padding-left: 10px;
+  line-height: 20px;
+  border-radius: 50%;
+  color:#34495E;
+  text-align:center;
+  text-decoration:none;
+  background-color: #2980B9;
+  font-size:15px;
+  /*font-weight:bold;*/
+/*  transition: all 0.3s ease; */
+}
+.round-button:hover {
+  background-color: #34495E;
+  color: #2980B9;
+}
+.modal-content{
+  background:transparent!important;
+  border: none;
+}
+.player{
+	padding-right: 30px;
+}
+.modal-header{
+  border:none;
 }
 @media(max-width: 768px){
 	.bgimg{
@@ -68,10 +121,8 @@ nav>.navbar-brand>img{
     	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     	height: 450px;
     }
-	.web{
-      padding-left:5px;
- 	}
 }
+
 
 
 footer{
@@ -82,11 +133,13 @@ footer{
 	height: 700px;
 	background-color: #293243;
 	margin-top: 150px;
-	padding-top: 60px;
+	/*padding-top: 60px;*/
+
 }
 
 footer>div>h1{
 	margin-bottom: 20px;
+	padding-top: 60px;
 }
 .footer-button{
 	width: 400px;
