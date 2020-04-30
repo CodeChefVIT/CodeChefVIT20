@@ -313,7 +313,8 @@ nav>.navbar-brand>img {
     font-weight: bolder; }
   .blogs .author[data-v-6ad3d82e] {
     margin: 0 2rem;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin-bottom: 4rem; }
   .blogs .excerpt[data-v-6ad3d82e] {
     margin: 0 2em;
     display: none; }
@@ -332,8 +333,11 @@ nav>.navbar-brand>img {
   .blogs #rtb-modal .row, .blogs #rtb .row {
     justify-content: center; }
   .blogs .read-more[data-v-6ad3d82e] {
+    width: inherit;
+    bottom: 0;
     text-align: left;
-    padding: 1em; }
+    position: absolute;
+    padding: 1em 1.2rem; }
   .blogs #rtb-modal .col-sm-4, .blogs #rtb .col-sm-4 {
     max-width: 29% !important; }
   .blogs .rtb-col[data-v-6ad3d82e] {
