@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link defer rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <title>Codechef VIT</title>
   </head>
@@ -31,24 +32,30 @@
                       <a class="nav-link" href="events.html">Events</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
+                      <a class="nav-link" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="webinars.html">Webinars</a>
                   </li>
                   <li class="nav-item">
+                      <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
                       <a class="nav-link" href="team.html">Team</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Sponsors</a>
+                      <a class="nav-link" href="sponsors.html">Sponsors</a>
                   </li>
                   </ul>
             </div>
         </nav>
 
-
 				<div class="text">
-					<h1>We are <span>a team</span></h1>
+					<h1>We are
+            <span style="display: initial;">Learners</span>
+            <span>Coders</span>
+            <span>Family</span>
+          </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
 					<a href="#"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
 				</div>
@@ -99,12 +106,12 @@
 
           <a href="#" class="grid-item">
             <div class="inside">
-              <div class="img-box" style="background-image: url('assets/images/backs/blog.png');"></div>
+              <div class="img-box" style="background-image: url('assets/images/backs/blog.jpeg');"></div>
 
               <div class="content-box">
                 <div class="text">
                   <h6>Blogs</h6>
-                  <h2>Asynchronous Programming In Node JS</h2>
+                  <h2>Setting up Continuous Integration(CI) for Node app with Travis-CI</h2>
                 </div>
               </div>
             </div>
@@ -114,7 +121,7 @@
       </div>
 		</div>
 
-
+ <!--banner Starts here-->
     <a href="#">
       <div class="banner">
 
@@ -129,8 +136,10 @@
         </div>
 
       </div>
-    </a>                    <!--banner-->
+    </a>
+ <!--banner ends here-->
 
+<!--Sections starts here-->
 		<div class="sections">
 
 			<a href="events.html">
@@ -153,12 +162,12 @@
 
 			<a href="">
 				<div class="section" id="team">
-					<h6>Our team</h6>
+					<h6>Our&nbspteam</h6>
 				</div>
 			</a>
 
 		</div>
-
+ <!--Sections ends here-->
 
 		<footer style="margin-top: 0;">
 			<div class="container">
@@ -184,6 +193,23 @@
 		</footer>
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+      var text = document.querySelector('.text h1');
+      var words = text.getElementsByTagName('span');
+      console.log(words);
+
+      var i = 0;
+
+      function rotator() {
+        words[i].style.display = 'none';
+        i = (i + 1) % words.length;
+        words[i].style.display = 'initial';
+      }
+
+      setInterval(rotator, 1000);
+
+    </script>   <!-- JS for rotator text in top-view -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
