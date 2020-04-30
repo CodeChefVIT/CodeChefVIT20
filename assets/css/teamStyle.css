@@ -26,12 +26,12 @@ nav>.navbar-brand>img{
      background: url('../images/team-cover.jpeg');
     background-size:cover;
     width:100%;
-    height:660px; 
-    background-repeat:no-repeat; 
+    height:660px;
+    background-repeat:no-repeat;
 }
 .shade {
      width: 100%;
-    height: 660px; 
+    height: 660px;
     clip-path:polygon(58% 0%,50% 100%,100% 100%,100% 0%);
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -62,34 +62,34 @@ nav>.navbar-brand>img{
     	height: 400px;
     }
 }
-@media (max-width: 576px) {  
+@media (max-width: 576px) {
   .xs {color:red;font-weight:bold;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width:768px) {  
+@media (min-width: 576px) and (max-width:768px) {
   .sm {color:red;font-weight:bold;}
 }
- 
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width:992px) {  
+@media (min-width: 768px) and (max-width:992px) {
  .md {color:red;font-weight:bold;}
 }
- 
+
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1200px) { 
+@media (min-width: 992px) and (max-width:1200px) {
  .lg {color:red;font-weight:bold;}
 }
- 
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) {
     .xl {color:red;font-weight:bold;}
 }
 .card-img-top{
 	width: 270px;
 	height: 270px;
 	border-radius : 50%;
-} 
+}
 .card{
   border: transparent;
   margin-bottom: 60px;
