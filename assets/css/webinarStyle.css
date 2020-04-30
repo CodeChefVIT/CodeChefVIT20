@@ -4,7 +4,6 @@
 }
 body{
 	font-family: Poppins;
-	font-size: 1.2em;
 }
 
 .bg-light{
@@ -19,6 +18,8 @@ body{
 nav>.navbar-brand>img{
 	padding-left: 30px;
 	margin-top:-5%;
+  height: 6rem;
+  width: auto;
 }
 .bgimg{
      background: url('../images/webinar-cover.jpeg');
@@ -40,7 +41,6 @@ nav>.navbar-brand>img{
       position: relative;
       padding-top:14%;
       float:right;
-      font-size: 1.4em;
 }
 .row{
 	margin-top: 20px;
@@ -91,8 +91,9 @@ nav>.navbar-brand>img{
 /*  transition: all 0.3s ease; */
 }
 .round-button:hover {
-  background-color: #34495E;
-  color: #2980B9;
+  /*background-color: #34495E;*/
+  color: #34495E;
+  transform:translateY(-10px);
 }
 .modal-content{
   background:transparent!important;
