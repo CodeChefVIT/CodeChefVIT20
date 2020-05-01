@@ -1,0 +1,60 @@
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.img-responsive{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 40%;
+}
+/*.btn{
+
+  position: absolute;
+width: 108.28px;
+height: 108px;
+left: 245px;
+top: 1373px;
+
+background: #2980B9;
+
+}*/
+.round-button {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -30px;
+  box-sizing: border-box;
+  display:block;
+  width:80px;
+  height:80px;
+  padding-top: 25px;
+  padding-left: 10px;
+  line-height: 20px;
+  border-radius: 50%;
+  color:#34495E;
+  text-align:center;
+  text-decoration:none;
+  background-color: #2980B9;
+  font-size:15px;
+  /*font-weight:bold;*/
+/*  transition: all 0.3s ease; */
+}
+.round-button:hover {
+  background-color: #34495E;
+  color: #2980B9;
+}
+.modal-content{
+  background:transparent!important;
+  border: none;
+}
+.modal-header{
+  border:none;
+}

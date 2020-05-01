@@ -8,7 +8,6 @@ html{
 }
 body{
 	font-family: Poppins;
-	font-size: 1.2em;
 }
 .bg-light{
 	background-color: transparent!important;
@@ -21,6 +20,8 @@ body{
 nav>.navbar-brand>img{
 	padding-left: 30px;
 	margin-top:-5%;
+	height: 6rem;
+  width: auto;
 }
 .bgimg{
      background: url('../images/team-cover.jpeg');
@@ -42,7 +43,7 @@ nav>.navbar-brand>img{
       position: relative;
       padding-top:14%;
       float:right;
-      font-size: 1.4em;
+      /*font-size: 1.4em;*/
 }
 @media(max-width: 768px){
 	.bgimg{
@@ -121,10 +122,11 @@ nav>.navbar-brand>img{
 footer{
 	position: relative;
 	text-align: center;
+
 	/*background: url("../images/logo1.png") center center;*/
 	background-size: cover;
 	background-color: #293243;
-	height: 900px;
+	height: 800px;
 }
 
 footer>div>h1{

@@ -19,6 +19,8 @@ body{
 nav>.navbar-brand>img{
 	padding-left: 30px;
 	margin-top:-5%;
+	height: 6rem;
+  width: auto;
 }
 .bgimg{
     background-size:cover;
