@@ -175,7 +175,7 @@ footer{
   text-align: center;
   /*background: url("../images/logo1.png") center center;*/
   background-size: cover;
-  height: 700px;
+  height: 800px;
   background-color: #293243;
   margin-top: 150px;
   /*padding-top: 60px;*/
@@ -192,6 +192,8 @@ footer>div>h1{
   margin-bottom: 20px;
   font-weight : bold;
   color: #546586!important;
+  margin-left: auto;
+  margin-right: auto;
 }
 .subscribe-btn{
   margin-top: 20px;
