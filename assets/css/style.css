@@ -15,6 +15,9 @@ a:hover {
   text-decoration: none;
 }
 
+h6 {
+  color: #2980B9; }
+
 .bg-light {
   background-color: transparent !important;
 }
@@ -150,65 +153,83 @@ nav>.navbar-brand>img {
 		          display: flex;
 		          align-items: center; }
 
-.banner {
-  position: relative;
-  width: 100%;
-  background-color: #293243;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
-}
-
-.banner .left {
-  background-color: #293243;
-  padding: 6em 4em;
-  width: 65%;
-  color: white;
-}
-
-.banner .left h6 {
-  color: #2980B9;
-}
-
-.banner .left::after {
-  content: 'C++';
-  max-width: 100%;
-  color: white;
-  z-index: 0;
-  position: absolute;
-  font-size: 25rem;
-  font-weight: 700;
-  top: 0;
-  left: 0;
-  opacity: .05;
-}
-
-.banner .right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35%;
-  background-color: #2980B9;
-}
-
-.banner .right::after {
-  content: '';
-  width: 40%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  z-index: 0;
-  transform-origin: top right;
-  transform: skewX(-20deg);
-}
-
-.banner .right img {
-  z-index: 1;
-  width: 5rem;
-  transform: translateX(-50%);
-}
-
+              .banner {
+                color: white;
+                position: relative;
+                width: 100%;
+                background-color: #293243;
+                overflow: hidden;
+                padding: 2em; }
+                .banner:before {
+                  content: '';
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  left: 63%;
+                  background: url("../images/backs/bg-light-slant.svg") no-repeat;
+                  z-index: 1;
+                  background-size: cover;
+                  height: 100%; }
+                .banner .container {
+                  position: relative;
+                  z-index: 2;
+                  margin-left: auto;
+                  margin-right: auto; }
+                  .banner .container .row {
+                    display: flex; }
+                    .banner .container .row .left {
+                      margin-left: auto;
+                      margin-right: auto;
+                      padding: 4em 0; }
+                      .banner .container .row .left h2 {
+                        font-size: 3em;
+                        text-transform: uppercase; }
+                      .banner .container .row .left p {
+                        color: #768298; }
+                      .banner .container .row .left:after {
+                        content: 'DEVSOC';
+                        position: absolute;
+                        font-weight: bolder;
+                        font-size: 15em;
+                        left: -5rem;
+                        bottom: -10rem;
+                        opacity: 0.03;
+                        z-index: 0; }
+                    .banner .container .row .right {
+                      margin: 0 auto;
+                      padding: 4em 0; }
+                      .banner .container .row .right .countdown {
+                        display: flex;
+                        flex-direction: row; }
+                        .banner .container .row .right .countdown div {
+                          position: relative;
+                          background-color: #F1F1F1;
+                          width: 130px;
+                          height: 130px;
+                          line-height: 130px;
+                          text-align: center;
+                          color: #000;
+                          margin: 0 15px;
+                          font-size: 3em;
+                          font-weight: 700;
+                          border-radius: 15px; }
+                          .banner .container .row .right .countdown div:before {
+                            content: '';
+                            position: absolute;
+                            bottom: -35px;
+                            left: 0;
+                            width: 100%;
+                            height: 35px;
+                            font-size: 0.5em;
+                            line-height: 35px;
+                            font-weight: 300;
+                            color: white; }
+                        .banner .container .row .right .countdown #wk:before {
+                          content: 'Weeks'; }
+                        .banner .container .row .right .countdown #day:before {
+                          content: 'Days'; }
+                        .banner .container .row .right .countdown #hr:before {
+                          content: 'Hours'; }
 .sections {
   padding: 10em;
   display: flex;
@@ -469,6 +490,14 @@ footer>div>div>div>a:hover {
   .cards a.grid-item:not(:first-child) h2 {
     font-size: 1.1rem; }
 
+    .banner:before {
+      content: '';
+      display: none; }
+    .banner .left {
+      padding-bottom: 2em !important; }
+    .banner .right {
+      padding-top: 0 !important; }
+
   .sections {
     padding: 4em; }
     .sections .section {
@@ -527,16 +556,13 @@ footer>div>div>div>a:hover {
 
 @media only screen and (max-width: 578px) {
   .banner .left {
-    width: 100%;
-  }
-
-  .banner .left:after {
-    font-size: 20rem;
-  }
-
+    width: 100%; }
+    .banner .left:after {
+      font-size: 20rem; }
   .banner .right {
-    display: none;
-  }
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 }
 
 @media(max-width: 768px) {

@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="index.html">About</a>
+                      <a class="nav-link active" href="index.html">About</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="events.html">Events</a>
@@ -122,21 +122,32 @@
 		</div>
 
  <!--banner Starts here-->
-    <a href="#">
       <div class="banner">
 
-        <div class="right">
-          <img src="assets/images/logos/play.png" alt="">
+        <div class="container">
+          <div class="row">
+
+            <div class="left">
+              <h6>Events</h6>
+              <h2>Devsoc</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="right">
+              <div class="countdown">
+                <div id="wk">NA</div>
+                <div id="day">NA</div>
+                <div id="hr">NA</div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="left">
-          <h6>Webinars</h6>
-          <h2>C++17: Templates</h2>
-          <p>By Navyaa Sharma</p>
-        </div>
+
+
 
       </div>
-    </a>
  <!--banner ends here-->
 
 <!--Sections starts here-->
@@ -193,12 +204,14 @@
 		</footer>
 
     <!-- Optional JavaScript -->
+
     <script type="text/javascript">
       var text = document.querySelector('.text h1');
       var words = text.getElementsByTagName('span');
-      console.log(words);
-
+      var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
       var i = 0;
+
+      //Function for text rotation in hero section
 
       function rotator() {
         words[i].style.display = 'none';
@@ -206,8 +219,31 @@
         words[i].style.display = 'initial';
       }
 
-      setInterval(rotator, 1000);
+      //Function to desplay Countdown in banner
 
+      function countDown() {
+        let now = new Date().getTime();
+        let gap = countDate - now;
+
+        let second = 1000;
+        let min = second * 60;
+        let hour = min * 60;
+        let day = hour * 24;
+        let week = day * 7;
+
+        let w = Math.floor(gap / (week));
+        let d = Math.floor(gap % (week) / (day));
+        let h = Math.floor(gap % (day) / (hour));
+
+        document.getElementById('wk').innerText = w;
+        document.getElementById('day').innerText = d;
+        document.getElementById('hr').innerText = h;
+      }
+
+      setInterval(rotator, 1000);
+      setInterval(function(){
+        countDown();
+      }, 1000);
     </script>   <!-- JS for rotator text in top-view -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
