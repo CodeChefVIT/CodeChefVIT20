@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link active" href="index.html">About</a>
+                      <a class="nav-link" href="index.html">About</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="events.html">Events</a>
@@ -122,7 +122,7 @@
 		</div>
 
  <!--banner Starts here-->
-      <div class="banner">
+    <div class="banner">
 
         <div class="container">
           <div class="row">
@@ -150,35 +150,111 @@
       </div>
  <!--banner ends here-->
 
-<!--Sections starts here-->
-		<div class="sections">
+<!--"Latest Projects" starts here-->
+    <div class="projects">
 
-			<a href="events.html">
-				<div class="section" id="events">
-					<h6>Events</h6>
-				</div>
-			</a>
+      <div class="container">
 
-			<a href="">
-				<div class="section" id="webinars">
-					<h6>Webinars</h6>
-				</div>
-			</a>
+        <h1>Latest Projects</h1>
 
-			<a href="">
-				<div class="section" id="projects">
-					<h6>Projects</h6>
-				</div>
-			</a>
+        <div class="tabs">
+          <button class="tab active" id="all" onclick="tabSwitch('none')">All</button>
+          <button class="tab" id="app" onclick="tabSwitch('app')">Web</button>
+          <button class="tab" id="web" onclick="tabSwitch('web')">Apps</button>
 
-			<a href="">
-				<div class="section" id="team">
-					<h6>Our&nbspteam</h6>
-				</div>
-			</a>
+        </div>
 
-		</div>
- <!--Sections ends here-->
+        <h6><a href="projects.html">See all</a></h6>
+
+        <div class="showcase">
+
+          <div class="project web">
+
+            <div class="text">
+              <h3>Project title</h3>
+              <h6>Web</h6>
+            </div>
+
+          </div>
+
+          <div class="project app">
+
+            <div class="text">
+              <h3>Project title</h3>
+              <h6>Apps</h6>
+            </div>
+
+          </div>
+
+          <div class="project app">
+
+            <div class="text">
+              <h3>Project title</h3>
+              <h6>Apps</h6>
+            </div>
+
+          </div>
+
+          <div class="project web">
+
+            <div class="text">
+              <h3>Project title</h3>
+              <h6>Web</h6>
+            </div>
+
+          </div>
+
+          <div class="project web">
+
+            <div class="text">
+              <h3>Project title</h3>
+              <h6>Web</h6>
+            </div>
+
+          </div>
+
+          <div class="project app">
+
+            <div class="text">
+              <h3>Project title</h3>
+              <h6>Apps</h6>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+ <!--"Latest Projects" ends here-->
+
+ <!--"Counter" starts here-->
+ <div class="counter">
+
+   <div class="container">
+
+     <div id="projects">
+       <h1>25</h1>
+       <h5>Projects done</h5>
+     </div>
+
+     <div id="lines">
+       <h1>961</h1>
+       <h5>Lines of Code</h5>
+     </div>
+
+     <div id="coffee">
+       <h1>600</h1>
+       <h5>Cups of coffee</h5>
+     </div>
+
+   </div>
+
+ </div>
+ <!--"Counter" ends here-->
+
+
 
 		<footer style="margin-top: 0;">
 			<div class="container">
@@ -240,10 +316,42 @@
         document.getElementById('hr').innerText = h;
       }
 
+      // function for the "latest projects"  section
+
+      function tabSwitch(id) {
+
+        let all = document.getElementsByClassName('project');
+
+        let elems = document.getElementsByClassName(id);
+
+        let tabs = document.getElementsByClassName('tab');
+
+        for (let i = 0; i < tabs.length; i++) {
+          tabs[i].addEventListener("click", function() {
+            let current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+
+          });
+        }
+
+        for(let i = 0; i<all.length; i++){
+          all[i].style.display = "inline-grid";
+        }
+
+        for(let i = 0; i<elems.length; i++){
+          elems[i].style.display = "none";
+
+        }
+
+      }  //function end
+
       setInterval(rotator, 1000);
       setInterval(function(){
         countDown();
       }, 1000);
+
+      tabSwitch('none');
     </script>   <!-- JS for rotator text in top-view -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
