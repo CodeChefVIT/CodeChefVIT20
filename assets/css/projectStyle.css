@@ -80,8 +80,6 @@ nav>.navbar-brand>img{
 footer {
   position: relative;
   text-align: center;
-  background: url("../images/logo1.png") center center;
-  background-size: cover;
   background-color: #293243;
   margin-top: 150px;
   padding-top: 40px;
