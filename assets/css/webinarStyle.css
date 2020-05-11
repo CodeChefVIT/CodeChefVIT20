@@ -43,8 +43,7 @@ nav>.navbar-brand>img{
       float:right;
 }
 .row{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 .img-overlay {
   position: absolute;
@@ -61,7 +60,7 @@ nav>.navbar-brand>img{
   height: 40%;
 }
 
-.container{
+.body-container{
   margin-top: 200px;
   height: auto;
 }
@@ -170,55 +169,50 @@ nav>.navbar-brand>img{
   }
 }
 
-footer{
+footer {
   position: relative;
   text-align: center;
-  /*background: url("../images/logo1.png") center center;*/
+  background: url("../images/logo1.png") center center;
   background-size: cover;
-  height: 800px;
   background-color: #293243;
   margin-top: 150px;
-  /*padding-top: 60px;*/
-
+  padding-top: 40px;
 }
 
-footer>div>h1{
+footer>div>h1 {
   margin-bottom: 20px;
-  padding-top: 60px;
 }
-.footer-button{
-  width: 400px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-weight : bold;
-  color: #546586!important;
-  margin-left: auto;
-  margin-right: auto;
+
+.footer-list{
+  list-style-type: none;
+  text-align: left;
+  margin-left: 30%;
 }
-.subscribe-btn{
-  margin-top: 20px;
-  width: 280px;
-  color: #293243!important;
+.footer-list>li>a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
 }
-footer>.container>h1{
+
+footer>.container>h1 {
   color: #fff;
 }
-footer>div>div>div>h3{
+
+footer>div>div>div>h3 {
+  margin-top: 30px;
   color: #546586;
 }
-footer>div>div.row{
+
+footer>div>div.row {
   margin-top: 60px;
 }
-.footer-icon{
-  font-size: 2em;
-  padding: 5px;
-  color: #FFF;
-}
-footer>div>div>div>a{
-  color: black;
+
+.footer-img{
+  padding-top: 30px;
 }
 
-footer>div>div>div>a:hover{
-  color:black;
-  opacity: 0.8;
+.footer-icon {
+  /*font-size: 2em;*/
+  padding: 10px;
+  color: #FFF;
 }

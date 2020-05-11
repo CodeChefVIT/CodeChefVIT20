@@ -101,7 +101,7 @@ footer{
 footer>div>h1{
 	margin-bottom: 20px;
 }
-.footer-button{
+/*.footer-button{
 	width: 400px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -112,10 +112,15 @@ footer>div>h1{
 	margin-top: 20px;
 	width: 280px;
 	color: #293243!important;
+}*/
+/*ul.footer-list{
+	list-style-type: none!important;
+
 }
+.footer-
 footer>.container>h1{
 	color: #fff;
-}
+}*/
 footer>div>div>div>h3{
 	color: #546586;
 }
@@ -127,11 +132,11 @@ footer>div>div.row{
 	padding: 5px;
 	color: #FFF;
 }
-footer>div>div>div>a{
+/*footer>div>div>div>a{
 	color: black;
 }
 
 footer>div>div>div>a:hover{
 	color:black;
 	opacity: 0.8;
-}
+}*/

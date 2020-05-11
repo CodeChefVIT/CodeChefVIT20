@@ -54,7 +54,7 @@ nav>.navbar-brand>img{
       text-align: center;
       position: relative;
       padding-right: 5%;
-      font-size: 1.5em;
+      font-size: 1.75em;
       margin-top: -7%;
       min-width: 300px;
     }
@@ -63,29 +63,7 @@ nav>.navbar-brand>img{
     	height: 400px;
     }
 }
-@media (max-width: 576px) {
-  .xs {color:red;font-weight:bold;}
-}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width:768px) {
-  .sm {color:red;font-weight:bold;}
-}
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width:992px) {
- .md {color:red;font-weight:bold;}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1200px) {
- .lg {color:red;font-weight:bold;}
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .xl {color:red;font-weight:bold;}
-}
 .card-img-top{
 	width: 270px;
 	height: 270px;
@@ -98,11 +76,15 @@ nav>.navbar-brand>img{
 .card-title{
 	margin-top: 20px;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 30px;
+}
+.card-text{
+	font-size: 20px;
+	min-width: 100px;
 }
 .row{
 	margin-top: 150px;
-	margin-bottom: 150px;
+	/*margin-bottom: 150px;*/
 }
 /*.grid-img{
 	width: 100%;
@@ -119,53 +101,50 @@ nav>.navbar-brand>img{
 	padding-right: 30px;
 }
 
-footer{
-	position: relative;
-	text-align: center;
 
-	/*background: url("../images/logo1.png") center center;*/
-	background-size: cover;
-	background-color: #293243;
-	height: 800px;
-}
-
-footer>div>h1{
-	margin-bottom: 20px;
-}
-footer>.container{
-	padding-top: 60px;
-}
-.footer-button{
-	width: 400px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-weight : bold;
-	color: #546586!important;
-}
-.subscribe-btn{
-	margin-top: 20px;
-	width: 280px;
-	color: #293243!important;
-}
-footer>.container>h1{
-	color: #fff;
-}
-footer>div>div>div>h3{
-	color: #546586;
-}
-footer>div>div.row{
-	margin-top: 80px;
-}
-.footer-icon{
-	font-size: 2em;
-	padding: 5px;
-	color: #FFF;
-}
-footer>div>div>div>a{
-	color: black;
+footer {
+  position: relative;
+  text-align: center;
+  background: url("../images/logo1.png") center center;
+  background-size: cover;
+  background-color: #293243;
+  margin-top: 150px;
+  padding-top: 40px;
 }
 
-footer>div>div>div>a:hover{
-	color:black;
-	opacity: 0.8;
+footer>div>h1 {
+  margin-bottom: 20px;
+}
+
+.footer-list{
+  list-style-type: none;
+  text-align: left;
+  margin-left: 30%;
+}
+.footer-list>li>a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer>.container>h1 {
+  color: #fff;
+}
+
+footer>div>div>div>h3 {
+  margin-top: 30px;
+  color: #546586;
+}
+
+footer>div>div.row {
+  margin-top: 60px;
+}
+
+.footer-img{
+  padding-top: 30px;
+}
+
+.footer-icon {
+  padding: 10px;
+  color: #FFF;
 }
