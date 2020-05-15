@@ -7,8 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Stylesheet for Font icons-->
 		<link defer rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Stylesheet for On Scroll animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Script for On Scroll animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Codechef VIT</title>
   </head>
@@ -122,52 +130,151 @@
 		</div>
 
  <!--banner Starts here-->
-    <a href="#">
-      <div class="banner">
+    <div class="banner">
 
-        <div class="right">
-          <img src="assets/images/logos/play.png" alt="">
+        <div class="container">
+          <div class="row">
+
+            <div class="left" data-aos="fade-right">
+              <h6>Events</h6>
+              <h2>Devsoc</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="right" data-aos="fade-left">
+              <div class="countdown">
+                <div id="wk">NA</div>
+                <div id="day">NA</div>
+                <div id="hr">NA</div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="left">
-          <h6>Webinars</h6>
-          <h2>C++17: Templates</h2>
-          <p>By Navyaa Sharma</p>
+
+
+
+      </div>
+ <!--banner ends here-->
+
+<!--"Latest Projects" starts here-->
+    <div class="projects">
+
+      <div class="container">
+
+        <h1>Latest Projects</h1>
+
+        <div class="tabs">
+          <button class="tab active" id="all" onclick="tabSwitch('none')">All</button>
+          <button class="tab" id="app" onclick="tabSwitch('app')">Web</button>
+          <button class="tab" id="web" onclick="tabSwitch('web')">Apps</button>
+
+        </div>
+
+        <h6><a href="projects.html">See all</a></h6>
+
+        <div class="showcase">
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project app">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Apps</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project app">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Apps</h6>
+                </div>
+
+            </div>
+          </a>
+
+
         </div>
 
       </div>
-    </a>
- <!--banner ends here-->
 
-<!--Sections starts here-->
-		<div class="sections">
+    </div>
+ <!--"Latest Projects" ends here-->
 
-			<a href="events.html">
-				<div class="section" id="events">
-					<h6>Events</h6>
-				</div>
-			</a>
+ <!--"Counter" starts here-->
+   <div class="counter">
 
-			<a href="">
-				<div class="section" id="webinars">
-					<h6>Webinars</h6>
-				</div>
-			</a>
+     <div class="container">
 
-			<a href="">
-				<div class="section" id="projects">
-					<h6>Projects</h6>
-				</div>
-			</a>
+       <div id="projects">
+         <h1>25</h1>
+         <h5>Projects done</h5>
+       </div>
 
-			<a href="">
-				<div class="section" id="team">
-					<h6>Our&nbspteam</h6>
-				</div>
-			</a>
+       <div id="lines">
+         <h1>961</h1>
+         <h5>Lines of Code</h5>
+       </div>
 
-		</div>
- <!--Sections ends here-->
+       <div id="coffee">
+         <h1>600</h1>
+         <h5>Cups of coffee</h5>
+       </div>
+
+    </div>
+  </div>
+ <!--"Counter" ends here-->
+
+
 
 		<footer>
       <div class="container">
@@ -200,13 +307,19 @@
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
+
     <script type="text/javascript">
+
+      AOS.init();
+
       var text = document.querySelector('.text h1');
       var words = text.getElementsByTagName('span');
-      console.log(words);
-
+      var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
       var i = 0;
+
+      //Function for text rotation in hero section
 
       function rotator() {
         words[i].style.display = 'none';
@@ -214,8 +327,63 @@
         words[i].style.display = 'initial';
       }
 
-      setInterval(rotator, 1000);
+      //Function to desplay Countdown in banner
 
+      function countDown() {
+        let now = new Date().getTime();
+        let gap = countDate - now;
+
+        let second = 1000;
+        let min = second * 60;
+        let hour = min * 60;
+        let day = hour * 24;
+        let week = day * 7;
+
+        let w = Math.floor(gap / (week));
+        let d = Math.floor(gap % (week) / (day));
+        let h = Math.floor(gap % (day) / (hour));
+
+        document.getElementById('wk').innerText = w;
+        document.getElementById('day').innerText = d;
+        document.getElementById('hr').innerText = h;
+      }
+
+      // function for the "latest projects"  section
+
+      function tabSwitch(id) {
+
+        let all = document.getElementsByClassName('project');
+
+        let elems = document.getElementsByClassName(id);
+
+        let tabs = document.getElementsByClassName('tab');
+
+        for (let i = 0; i < tabs.length; i++) {
+          tabs[i].addEventListener("click", function() {
+            let current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+
+          });
+        }
+
+        for(let i = 0; i<all.length; i++){
+          all[i].style.display = "block";
+        }
+
+        for(let i = 0; i<elems.length; i++){
+          elems[i].style.display = "none";
+
+        }
+
+      }  //function end
+
+      setInterval(rotator, 1000);
+      setInterval(function(){
+        countDown();
+      }, 1000);
+
+      tabSwitch('none');
     </script>   <!-- JS for rotator text in top-view -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
