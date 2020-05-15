@@ -7,8 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Stylesheet for Font icons-->
 		<link defer rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Stylesheet for On Scroll animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Script for On Scroll animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Codechef VIT</title>
   </head>
@@ -127,13 +135,13 @@
         <div class="container">
           <div class="row">
 
-            <div class="left">
+            <div class="left" data-aos="fade-right">
               <h6>Events</h6>
               <h2>Devsoc</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
-            <div class="right">
+            <div class="right" data-aos="fade-left">
               <div class="countdown">
                 <div id="wk">NA</div>
                 <div id="day">NA</div>
@@ -195,7 +203,7 @@
 
                 <div class="text">
                   <h3>Project title</h3>
-                  <h6>Apps</h6>
+                  <h6>Web</h6>
                 </div>
 
             </div>
@@ -299,9 +307,13 @@
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
 
     <script type="text/javascript">
+
+      AOS.init();
+
       var text = document.querySelector('.text h1');
       var words = text.getElementsByTagName('span');
       var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
@@ -356,7 +368,7 @@
         }
 
         for(let i = 0; i<all.length; i++){
-          all[i].style.display = "inline-grid";
+          all[i].style.display = "block";
         }
 
         for(let i = 0; i<elems.length; i++){

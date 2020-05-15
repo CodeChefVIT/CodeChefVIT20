@@ -153,6 +153,11 @@ nav>.navbar-brand>img {
           display: flex;
           align-items: center; }
 
+
+
+/**
+* "Banner" starts here
+*/
 .banner {
   color: white;
   position: relative;
@@ -232,115 +237,118 @@ nav>.navbar-brand>img {
             content: 'Hours'; }
 
 
+/**
+* "Latest Projects" starts here
+*/
+.projects {
+  position: relative;
+  width: 100%;
+  margin: 5em 0;
+  padding: 0;
+  min-height: 100vh; }
+  .projects .container {
+    text-align: center; }
+    .projects .container h1 {
+      text-transform: uppercase;
+      font-weight: 600; }
+    .projects .container .tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .projects .container .tabs .tab {
+        margin: .5em .2em;
+        padding: .3em 2em;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #EAEAEA;
+        border: 3px solid #D8D8D8;
+        box-sizing: border-box; }
+        .projects .container .tabs .tab:hover {
+          background-color: #47B6FF;
+          border: 3px solid #009AFF;
+          color: white; }
+      .projects .container .tabs .active {
+        background-color: #47B6FF;
+        border: 3px solid #009AFF;
+        color: white; }
+    .projects .container h6 {
+      margin-top: .5rem;
+      margin-bottom: 1.1rem; }
+    .projects .container .showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      grid-gap: .5rem; }
+      .projects .container .showcase .project {
+        position: relative;
+        width: 100%;
+        height: 21em;
+        background-color: #c4c4c4;
+        padding: 2em;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden; }
+        .projects .container .showcase .project .text {
+          display: none;
+          position: absolute;
+          bottom: 2em;
+          z-index: 3; }
+          .projects .container .showcase .project .text h3 {
+            font-weight: 700;
+            color: white;
+            text-align: left; }
+          .projects .container .showcase .project .text h6 {
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.2em; }
+        .projects .container .showcase .project:after {
+          content: '';
+          background: rgba(0, 0, 0, 0.65);
+          top: 100%;
+          left: 0;
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          transition: all .2s ease-in; }
+        .projects .container .showcase .project:hover:after {
+          top: 0; }
+        .projects .container .showcase .project:hover .text {
+          display: block; }
 
-            /**
-            * "Latest Projects" starts here
-            */
-            .projects {
-              position: relative;
-              width: 100%;
-              margin: 5em 0;
-              padding: 0;
-              min-height: 100vh; }
-              .projects .container {
-                text-align: center; }
-                .projects .container h1 {
-                  text-transform: uppercase;
-                  font-weight: 600; }
-                .projects .container .tabs {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center; }
-                  .projects .container .tabs .tab {
-                    margin: .5em .2em;
-                    padding: .3em 2em;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    background-color: #EAEAEA;
-                    border: 3px solid #D8D8D8;
-                    box-sizing: border-box; }
-                    .projects .container .tabs .tab:hover {
-                      background-color: #47B6FF;
-                      border: 3px solid #009AFF;
-                      color: white; }
-                  .projects .container .tabs .active {
-                    background-color: #47B6FF;
-                    border: 3px solid #009AFF;
-                    color: white; }
-                .projects .container h6 {
-                  margin-top: .5rem;
-                  margin-bottom: 1.1rem; }
-                .projects .container .showcase {
-                  display: grid;
-                  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-                  grid-gap: .5rem; }
-                  .projects .container .showcase .project {
-                    position: relative;
-                    width: 100%;
-                    height: 21em;
-                    background-color: #c4c4c4;
-                    padding: 2em;
-                    display: flex;
-                    align-items: flex-end;
-                    overflow: hidden; }
-                    .projects .container .showcase .project .text {
-                      display: none;
-                      z-index: 3; }
-                      .projects .container .showcase .project .text h3 {
-                        font-weight: 700;
-                        color: white;
-                        text-align: left; }
-                      .projects .container .showcase .project .text h6 {
-                        text-align: left;
-                        font-weight: 700;
-                        font-size: 1.2em; }
-                    .projects .container .showcase .project:after {
-                      content: '';
-                      background: rgba(0, 0, 0, 0.65);
-                      top: 100%;
-                      left: 0;
-                      position: absolute;
-                      width: 100%;
-                      height: 100%;
-                      transition: all .2s ease-in; }
-                    .projects .container .showcase .project:hover:after {
-                      top: 0; }
-                    .projects .container .showcase .project:hover .text {
-                      display: block; }
 
-            /**
-            * "Counter" starts here
-            */
-            .counter {
-              position: relative;
-              margin-bottom: 10em;
-              padding: 7em 0;
-              background: url("../images/backs/techy.jpg");
-              background-attachment: fixed;
-              background-size: cover;
-              background-position: 0 73%;
-              text-align: center;
-              color: white; }
-              .counter:before {
-                content: '';
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.6); }
-              .counter .container {
-                position: relative;
-                display: flex;
-                justify-content: space-around;
-                align-items: center; }
-                .counter .container div h1 {
-                  font-weight: 700; }
-                .counter .container div h5 {
-                  background: rgba(189, 189, 189, 0.35);
-                  padding: .5em 1.3em;
-                  text-transform: uppercase;
-                  font-size: 1.7em; }
+/**
+* "Counter" starts here
+*/
+.counter {
+  position: relative;
+  margin-bottom: 10em;
+  padding: 7em 0;
+  background: url("../images/backs/techy.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 73%;
+  text-align: center;
+  color: white; }
+  .counter:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .counter .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .counter .container div h1 {
+      font-weight: 700; }
+    .counter .container div h5 {
+      background: rgba(189, 189, 189, 0.4);
+      padding: .5em 1.3em;
+      text-transform: uppercase;
+      font-size: 1.7em; }
 
 
 .bgimg {
@@ -574,17 +582,21 @@ footer>div>div>div>a:hover {
   .projects .container .showcase .project:after {
     top: 0 !important; }
   .projects .container .showcase .project .text {
-    display: inline-block; }
+    display: block; }
 
   .counter {
     padding: 3em 0; }
     .counter .container {
       flex-direction: column; }
       .counter .container div {
-        margin-bottom: 3em; }
+        margin-bottom: 3em;
+        background: rgba(189, 189, 189, 0.5);
+        padding: 2em 2em 1em 2em;
+        width: 100%; }
+        .counter .container div h5 {
+          background: none; }
         .counter .container div:last-child {
           margin-bottom: 0; } }
-
 
 
 @media only screen and (max-width: 578px) {
