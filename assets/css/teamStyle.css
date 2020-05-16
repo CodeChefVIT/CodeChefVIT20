@@ -42,27 +42,46 @@ nav>.navbar-brand>img{
       position: relative;
       padding-top:14%;
       float:right;
-      /*font-size: 1.4em;*/
+      font-size: 1.4em;
+}
+.context>h1{
+  font-size: 1.8em;
 }
 @media(max-width: 768px){
-	.bgimg{
-    	position: relative;
-    	height: 400px;
-    }
-    .context{
-      text-align: center;
-      position: relative;
-      padding-right: 5%;
-      font-size: 1.75em;
-      margin-top: -7%;
-      min-width: 300px;
-    }
-    .shade{
-    	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    	height: 400px;
-    }
+.bgimg {
+    position: relative;
+    height: 500px;
+  }
+
+  .context {
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 1.4em;
+    float: none;
+  }
+
+  .shade {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 500px;
+  }
+   .context>h1{
+    font-size: 1.8em;
+  }
+   .footer-items div:nth-of-type(2){
+    transform : translateY(-150px);
+    margin-right: 20%;
+  }
+  .footer-items div:nth-of-type(1){
+    transform : translateY(320px);
+  }
 }
 
+@media only screen and (max-width: 991px){
+.navbar-nav li {
+    padding: 1.2em;
+  }
+}
 .card-img-top{
 	width: 270px;
 	height: 270px;

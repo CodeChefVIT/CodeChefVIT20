@@ -22,7 +22,8 @@ h6 {
   background-color: transparent !important;
 }
 
-.navbar-light .navbar-nav .nav-link {
+
+.navbar-light .navbar-nav .nav-link{
   color: #000000;
   padding-top: 45px;
   padding-right: 20px;
@@ -373,6 +374,10 @@ nav>.navbar-brand>img {
   position: relative;
   padding-top: 14%;
   float: right;
+  font-size: 1.4em;
+}
+.context>h1{
+  font-size: 1.8em;
 }
 
 .grid-img {
@@ -545,7 +550,8 @@ footer>div>div>div>a:hover {
   .navbar-nav {
     justify-content: center;
     align-items: flex-start;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1); }
+    /*box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);*/
+    }
     .navbar-nav li {
       padding: 1.2em; }
 
@@ -616,19 +622,32 @@ footer>div>div>div>a:hover {
 @media(max-width: 768px) {
   .bgimg {
     position: relative;
+    height: 500px;
   }
 
   .context {
     text-align: center;
-    padding-top: 5%;
-    padding-left: 10%;
+    margin-top: 30px;
     position: absolute;
-    font-size: 1.75em;
+    font-size: 1.4em;
     float: none;
+  }
+
+  .context>h1{
+    font-size: 1.8em;
   }
 
   .shade {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 500px;
+  }
+
+  .footer-items div:nth-of-type(2){
+    transform : translateY(-150px);
+    margin-right: 20%;
+  }
+  .footer-items div:nth-of-type(1){
+    transform : translateY(320px);
   }
 
 }
