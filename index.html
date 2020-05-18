@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--Stylesheet for Custon CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Stylesheet for Font icons-->
 		<link defer rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -15,8 +17,6 @@
     <!-- Stylesheet for On Scroll animations-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Script for On Scroll animations-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Codechef VIT</title>
   </head>
@@ -59,11 +59,7 @@
         </nav>
 
 				<div class="text">
-					<h1>We are
-            <span style="display: initial;">Learners</span>
-            <span>Coders</span>
-            <span>Family</span>
-          </h1>
+					<h1>We are <span>Coders</span></h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
 					<a href="#"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
 				</div>
@@ -308,6 +304,9 @@
       </div>
     </footer>
 
+    <!-- Script for On Scroll animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Optional JavaScript -->
 
     <script type="text/javascript">
@@ -319,15 +318,8 @@
       var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
       var i = 0;
 
-      //Function for text rotation in hero section
 
-      function rotator() {
-        words[i].style.display = 'none';
-        i = (i + 1) % words.length;
-        words[i].style.display = 'initial';
-      }
-
-      //Function to desplay Countdown in banner
+      //Function to display Countdown in banner
 
       function countDown() {
         let now = new Date().getTime();
@@ -378,7 +370,7 @@
 
       }  //function end
 
-      setInterval(rotator, 1000);
+
       setInterval(function(){
         countDown();
       }, 1000);
