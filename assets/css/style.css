@@ -677,6 +677,15 @@ footer>div>div>div>a:hover {
     padding-left: 0 !important;
     padding-right: 0 !important; } }
 
+/*Modals for events page*/
+
+.modal-content{
+  width: 700px;
+  height: 500px;
+  padding: 20px;
+}
+
+
 /**
 * Media for Smaller devices like iPhone SE,3,4,4s
 */
