@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--Stylesheet for Custon CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Stylesheet for Font icons-->
 		<link defer rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -15,8 +17,6 @@
     <!-- Stylesheet for On Scroll animations-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Script for On Scroll animations-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Codechef VIT</title>
   </head>
@@ -25,6 +25,20 @@
 		<div class="top-view">
 
 			<div class=" hero">
+
+        <!-- The video -->
+        <video autoplay muted loop id="intro">
+          <source src="assets/video/introVideo.mp4" type="video/mp4">
+        </video>
+
+        <div id="vidOverlay"></div>
+
+        <div id="overlay" onclick="off()">
+          <video autoplay muted loop>
+            <source src="assets/video/introVideo.mp4" type="video/mp4">
+          </video>
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" style="background-color: transparent!important;position: absolute;top:0;width: 100%">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,13 +73,9 @@
         </nav>
 
 				<div class="text">
-					<h1>We are
-            <span style="display: initial;">Learners</span>
-            <span>Coders</span>
-            <span>Family</span>
-          </h1>
+					<h1>We are <span>Coders</span></h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
-					<a href="#"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
+					<a href="#" onclick="on()"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
 				</div>
 
 			</div>
@@ -308,83 +318,11 @@
       </div>
     </footer>
 
+    <!-- Script for On Scroll animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Optional JavaScript -->
-
-    <script type="text/javascript">
-
-      AOS.init();
-
-      var text = document.querySelector('.text h1');
-      var words = text.getElementsByTagName('span');
-      var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
-      var i = 0;
-
-      //Function for text rotation in hero section
-
-      function rotator() {
-        words[i].style.display = 'none';
-        i = (i + 1) % words.length;
-        words[i].style.display = 'initial';
-      }
-
-      //Function to desplay Countdown in banner
-
-      function countDown() {
-        let now = new Date().getTime();
-        let gap = countDate - now;
-
-        let second = 1000;
-        let min = second * 60;
-        let hour = min * 60;
-        let day = hour * 24;
-        let week = day * 7;
-
-        let w = Math.floor(gap / (week));
-        let d = Math.floor(gap % (week) / (day));
-        let h = Math.floor(gap % (day) / (hour));
-
-        document.getElementById('wk').innerText = w;
-        document.getElementById('day').innerText = d;
-        document.getElementById('hr').innerText = h;
-      }
-
-      // function for the "latest projects"  section
-
-      function tabSwitch(id) {
-
-        let all = document.getElementsByClassName('project');
-
-        let elems = document.getElementsByClassName(id);
-
-        let tabs = document.getElementsByClassName('tab');
-
-        for (let i = 0; i < tabs.length; i++) {
-          tabs[i].addEventListener("click", function() {
-            let current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-
-          });
-        }
-
-        for(let i = 0; i<all.length; i++){
-          all[i].style.display = "block";
-        }
-
-        for(let i = 0; i<elems.length; i++){
-          elems[i].style.display = "none";
-
-        }
-
-      }  //function end
-
-      setInterval(rotator, 1000);
-      setInterval(function(){
-        countDown();
-      }, 1000);
-
-      tabSwitch('none');
-    </script>   <!-- JS for rotator text in top-view -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
