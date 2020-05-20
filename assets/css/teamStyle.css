@@ -82,43 +82,109 @@ nav>.navbar-brand>img{
     padding: 1.2em;
   }
 }
-.card-img-top{
-	width: 270px;
-	height: 270px;
-	border-radius : 50%;
+.text{
+  text-align: center;
+  margin-top: 80px;
+  display: none;
+  position: absolute;
+  z-index: 3; 
+  color: #fff;
 }
+.text>h1{
+  font-weight: bolder;
+  font-size: 25px;
+}
+.text>h5{
+  font-weight: 600;
+  font-size: 20px;
+}
+.text>p{
+  margin-bottom: 0;
+}
+/*.text>a>span>.fa-circle{
+  padding:0;
+  border-radius : 80%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}*/
+.fb{
+  color: #2980B9;
+  padding : 0;
+}
+.text>a>span>.fa-facebook-square{
+  color: #fff;
+}
+.text>a>span>.fa-facebook-square:hover{
+  color: #fff;
+}
+.text>a>span>.fa-github{
+  color: #fff;
+}
+.text>a>span>.fa-github:hover{
+  color: #fff;
+}
+.gt{
+  color: #363636;
+  padding:0;
+}
+.text>a>span>.fa-instagram{
+  color: #fff;
+}
+.text>a>span>.fa-instagram:hover{
+  color: #fff;
+}
+.in{
+  color:#FF007A;
+  padding:0;
+}
+
 .card{
   border: transparent;
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
-.card-title{
+.card-body{
+  background: url('../images/event-img.jpg') ;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.card-body:after{
+   content: '';
+          background: rgba(0, 154, 255, 0.65);
+          top: 100%;
+          left: 0;
+          position: absolute;
+          z-index: 2;
+          width: 100%;
+          height: 0;
+          transition: all .2s ease-in;
+}
+.card-body:hover:after{
+  top:0;
+  height: 100%;
+  border-radius: 10px;
+}
+.card-body:hover .text{
+  display:block;
+}
+/*.card-title{
 	margin-top: 20px;
 	font-weight: bold;
 	font-size: 30px;
 }
-.card-text{
+*/.card-text{
 	font-size: 20px;
-	min-width: 100px;
+	width: 100px;
 }
 .row{
 	margin-top: 150px;
 	/*margin-bottom: 150px;*/
 }
-/*.grid-img{
-	width: 100%;
-}
-.heading{
-	padding-left: 5px;
-	padding-top: 70px;
-	padding-bottom: 50px;
-}*/
-.col-lg-4{
-	width: 100%;
-	height: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
-}
 
+.col-lg-4{
+	/*width: 100%;*/
+	height: 100%;
+  margin-top: 20px;
+}
 
 footer {
   position: relative;
