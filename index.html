@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="assert/css/style.css">
+    <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Stylesheet for Custon CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Stylesheet for Font icons-->
+		<link defer rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Stylesheet for On Scroll animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <title>Codechef VIT</title>
   </head>
@@ -16,41 +25,57 @@
 		<div class="top-view">
 
 			<div class=" hero">
+
+        <!-- The video -->
+        <video autoplay muted loop id="intro">
+          <source src="assets/video/introVideo.mp4" type="video/mp4">
+        </video>
+
+        <div id="vidOverlay"></div>
+
+        <div id="overlay" onclick="off()">
+          <video autoplay muted loop>
+            <source src="assets/video/introVideo.mp4" type="video/mp4">
+          </video>
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" style="background-color: transparent!important;position: absolute;top:0;width: 100%">
-            <a class="navbar-brand" href="index.html"><img src="assert/images/logos/logo.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto float-right">
                   <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="index.html">About</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="events.html">Events</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
+                      <a class="nav-link" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Webinars</a>
+                      <a class="nav-link" href="webinars.html">Webinars</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Team</a>
+                      <a class="nav-link" href="projects.html">Projects</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Sponsors</a>
+                      <a class="nav-link" href="team.html">Team</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="sponsors.html">Sponsors</a>
                   </li>
                   </ul>
             </div>
         </nav>
 
-
 				<div class="text">
-					<h1>We are <span>a team</span></h1>
+					<h1>We are <span>Coders</span></h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
-					<a href="#"><img src="assert/images/logos/play.png" alt=""><span>Play Video</span></a>
+					<a href="#" onclick="on()"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
 				</div>
 
 			</div>
@@ -70,7 +95,7 @@
 
           <a href="#" class="grid-item">
             <div class="inside">
-              <div class="img-box" style="background-image: url('assert/images/backs/blitz.jpg');"></div>
+              <div class="img-box" style="background-image: url('assets/images/backs/blitz.jpg');"></div>
 
               <div class="content-box">
                 <div class="text">
@@ -85,7 +110,7 @@
 
           <a href="#" class="grid-item">
             <div class="inside">
-              <div class="img-box" style="background-image: url('assert/images/backs/cpp_Banner.jpg');"></div>
+              <div class="img-box" style="background-image: url('assets/images/backs/cpp_Banner.jpg');"></div>
 
               <div class="content-box">
                 <div class="text">
@@ -99,12 +124,12 @@
 
           <a href="#" class="grid-item">
             <div class="inside">
-              <div class="img-box" style="background-image: url('assert/images/backs/blog.png');"></div>
+              <div class="img-box" style="background-image: url('assets/images/backs/blog.jpeg');"></div>
 
               <div class="content-box">
                 <div class="text">
                   <h6>Blogs</h6>
-                  <h2>Asynchronous Programming In Node JS</h2>
+                  <h2>Setting up Continuous Integration(CI) for Node app with Travis-CI</h2>
                 </div>
               </div>
             </div>
@@ -114,79 +139,195 @@
       </div>
 		</div>
 
+ <!--banner Starts here-->
+    <div class="banner">
 
-    <a href="#">
-      <div class="banner">
+        <div class="container">
+          <div class="row">
 
-        <div class="right">
-          <img src="assert/images/logos/play.png" alt="">
+            <div class="left" data-aos="fade-right">
+              <h6>Events</h6>
+              <h2>Devsoc</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="right" data-aos="fade-left">
+              <div class="countdown">
+                <div id="wk">NA</div>
+                <div id="day">NA</div>
+                <div id="hr">NA</div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="left">
-          <h6>Webinars</h6>
-          <h2>C++17: Templates</h2>
-          <p>By Navyaa Sharma</p>
+
+
+
+      </div>
+ <!--banner ends here-->
+
+<!--"Latest Projects" starts here-->
+    <div class="projects">
+
+      <div class="container">
+
+        <h1>Latest Projects</h1>
+
+        <div class="tabs">
+          <button class="tab active" id="all" onclick="tabSwitch('none')">All</button>
+          <button class="tab" id="app" onclick="tabSwitch('app')">Web</button>
+          <button class="tab" id="web" onclick="tabSwitch('web')">Apps</button>
+
+        </div>
+
+        <h6><a href="projects.html">See all</a></h6>
+
+        <div class="showcase">
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project app">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Apps</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project web">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Web</h6>
+                </div>
+
+            </div>
+          </a>
+
+          <a href="" class="project app">
+            <div>
+
+                <div class="text">
+                  <h3>Project title</h3>
+                  <h6>Apps</h6>
+                </div>
+
+            </div>
+          </a>
+
+
         </div>
 
       </div>
-    </a>                    <!--banner-->
 
-		<div class="sections">
+    </div>
+ <!--"Latest Projects" ends here-->
 
-			<a href="events.html">
-				<div class="section" id="events">
-					<h6>Events</h6>
-				</div>
-			</a>
+ <!--"Counter" starts here-->
+   <div class="counter">
 
-			<a href="">
-				<div class="section" id="webinars">
-					<h6>Webinars</h6>
-				</div>
-			</a>
+     <div class="container">
 
-			<a href="">
-				<div class="section" id="projects">
-					<h6>Projects</h6>
-				</div>
-			</a>
+       <div id="projects">
+         <h1>25</h1>
+         <h5>Projects done</h5>
+       </div>
 
-			<a href="">
-				<div class="section" id="team">
-					<h6>Our team</h6>
-				</div>
-			</a>
+       <div id="lines">
+         <h1>961</h1>
+         <h5>Lines of Code</h5>
+       </div>
 
-		</div>
+       <div id="coffee">
+         <h1>600</h1>
+         <h5>Cups of coffee</h5>
+       </div>
+
+    </div>
+  </div>
+ <!--"Counter" ends here-->
 
 
-		<footer style="margin-top: 0;">
-			<div class="container">
-				<h1>STAY UP TO DATE WITH OUR NEWSLETTER</h1>
-				<button class="btn btn-lg btn-outline-light footer-button">your name</button>
-				<br>
-				<button class="btn btn-lg btn-outline-light footer-button">your email</button>
-				<br>
-				<button class="btn btn-lg btn-light subscribe-btn">SUBSCRIBE</button>
-				<br>
-				<div class="row">
-					<div class="col-lg-6">
-						<p class="mx-auto"><a href="#"><img src="assert/images/logo-white.jpg"></a></p>
-					</div>
-		            <div class="col-lg-6">
-		            	<h3 class="mr-auto">GET IN TOUCH</h3>
-						<a href="#"><i class="fab fa-facebook-square footer-icon"></i></a>
-						<a href="#"><i class="fab fa-github footer-icon"></i></a>
-						<a href="#"><i class="fab fa-instagram footer-icon"></i></a>
-		            </div>
-				</div>
-			</div>
-		</footer>
+
+		<footer>
+      <div class="container">
+        <div class="row footer-items">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <p class="mx-auto"><a href="#"><img src="assets/images/logo-white.jpg" class="footer-img"></a></p>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <ul class="footer-list">
+              <h3 style="color: #fff;">EXPLORE</h3>
+              <li><a href = "index.html" target = "_blank">Home</a></li>
+              <li><a href = "index.html" target = "_blank">About Us</a></li>
+              <li><a href = "events.html" target = "_blank">Events</a></li>
+              <li><a href = "blog.html" target = "_blank">Blog</a></li>
+              <li><a href = "webinars.html" target = "_blank">Webinars</a></li>
+              <li><a href = "projects.html" target = "_blank">Projects</a></li>
+              <li><a href = "team.html" target = "_blank">Team</a></li>
+              <li><a href = "sponsors.html" target = "_blank">Sponsors</a></li>
+            </ul>
+          </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <h3 class="mr-auto footer-heading">GET IN TOUCH</h3>
+            <a href="https://www.facebook.com/codechefvit" target = "_blank"><i class="fab fa-facebook-square footer-icon fa-2x"></i></a>
+            <a href="https://github.com/CodeChefVIT" target = "_blank"><i class="fab fa-github footer-icon fa-2x"></i></a>
+            <a href="https://www.instagram.com/codechefvit/" target = "_blank"><i class="fab fa-instagram footer-icon fa-2x"></i></a>
+            <a href="https://twitter.com/codechefvit" target = "_blank"><i class="fab fa-twitter footer-icon fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/codechef-vit-chapter" target = "_blank"><i class="fab fa-linkedin-in footer-icon fa-2x"></i></a>
+            <a href="https://medium.com/codechef-vit" target = "_blank"><i class="fab fa-medium footer-icon fa-2x"></i></a>
+                </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script for On Scroll animations-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
+<!-- >>>>>>> a77816ca0a2543f3f6ffccf4b71f2817647254da -->
 </html>
