@@ -1,0 +1,115 @@
+@font-face{
+	src: url('../fonts/Poppins/Poppins-Regular.ttf');
+	font-family: Poppins;
+}
+html{
+	margin-bottom: 0;
+}
+body{
+	font-family: Poppins;
+}
+.bg-light{
+	background-color: transparent!important;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #000000;
+	padding-top: 45px;
+	padding-right: 20px;
+}
+nav>.navbar-brand>img{
+	padding-left: 30px;
+	margin-top:-5%;
+	height: 6rem;
+  width: auto;
+}
+.bgimg{
+     background: url('../images/team-cover.jpeg');
+    background-size:cover;
+    width:100%;
+    height:660px;
+    background-repeat:no-repeat;
+}
+.shade {
+     width: 100%;
+    height: 660px;
+    clip-path:polygon(58% 0%,50% 100%,100% 100%,100% 0%);
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+}
+.context{
+      text-align:left;
+      color:white;
+      position: relative;
+      padding-top:14%;
+      float:right;
+      /*font-size: 1.4em;*/
+}
+@media(max-width: 768px){
+	.bgimg{
+    	position: relative;
+    	height: 400px;
+    }
+    .context{
+      text-align: center;
+      position: relative;
+      padding-right: 5%;
+      font-size: 1.75em;
+      margin-top: -7%;
+      min-width: 300px;
+    }
+    .shade{
+    	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    	height: 400px;
+    }
+}
+
+hr{
+    width:80px;
+   margin:20px 0 40px 0;
+}
+
+
+footer {
+  position: relative;
+  text-align: center;
+  background-color: #293243;
+  margin-top: 150px;
+  padding-top: 40px;
+}
+
+footer>div>h1 {
+  margin-bottom: 20px;
+}
+
+.footer-list{
+  list-style-type: none;
+  text-align: left;
+  margin-left: 30%;
+}
+.footer-list>li>a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+footer>.container>h1 {
+  color: #fff;
+}
+
+footer>div>div>div>h3 {
+  margin-top: 30px;
+  color: #546586;
+}
+
+footer>div>div.row {
+  margin-top: 60px;
+}
+
+.footer-img{
+  padding-top: 30px;
+}
+
+.footer-icon {
+  padding: 10px;
+  color: #FFF;
+}
