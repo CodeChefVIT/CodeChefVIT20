@@ -86,7 +86,7 @@ nav>.navbar-brand>img{
 
 
 .text{
-  text-align: center;
+  /*text-align: center;
   margin-top: 20px;
   margin-left: 10px;
   display: none;
@@ -94,12 +94,20 @@ nav>.navbar-brand>img{
   z-index: 3; 
   color: #fff;
   font-size: 15px;
-  width: 260px;
+  width: 260px;*/
+  text-align: center;
+  margin-top: 80px;
+  display: none;
+  position: absolute;
+  z-index: 3; 
+  position: relative;
+  z-index: 3;
+  color: #fff;
 }
 
 .text>h1{
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 .text>h5{
@@ -107,7 +115,8 @@ nav>.navbar-brand>img{
   font-size: 20px;
 }
 .text>p{
-  margin-bottom: 0;
+  padding: 7px;
+
 }
 /*.text>a>span>.fa-circle{
   padding:0;
@@ -156,6 +165,9 @@ nav>.navbar-brand>img{
   border-radius: 10px;
   margin:0;
   padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .c1{
@@ -240,9 +252,13 @@ nav>.navbar-brand>img{
 }
 
 .row{
-  margin-top: 150px;
-  /*margin-bottom: 150px;*/
+  margin-top: 1.2em;
 }
+
+.row:first-child {
+  margin-top: 150px;
+}
+
 
 .col-lg-4{
   /*width: 100%;*/
