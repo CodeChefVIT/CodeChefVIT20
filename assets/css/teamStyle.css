@@ -1,25 +1,25 @@
 @font-face{
-	src: url('../fonts/Poppins/Poppins-Regular.ttf');
-	font-family: Poppins;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+  font-family: Poppins;
 }
 html{
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 body{
-	font-family: Poppins;
+  font-family: Poppins;
 }
 .bg-light{
-	background-color: transparent!important;
+  background-color: transparent!important;
 }
 .navbar-light .navbar-nav .nav-link{
-	color: #000000;
-	padding-top: 45px;
-	padding-right: 20px;
+  color: #000000;
+  padding-top: 45px;
+  padding-right: 20px;
 }
 nav>.navbar-brand>img{
-	padding-left: 30px;
-	margin-top:-5%;
-	height: 6rem;
+  padding-left: 30px;
+  margin-top:-5%;
+  height: 6rem;
   width: auto;
 }
 .bgimg{
@@ -68,6 +68,7 @@ nav>.navbar-brand>img{
    .context>h1{
     font-size: 1.8em;
   }
+
    .footer-items div:nth-of-type(2){
     transform : translateY(-150px);
     margin-right: 20%;
@@ -82,23 +83,38 @@ nav>.navbar-brand>img{
     padding: 1.2em;
   }
 }
+
+
 .text{
+  /*text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: none;
+  position: absolute;
+  z-index: 3; 
+  color: #fff;
+  font-size: 15px;
+  width: 260px;*/
+   margin-top: 10px;
   text-align: center;
   display: none;
   position: relative;
   z-index: 3;
   color: #fff;
 }
+
 .text>h1{
   font-weight: bolder;
   font-size: 25px;
+  text-transform: uppercase;
 }
 .text>h5{
   font-weight: 600;
   font-size: 20px;
 }
 .text>p{
-  margin-bottom: 0;
+  padding: 7px;
+
 }
 /*.text>a>span>.fa-circle{
   padding:0;
@@ -141,13 +157,75 @@ nav>.navbar-brand>img{
   /*margin-bottom: 60px;*/
 }
 .card-body{
-  background: url('../images/event-img.jpg') ;
+  /*background: url('../images/event-img.jpg') ;*/
   height: 450px;
+  width: 290px;
   border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.c1{
+   background: url('../images/team/KUNAL2.jpg') ;
+}
+
+.c2{
+   background: url('../images/team/RAJAT3.jpg') ;
+}
+
+.c3{
+   background: url('../images/team/Akshat Gupta3.jpg') ;
+}
+
+.c4{
+   background: url('../images/team/Muskan_Tewari2.jpg') ;
+}
+
+.c5{
+   background: url('../images/team/Ishan Gupta2.jpg') ;
+}
+
+.c6{
+   background: url('../images/team/Nishi_Jain2.jpg') ;
+}
+
+.c7{
+   background: url('../images/team/Vansh Goel2.jpg') ;
+}
+
+.c8{
+
+   background: url('../images/team/Dipto.jpg') ;
+}
+
+.c9{
+   background: url('../images/team/Shreya Chaterjee3.jpg') ;
+}
+
+.c10{
+   background: url('../images/team/Kshitiz2.jpg') ;
+}
+.c11{
+   background: url('../images/team/Devang Pandey3.jpg') ;
+}
+
+.c12{
+   background: url('../images/team/Anuj Kapoor2.jpg') ;
+}
+
+.c13{
+   background: url('../images/team/navyaa sharma3.jpg') ;
+}
+
+.c14{
+   background: url('../images/team/Priyank Kaushik2.jpg') ;
+}
+
+.c15{
+   background: url('../images/team/Anmol Pant3.jpg');
+}
+
 
 .card-body:after{
    content: '';
@@ -156,7 +234,7 @@ nav>.navbar-brand>img{
           left: 0;
           position: absolute;
           z-index: 2;
-          width: 100%;
+          width: 290px;
           height: 0;
           transition: all .2s ease-in;
 }
@@ -168,27 +246,18 @@ nav>.navbar-brand>img{
 .card-body:hover .text{
   display:block;
 }
-/*.card-title{
-	margin-top: 20px;
-	font-weight: bold;
-	font-size: 30px;
-}
-*/.card-text{
-	font-size: 20px;
-	width: 100px;
-}
+
 .row{
-	margin-top: 1.2em;
-	/*margin-bottom: 150px;*/
+  margin-top: 1.2em;
 }
 
 .row:first-child {
-	margin-top: 150px;
+  margin-top: 150px;
 }
 
 .col-lg-4{
-	/*width: 100%;*/
-	height: 100%;
+  /*width: 100%;*/
+  height: 100%;
   margin-top: 20px;
 }
 
