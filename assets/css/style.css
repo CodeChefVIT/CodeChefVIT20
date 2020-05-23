@@ -26,17 +26,17 @@ h6 {
 .bg-light {
   background-color: transparent !important;
 }
-
-
 .navbar-light .navbar-nav .nav-link{
-  color: rgb(156, 151, 151);
+  color: #000;
   padding-top: 45px;
   padding-right: 20px;
 }
+.navbar-light .navbar-nav .nav-link.indexnav{
+    color: #fff;
+   } 
 
 nav>.navbar-brand>img {
   padding-left: 30px;
-  margin-top: -5%;
   height: 6rem;
   width: auto;
 }
@@ -607,10 +607,25 @@ footer>div>div>div>a:hover {
 
   .navbar-collapse {
     z-index: 100;
-    background-color: white; }
+    background-color: white;
+     }
+     .navbar-light .navbar-nav .nav-link.indexnav{
+    color: #000;
+   }
+
 
   .hero {
-    min-height: 100vh; }
+    min-height: 100vh;
+    overflow-y: visible; }
+
+    .hero::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.hero {
+  -ms-overflow-style: none;
+}
 
   .hanger {
     display: none; }
@@ -733,6 +748,7 @@ footer>div>div>div>a:hover {
 
 
 @media(max-width: 768px) {
+
   .bgimg {
     position: relative;
     height: 500px;
