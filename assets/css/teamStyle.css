@@ -91,7 +91,7 @@ nav>.navbar-brand>img{
   margin-left: 10px;
   display: none;
   position: absolute;
-  z-index: 3; 
+  z-index: 3;
   color: #fff;
   font-size: 15px;
   width: 260px;*/
@@ -154,6 +154,7 @@ nav>.navbar-brand>img{
 
 .card{
   border: transparent;
+  overflow: hidden;
   /*margin-bottom: 60px;*/
 }
 .card-body{
@@ -228,37 +229,23 @@ nav>.navbar-brand>img{
 
 
 .card-body:after{
-<<<<<<< HEAD
 	content: '';
 	background: rgba(0, 154, 255, 0.65);
 	top: 100%;
 	left: 0;
+  border-radius: 10px;
 	position: absolute;
 	z-index: 2;
 	width: 100%;
-	height: 0;
+  height: 100%;
 	transition: all .2s ease-in;
-=======
-   content: '';
-          background: rgba(0, 154, 255, 0.65);
-          top: 100%;
-          left: 0;
-          position: absolute;
-          z-index: 2;
-          width: 290px;
-          height: 0;
-          transition: all .2s ease-in;
->>>>>>> 42c774d7bfeb06fd59f354a54115a559dcb402e9
 }
 .card-body:hover:after{
   top:0;
-  height: 100%;
-  border-radius: 10px;
 }
 .card-body:hover .text{
   display:block;
 }
-<<<<<<< HEAD
 /*.card-title{
 	margin-top: 20px;
 	font-weight: bold;
@@ -268,19 +255,13 @@ nav>.navbar-brand>img{
 	font-size: 20px;
 	width: 100px;
 }
-=======
->>>>>>> 42c774d7bfeb06fd59f354a54115a559dcb402e9
 
 .row{
   margin-top: 1.2em;
 }
 
 .row:first-child {
-<<<<<<< HEAD
 	margin-top: 150px	;
-=======
-  margin-top: 150px;
->>>>>>> 42c774d7bfeb06fd59f354a54115a559dcb402e9
 }
 
 .col-lg-4{
