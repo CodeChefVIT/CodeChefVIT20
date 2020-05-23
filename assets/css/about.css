@@ -23,7 +23,7 @@ nav>.navbar-brand>img{
   width: auto;
 }
 .bgimg{
-     background: url('../images/team-cover.jpeg');
+     background: url('../images/about-us.jpeg');
     background-size:cover;
     width:100%;
     height:660px;
@@ -112,4 +112,80 @@ footer>div>div.row {
 .footer-icon {
   padding: 10px;
   color: #FFF;
+}
+
+@media only screen and (max-width: 430px) {
+  :root {
+    --cards-min-width: 13em;
+    --project-min-width: 12rem; }
+
+  .container {
+    padding: 1em; }
+
+  .top-view .hero .text h1 {
+    font-size: 2.5em; }
+  .top-view .hero .text p {
+    font-size: 1em; }
+  .top-view .hero .text a {
+    font-size: .8em; }
+
+  .cards .grid a.grid-item:first-child {
+    height: 23em; }
+  .cards .grid a.grid-item:not(:first-child) .inside .content-box .text {
+    text-overflow: ellipsis; }
+    .cards .grid a.grid-item:not(:first-child) .inside .content-box .text h2 {
+      font-size: 1.2em; }
+    .cards .grid a.grid-item:not(:first-child) .inside .content-box .text p {
+      font-size: .9em; }
+
+  .banner {
+    text-align: center; }
+    .banner .right .countdown {
+      flex-direction: column !important;
+      align-items: center; }
+      .banner .right .countdown div:not(:last-child) {
+        margin-bottom: 1em !important; }
+
+      .projects .container {
+        padding: 2em; } }
+
+@media only screen and (max-width: 350px) {
+  .projects .tabs {
+    flex-direction: column; }
+    .projects .tabs .tab {
+      width: 100%;
+      padding: .8em 0 !important; } }
+
+
+@media(max-width: 768px) {
+  .bgimg {
+    position: relative;
+    height: 500px;
+  }
+
+  .context {
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 1.4em;
+    float: none;
+  }
+
+  .context>h1{
+    font-size: 1.8em;
+  }
+
+  .shade {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 500px;
+  }
+
+  .footer-items div:nth-of-type(2){
+    transform : translateY(-150px);
+    margin-right: 20%;
+  }
+  .footer-items div:nth-of-type(1){
+    transform : translateY(320px);
+  }
+
 }
