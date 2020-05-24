@@ -26,17 +26,17 @@ h6 {
 .bg-light {
   background-color: transparent !important;
 }
-
-
 .navbar-light .navbar-nav .nav-link{
-  color: rgb(156, 151, 151);
+  color: #000;
   padding-top: 45px;
   padding-right: 20px;
 }
+.navbar-light .navbar-nav .nav-link.indexnav{
+    color: #fff;
+   } 
 
 nav>.navbar-brand>img {
   padding-left: 30px;
-  margin-top: -5%;
   height: 6rem;
   width: auto;
 }
@@ -45,7 +45,12 @@ nav>.navbar-brand>img {
   min-height: 100vh;
   color: white;
 }
-
+.custom-toggler.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 .hero {
   position: relative;
   min-height: calc(100vh - 25px);
@@ -607,10 +612,25 @@ footer>div>div>div>a:hover {
 
   .navbar-collapse {
     z-index: 100;
-    background-color: white; }
+    background-color: white;
+     }
+     .navbar-light .navbar-nav .nav-link.indexnav{
+    color: #000;
+   }
+
 
   .hero {
-    min-height: 100vh; }
+    min-height: 100vh;
+    overflow-y: visible; }
+
+    .hero::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.hero {
+  -ms-overflow-style: none;
+}
 
   .hanger {
     display: none; }
@@ -733,6 +753,7 @@ footer>div>div>div>a:hover {
 
 
 @media(max-width: 768px) {
+
   .bgimg {
     position: relative;
     height: 500px;
