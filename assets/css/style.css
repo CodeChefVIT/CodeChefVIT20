@@ -259,8 +259,7 @@ padding: 120px 0; }
           opacity: 0.03;
           z-index: 0; }
       .banner .container .row .right {
-        margin: 0 auto;
-        padding: 4em 0; }
+        margin: auto; }
         .banner .container .row .right .countdown {
           display: flex;
           flex-direction: row; }
@@ -302,7 +301,8 @@ padding: 120px 0; }
   position: relative;
   width: 100%;
   margin: 5em 0;
-  padding: 0; }
+  padding: 0;
+  min-height: calc(100vh - 4em); }
   .projects .container {
     text-align: center; }
     .projects .container h1 {
@@ -348,12 +348,18 @@ padding: 120px 0; }
         .projects .container .showcase .project .text {
           display: none;
           position: absolute;
-          bottom: 2em;
-          z-index: 3; }
+          bottom: 0;
+          left: 0;
+          z-index: 3;
+          padding: 2em; }
           .projects .container .showcase .project .text h3 {
             font-weight: 700;
             color: white;
             text-align: left; }
+          .projects .container .showcase .project .text p {
+            color: white;
+            text-align: left;
+            font-size: .9em; }
           .projects .container .showcase .project .text h6 {
             text-align: left;
             font-weight: 700;
@@ -605,8 +611,7 @@ footer>div>div>div>a:hover {
 
   .navbar-nav {
     justify-content: center;
-    align-items: flex-start;
-    }
+    align-items: flex-start; }
     .navbar-nav li {
       padding: 1.2em; }
 
@@ -642,9 +647,7 @@ footer>div>div>div>a:hover {
   .cards a.grid-item:not(:first-child) p {
     font-size: .9em; }
 
-  .banner:before {
-    content: '';
-    display: none; }
+
   .banner .left {
     padding-bottom: 2em !important; }
   .banner .right {
@@ -749,7 +752,9 @@ footer>div>div>div>a:hover {
     flex-direction: column; }
     .projects .tabs .tab {
       width: 100%;
-      padding: .8em 0 !important; } }
+      padding: .8em 0 !important; }
+  .projects .showcase .project .text {
+    padding: 1.2em !important; } }
 
 
 @media(max-width: 768px) {
@@ -784,6 +789,34 @@ footer>div>div>div>a:hover {
     transform : translateY(320px);
   }
 
+  #intro{
+    display: none;
+  }
+
+  .hero {
+    background: url('../video/poster.png') no-repeat;
+    background-size: cover;
+  }
+
+  .banner:before {
+    content: '';
+    display: none; }
+  .banner .right {
+    padding: 4em 0; } 
+
 }
 
 
+@media(min-aspect-ratio: 16/9) {
+  #intro {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-aspect-ratio: 16/9) {
+  #intro {
+    width: auto;
+    height: 100%;
+  }
+}
