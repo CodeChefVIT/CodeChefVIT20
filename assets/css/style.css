@@ -1,3 +1,4 @@
+
 :root {
   --cards-min-width: 23em;
   --project-min-width: 20rem; }
@@ -599,7 +600,6 @@ footer>div>div.row {
 footer>div>div>div>a {
   color: black;
 }
-
 footer>div>div>div>a:hover {
   color: black;
   opacity: 0.8;
