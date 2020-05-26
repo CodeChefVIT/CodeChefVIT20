@@ -22,12 +22,6 @@ nav>.navbar-brand>img{
   height: 6rem;
   width: auto;
 }
-.navbar-light .navbar-nav .nav-link:hover{
-  opacity: 0.7;
-}
-.active{
-  border-bottom: solid 3px #2980B9;
-}
 .bgimg{
      background: url('../images/team-cover.jpeg');
     background-size:cover;
