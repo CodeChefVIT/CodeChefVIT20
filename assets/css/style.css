@@ -1,7 +1,7 @@
 :root {
-  --cards-min-width: 23em;
-  --project-min-width: 20rem; }
-
+  --domains-min-width: 20em;
+  --project-min-width: 20rem;
+}
 @font-face {
   src: url('../fonts/Poppins/Poppins-Regular.ttf');
   font-family: Poppins;
@@ -124,6 +124,7 @@ nav>.navbar-brand>img {
   position: relative;
   width: 100%;
   padding: 0;
+  margin: 4em 0;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +132,6 @@ nav>.navbar-brand>img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 .about .container {
@@ -144,21 +144,6 @@ nav>.navbar-brand>img {
   position: relative;
   padding: .5rem;
   margin-bottom: .8em;
-}
-
-.about .container h1::before {
-  content: 'ABOUT US';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 7.5rem;
-  left: 11rem;
-  font-size: 7.5em;
-  color: #EDEDED;
-  z-index: -1;
-  font-weight: bold;
-  white-space: nowrap;
-  letter-spacing: -10px;
 }
 
 .about .container h1::after {
@@ -174,7 +159,7 @@ nav>.navbar-brand>img {
 }
 
 .about .container p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .about .container h2 {
@@ -182,15 +167,10 @@ nav>.navbar-brand>img {
 }
 
 .about .container .domains {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(var(--domains-min-width), 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(var(--domains-min-width), 1fr));
 }
 
 .about .container .domains .domain {
@@ -204,12 +184,10 @@ nav>.navbar-brand>img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-self: center;
   -webkit-box-shadow: 0px 10px 20px rgba(135, 135, 135, 0.25);
           box-shadow: 0px 10px 20px rgba(135, 135, 135, 0.25);
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
-  min-width: 14em;
   text-overflow: ellipsis;
 }
 
@@ -233,7 +211,6 @@ nav>.navbar-brand>img {
   -webkit-box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
           box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
 }
-
 /**
 * "Banner" starts here
 */
@@ -328,7 +305,19 @@ nav>.navbar-brand>img {
     text-align: center; }
     .projects .container h1 {
       text-transform: uppercase;
-      font-weight: 600; }
+      font-weight: 600; 
+      position: relative;}
+    .projects .container h1::after {
+      content: '';
+      width: 7.5em;
+      height: .5rem;
+      position: absolute;
+      bottom: -.6rem;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
+      background-color: #51BAFF;
+    }
     .projects .container .tabs {
       padding: 1em;
       display: flex;
@@ -653,8 +642,7 @@ footer>div>div>div>a:hover {
   }
   .about .container .domains .domain p {
     font-size: 1em;
-    }
-
+  }
 
   .banner .left {
     padding-bottom: 2em !important; }
@@ -715,9 +703,8 @@ footer>div>div>div>a:hover {
 */
 @media only screen and (max-width: 430px) {
   :root {
-    --cards-min-width: 13em;
-    --project-min-width: 12rem; }
-
+    --project-min-width: 12rem;
+  }
   .container {
     padding: 1em; }
 
@@ -740,6 +727,10 @@ footer>div>div>div>a:hover {
         padding: 2em; } }
 
 @media only screen and (max-width: 350px) {
+  :root {
+    --domains-min-width: 12em;
+  }
+
   .projects .tabs {
     flex-direction: column; }
     .projects .tabs .tab {
