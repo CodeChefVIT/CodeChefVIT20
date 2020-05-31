@@ -14,7 +14,7 @@ body{
 .navbar-light .navbar-nav .nav-link{
   color: #000000;
   padding-top: 45px;
-  padding-right: 20px;
+  margin-right: 10px;
 }
 nav>.navbar-brand>img{
   padding-left: 30px;
@@ -155,24 +155,24 @@ nav>.navbar-brand>img{
 .card{
   border: transparent;
   overflow: hidden;
+  box-shadow: 4px 9px 9px rgba(0, 0, 0, 0.3);
   /*margin-bottom: 60px;*/
 }
 .card-body{
   /*background: url('../images/event-img.jpg') ;*/
   height: 450px;
-  width: 290px;
-  border-radius: 10px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .c1{
-   background: url('../images/team/KUNAL2.jpg') ;
+   background: url('../images/team/KUNAL2.jpg');
 }
 
 .c2{
-   background: url('../images/team/RAJAT3.jpg') ;
+   background: url('../images/team/RAJAT3.jpg') center center;
 }
 
 .c3{
@@ -180,11 +180,11 @@ nav>.navbar-brand>img{
 }
 
 .c4{
-   background: url('../images/team/Muskan_Tewari2.jpg') ;
+   background: url('../images/team/Muskan2.jpg') center center ;
 }
 
 .c5{
-   background: url('../images/team/Ishan Gupta2.jpg') ;
+   background: url('../images/team/Ishan Gupta2.jpg') center ;
 }
 
 .c6{
@@ -197,7 +197,7 @@ nav>.navbar-brand>img{
 
 .c8{
 
-   background: url('../images/team/Dipto.jpg') ;
+   background: url('../images/team/DIPTO2.jpg') ;
 }
 
 .c9{
@@ -216,7 +216,7 @@ nav>.navbar-brand>img{
 }
 
 .c13{
-   background: url('../images/team/navyaa sharma3.jpg') ;
+   background: url('../images/team/navyaa_sharma2.jpg') ;
 }
 
 .c14{
@@ -233,8 +233,7 @@ nav>.navbar-brand>img{
 	background: rgba(0, 154, 255, 0.65);
 	top: 100%;
 	left: 0;
-  border-radius: 10px;
-	position: absolute;
+  position: absolute;
 	z-index: 2;
 	width: 100%;
   height: 100%;
@@ -267,7 +266,7 @@ nav>.navbar-brand>img{
 .col-lg-4{
   /*width: 100%;*/
   height: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 footer {
