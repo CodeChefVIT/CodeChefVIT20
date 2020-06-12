@@ -4,6 +4,7 @@
 }
 html{
   margin-bottom: 0;
+  overflow-x: hidden;
 }
 body{
   font-family: Poppins;
@@ -47,6 +48,7 @@ nav>.navbar-brand>img{
 .context>h1{
   font-size: 1.8em;
 }
+
 @media(max-width: 768px){
 .bgimg {
     position: relative;
@@ -68,33 +70,69 @@ nav>.navbar-brand>img{
    .context>h1{
     font-size: 1.8em;
   }
-
-   .footer-items div:nth-of-type(2){
-    transform : translateY(-150px);
-    margin-right: 20%;
+  .footer-list:nth-child(1){
+    margin-top: 0;
   }
-  .footer-items div:nth-of-type(1){
-    transform : translateY(320px);
+  .container.footer-contain{
+    padding-top:0;
+    margin-top:0;
+  }
+  .social{
+    float: center;
+    /*padding-left: 125px;*/
+    display: inline-flex;
+  }
+
+  .footer-list{
+    display: block;
+    padding:0;
+    padding-bottom: 0;
+  }
+
+  .col-lg-4.footer-col{
+    padding-right: 0;
+    margin-top: 0;
+    margin-left: -215px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /*display: inline-block;*/
+  }
+
+  footer>.container>h3{
+    text-align: left;
+  }
+  .row.footer-row{
+    margin-top: 0;
+  }
+  footer{
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
-@media only screen and (max-width: 991px){
-.navbar-nav li {
-    padding: 1.2em;
+@media(max-width: 576px){
+  .col-lg-4.footer-col{
+    padding-right: 0;
+    margin-top: 0;
+    margin-left: -180px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /*display: inline-block;*/
   }
 }
 
+@media(max-width: 430px){
+  .col-lg-4.footer-col{
+    padding-right: 0;
+    margin-top: 0;
+    margin-left: -130px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /*display: inline-block;*/
+  }
+}
 
 .text{
-  /*text-align: center;
-  margin-top: 20px;
-  margin-left: 10px;
-  display: none;
-  position: absolute;
-  z-index: 3;
-  color: #fff;
-  font-size: 15px;
-  width: 260px;*/
    margin-top: 10px;
   text-align: center;
   display: none;
@@ -116,11 +154,7 @@ nav>.navbar-brand>img{
   padding: 7px;
 
 }
-/*.text>a>span>.fa-circle{
-  padding:0;
-  border-radius : 80%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}*/
+
 .fb{
   color: #2980B9;
   padding : 0;
@@ -245,12 +279,7 @@ nav>.navbar-brand>img{
 .card-body:hover .text{
   display:block;
 }
-/*.card-title{
-	margin-top: 20px;
-	font-weight: bold;
-	font-size: 30px;
-}
-*/.card-text{
+.card-text{
 	font-size: 20px;
 	width: 100px;
 }
@@ -263,18 +292,27 @@ nav>.navbar-brand>img{
 	margin-top: 150px	;
 }
 
-.col-lg-4{
+.col-lg-4.d-flex{
   /*width: 100%;*/
   height: 100%;
   margin-top: 30px;
 }
+
 
 footer {
   position: relative;
   text-align: center;
   background-color: #293243;
   margin-top: 150px;
-  padding-top: 40px;
+}
+.footer-text{
+  text-align: justify;
+  color: #fff;
+  padding: 10px;
+}
+.footer-logo{
+  margin-left: -220px;
+  margin-bottom: 30px;
 }
 
 footer>div>h1 {
@@ -284,32 +322,87 @@ footer>div>h1 {
 .footer-list{
   list-style-type: none;
   text-align: left;
-  margin-left: 30%;
+  display: inline-block;
 }
 .footer-list>li>a{
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 footer>.container>h1 {
   color: #fff;
 }
 
-footer>div>div>div>h3 {
-  margin-top: 30px;
-  color: #546586;
+.row.footer-row{
+  margin-top: 0;
 }
 
-footer>div>div.row {
-  margin-top: 60px;
+footer>div>h3 {
+  margin-top: 30px;
+  /*color: #546586;*/
+  color: #fff;
+  font-size: 20px;
 }
 
 .footer-img{
-  padding-top: 30px;
+  padding-top: 40px;
+  width: 100px;
+}
+
+.footer-hr{
+  margin-top: 14px;
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px #fff!important;
+  overflow: hidden;
+
+}
+
+footer>.container>.container>.row>.col-lg-4.col-md-6{
+  padding-bottom: 0;
+}
+
+footer>.container>.container>.row{
+  margin-top: 0;
+}
+
+.legend{
+  display: flex;
+}
+
+.social{
+  list-style-type: none;
+  display:inline-block;
+}
+
+.social li a{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  /*margin-left: 6px;*/
+  margin-right: 6px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #293243;
+  padding:0;
+}
+
+.social li{
+  float: right;
 }
 
 .footer-icon {
-  padding: 10px;
-  color: #FFF;
+  /*color: #FFF;*/
+  /*margin-right: px;*/
+  margin-top: 7px;
 }
+
+.footer-row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ .footer-col{
+      padding: 0;
+    }
