@@ -54,7 +54,7 @@ nav>.navbar-brand>img {
 }
 .hero {
   position: relative;
-  min-height: calc(100vh - 25px);
+  min-height: 100vh;
   background-color: #e8e8e8;
   max-width: 100vw;
   display: flex;
@@ -796,9 +796,11 @@ footer>div>div>div>a:hover {
     display: none;
   }
 
-  .hero {
-    background: url('../video/poster.png') no-repeat;
-    background-size: cover;
+  .top-view .hero {
+    background-color: #234982;
+  }
+  .top-view .hero #intro, .top-view .hero #vidOverlay {
+    display: none;
   }
 
   .banner:before {
