@@ -17,7 +17,7 @@ body{
 }
 nav>.navbar-brand>img{
   padding-left: 30px;
-  margin-top:-5%;
+
   height: 6rem;
   width: auto;
 }
@@ -25,12 +25,12 @@ nav>.navbar-brand>img{
      background: url('../images/webinar-cover.jpeg');
     background-size:cover;
     width:100%;
-    height:660px;
+    height:85vh;
     background-repeat:no-repeat;
 }
 .shade {
      width: 100%;
-    height: 660px;
+    height: 85vh;
     clip-path:polygon(58% 0%,50% 100%,100% 100%,100% 0%);
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
