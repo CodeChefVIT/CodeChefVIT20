@@ -381,7 +381,7 @@ nav>.navbar-brand>img {
             font-size: 1.2em; }
         .projects .container .showcase .project:after {
           content: '';
-          background: rgba(0, 0, 0, 0.8);
+          background: rgba(0, 0, 0, 0.75);
           top: 100%;
           left: 0;
           position: absolute;
@@ -427,6 +427,66 @@ nav>.navbar-brand>img {
       padding: .5em 1.3em;
       text-transform: uppercase;
       font-size: 1.7em; }
+
+
+/**
+* Gallery starts from here
+*/
+.gallery {
+  position: relative;
+  margin-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .container {
+  text-align: center;
+}
+
+.gallery .container h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding: .5rem;
+  margin-bottom: .8em;
+}
+
+.gallery .container h1::after {
+  content: '';
+  width: 4.5em;
+  height: .6rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #51BAFF;
+}
+
+.gallery .container .carousel {
+  position: relative;
+}
+
+.gallery .container .carousel:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.8);
+  height: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  bottom: 0px;
+  border-radius: 100%;
+}
 
 
 .bgimg {
