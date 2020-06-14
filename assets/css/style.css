@@ -1,7 +1,8 @@
-:root {
-  --cards-min-width: 23em;
-  --project-min-width: 20rem; }
 
+:root {
+  --domains-min-width: 20em;
+  --project-min-width: 20rem;
+}
 @font-face {
   src: url('../fonts/Poppins/Poppins-Regular.ttf');
   font-family: Poppins;
@@ -53,7 +54,7 @@ nav>.navbar-brand>img {
 }
 .hero {
   position: relative;
-  min-height: calc(100vh - 25px);
+  min-height: 100vh;
   background-color: #e8e8e8;
   max-width: 100vw;
   display: flex;
@@ -122,97 +123,100 @@ nav>.navbar-brand>img {
       opacity: .5;
       text-decoration: none; }
 
-.hanger {
-  width: 50vw;
+/**
+* "About Us" section starts here
+*/
+.about {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 4em 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .container {
+  text-align: center;
+}
+
+.about .container h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding: .5rem;
+  margin-bottom: .8em;
+}
+
+.about .container h1::after {
+  content: '';
+  width: 4.5em;
+  height: .6rem;
   position: absolute;
   bottom: 0;
-  background-color: #2980B9;
-  color: white;
-  text-align: center;
-  height: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #51BAFF;
+}
+
+.about .container p {
+  font-size: 1.2rem;
+}
+
+.about .container h2 {
+  font-weight: 600;
+}
+
+.about .container .domains {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(var(--domains-min-width), 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(var(--domains-min-width), 1fr));
+}
+
+.about .container .domains .domain {
+  background-color: white;
+  margin: .6rem;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
-  .hanger h2 {
-    margin: auto;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    transition: letter-spacing .2s ease-in-out; }
-  .hanger:hover h2 {
-    letter-spacing: .31em; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 10px 20px rgba(135, 135, 135, 0.25);
+          box-shadow: 0px 10px 20px rgba(135, 135, 135, 0.25);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  text-overflow: ellipsis;
+}
 
-/**
-* "Cards" starts here
-*/
-.cards {
-width: 100%;
-min-height: calc(100vh - 150px);
-padding: 120px 0; }
-.cards .container {
-  margin: auto; }
-  .cards .container .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width), 1fr));
-    grid-column-gap: 1em;
-    grid-row-gap: 1em; }
-    .cards .container .grid h1 {
-      font-weight: 700; }
-    .cards .container .grid h6 {
-      color: #2980B9; }
-    .cards .container .grid a.grid-item .img-box {
-      transition: transform 0.9s cubic-bezier(0.215, 0.61, 0.355, 1); }
-    .cards .container .grid a.grid-item:hover .img-box {
-      transform: scale(1.1, 1.1); }
-    .cards .container .grid .grid-item:first-child {
-      grid-row-end: span 2; }
-      .cards .container .grid .grid-item:first-child .img-box:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        display: block;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 80%); }
-    .cards .container .grid .grid-item .inside {
-      height: 100%;
-      position: relative;
-      padding-bottom: 20em;
-      overflow: hidden; }
-    .cards .container .grid .grid-item .img-box {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: auto;
-      height: auto;
-      background-size: cover;
-      background-position: bottom; }
-    .cards .container .grid .grid-item .content-box {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -1px;
-      z-index: 1;
-      padding: 60px 40px 40px;
-      color: #fff; }
-    .cards .container .grid .grid-item:not(:first-child) .inside {
-      padding-bottom: calc(50% - 10px); }
-      .cards .container .grid .grid-item:not(:first-child) .inside .img-box {
-        background-position: left;
-        background-size: cover; }
-      .cards .container .grid .grid-item:not(:first-child) .inside .content-box {
-        left: 40%;
-        top: -1px;
-        background: url(../images/backs/bg-feature-slant.svg) no-repeat left bottom;
-        background-size: auto 100%;
-        padding: 20px 20px 20px 15%;
-        display: flex;
-        align-items: center;
-        text-overflow: ellipsis; }
+.about .container .domains .domain i {
+  font-size: 4em;
+}
 
+.about .container .domains .domain h3 {
+  margin: 1rem;
+  font-weight: 600;
+}
 
+.about .container .domains .domain p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
 
+.about .container .domains .domain:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
+          box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
+}
 /**
 * "Banner" starts here
 */
@@ -307,7 +311,19 @@ padding: 120px 0; }
     text-align: center; }
     .projects .container h1 {
       text-transform: uppercase;
-      font-weight: 600; }
+      font-weight: 600; 
+      position: relative;}
+    .projects .container h1::after {
+      content: '';
+      width: 7.5em;
+      height: .5rem;
+      position: absolute;
+      bottom: -.6rem;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
+      background-color: #51BAFF;
+    }
     .projects .container .tabs {
       padding: 1em;
       display: flex;
@@ -555,7 +571,15 @@ footer {
   text-align: center;
   background-color: #293243;
   margin-top: 150px;
-  padding-top: 40px;
+}
+.footer-text{
+  text-align: justify;
+  color: #fff;
+  padding: 10px;
+}
+.footer-logo{
+  margin-left: -220px;
+  margin-bottom: 30px;
 }
 
 footer>div>h1 {
@@ -565,45 +589,91 @@ footer>div>h1 {
 .footer-list{
   list-style-type: none;
   text-align: left;
-  margin-left: 30%;
+  display: inline-block;
 }
 .footer-list>li>a{
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 footer>.container>h1 {
   color: #fff;
 }
 
-footer>div>div>div>h3 {
-  margin-top: 30px;
-  color: #546586;
+.row.footer-row{
+  margin-top: 0;
 }
 
-footer>div>div.row {
-  margin-top: 60px;
+footer>div>h3 {
+  margin-top: 30px;
+  /*color: #546586;*/
+  color: #fff;
+  font-size: 20px;
 }
 
 .footer-img{
-  padding-top: 30px;
+  padding-top: 40px;
+  width: 100px;
+}
+
+.footer-hr{
+  margin-top: 14px;
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px #fff!important;
+  overflow: hidden;
+
+}
+
+footer>.container>.container>.row>.col-lg-4.col-md-6{
+  padding-bottom: 0;
+}
+
+footer>.container>.container>.row{
+  margin-top: 0;
+}
+
+.legend{
+  display: flex;
+}
+
+.social{
+  list-style-type: none;
+  display:inline-block;
+}
+
+.social li a{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  /*margin-left: 6px;*/
+  margin-right: 6px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #293243;
+  padding:0;
+}
+
+.social li{
+  float: right;
 }
 
 .footer-icon {
-  /*font-size: 2em;*/
-  padding: 10px;
-  color: #FFF;
-}
-/*
-footer>div>div>div>a {
-  color: black;
+  /*color: #FFF;*/
+  /*margin-right: px;*/
+  margin-top: 7px;
 }
 
-footer>div>div>div>a:hover {
-  color: black;
-  opacity: 0.8;
-}*/
+.footer-row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ .footer-col{
+      padding: 0;
+    }
+
 
 @media only screen and (max-width: 991px) {
   body {
@@ -637,16 +707,17 @@ footer>div>div>div>a:hover {
   -ms-overflow-style: none;
 }
 
-  .hanger {
-    display: none; }
+  
 
-  .cards a.grid-item:first-child {
-    height: 550px; }
-  .cards a.grid-item:not(:first-child) h2 {
-    font-size: 1.5rem; }
-  .cards a.grid-item:not(:first-child) p {
-    font-size: .9em; }
-
+  .about .container p {
+    font-size: 1.2em;
+  }
+  .about .container .domains .domain h3 {
+    font-size: 1em;
+  }
+  .about .container .domains .domain p {
+    font-size: 1em;
+  }
 
   .banner .left {
     padding-bottom: 2em !important; }
@@ -684,12 +755,13 @@ footer>div>div>div>a:hover {
   .container {
     padding: 2em; }
 
-  .cards .grid a.grid-item {
-    min-width: 15rem; }
-    .cards .grid a.grid-item:first-child {
-      height: 25em; }
-    .cards .grid a.grid-item .content-box {
-      bottom: -25px  !important; }
+    footer>.container>.container{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    footer>.container{
+      padding-bottom: 0;
+    }
 
   .banner .left {
     width: 100%; }
@@ -714,11 +786,20 @@ footer>div>div>div>a:hover {
 */
 @media only screen and (max-width: 430px) {
   :root {
-    --cards-min-width: 13em;
-    --project-min-width: 12rem; }
-
+    --project-min-width: 12rem;
+  }
   .container {
     padding: 1em; }
+  footer>.container {
+    padding-bottom:0;
+  }
+  footer>.container>.container{
+    padding-bottom: 0;
+  }
+  .social{
+    padding-left: -20px;
+  }
+   
 
   .top-view .hero .text h1 {
     font-size: 2.5em; }
@@ -726,15 +807,6 @@ footer>div>div>div>a:hover {
     font-size: 1em; }
   .top-view .hero .text a {
     font-size: .8em; }
-
-  .cards .grid a.grid-item:first-child {
-    height: 23em; }
-  .cards .grid a.grid-item:not(:first-child) .inside .content-box .text {
-    text-overflow: ellipsis; }
-    .cards .grid a.grid-item:not(:first-child) .inside .content-box .text h2 {
-      font-size: 1.2em; }
-    .cards .grid a.grid-item:not(:first-child) .inside .content-box .text p {
-      font-size: .9em; }
 
   .banner {
     text-align: center; }
@@ -748,13 +820,18 @@ footer>div>div>div>a:hover {
         padding: 2em; } }
 
 @media only screen and (max-width: 350px) {
+  :root {
+    --domains-min-width: 12em;
+  }
+
   .projects .tabs {
     flex-direction: column; }
     .projects .tabs .tab {
       width: 100%;
       padding: .8em 0 !important; }
   .projects .showcase .project .text {
-    padding: 1.2em !important; } }
+    padding: 1.2em !important; } 
+  }
 
 
 @media(max-width: 768px) {
@@ -780,22 +857,54 @@ footer>div>div>div>a:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     height: 500px;
   }
-
-  .footer-items div:nth-of-type(2){
-    transform : translateY(-150px);
-    margin-right: 20%;
+  .footer-list:nth-child(1){
+    margin-top: 0;
   }
-  .footer-items div:nth-of-type(1){
-    transform : translateY(320px);
+  .container.footer-contain{
+    padding-top:0;
+    margin-top:0;
+  }
+  .social{
+    float: center;
+    /*padding-left: 125px;*/
+    display: inline-flex;
+  }
+
+  .footer-list{
+    display: block;
+    padding:0;
+    padding-bottom: 0;
+  }
+
+  .col-lg-4.footer-col{
+    padding-right: 0;
+    margin-top: 0;
+    margin-left: -20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /*display: inline-block;*/
+  }
+
+  footer>.container>h3{
+    text-align: left;
+  }
+  .row.footer-row{
+    margin-top: 0;
+  }
+  footer{
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   #intro{
     display: none;
   }
 
-  .hero {
-    background: url('../video/poster.png') no-repeat;
-    background-size: cover;
+  .top-view .hero {
+    background-color: #234982;
+  }
+  .top-view .hero #intro, .top-view .hero #vidOverlay {
+    display: none;
   }
 
   .banner:before {
@@ -803,6 +912,29 @@ footer>div>div>div>a:hover {
     display: none; }
   .banner .right {
     padding: 4em 0; } 
+
+    .about {
+      margin: 3em 0;
+      overflow: visible;
+    }
+    .about .container p {
+      font-size: 1.2em;
+      text-align: justify;
+    }
+    .about .container .domains {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 2em;
+    }
+    .about .container .domains .domain h3 {
+      font-size: 1em;
+    }
+    .about .container .domains .domain p {
+      font-size: 1em;
+      text-align: center;
+    }
 
 }
 

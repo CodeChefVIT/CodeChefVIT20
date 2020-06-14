@@ -1,25 +1,26 @@
+
 @font-face{
-	src: url('../fonts/Poppins/Poppins-Regular.ttf');
-	font-family: Poppins;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+  font-family: Poppins;
 }
 html{
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 body{
-	font-family: Poppins;
+  font-family: Poppins;
 }
 .bg-light{
-	background-color: transparent!important;
+  background-color: transparent!important;
 }
 .navbar-light .navbar-nav .nav-link{
-	color: #000000;
-	padding-top: 45px;
-	padding-right: 20px;
+  color: #000000;
+  padding-top: 45px;
+  padding-right: 20px;
 }
 nav>.navbar-brand>img{
-	padding-left: 30px;
-	margin-top:-5%;
-	height: 6rem;
+  padding-left: 30px;
+  margin-top:-5%;
+  height: 6rem;
   width: auto;
 }
 .bgimg{
@@ -45,9 +46,9 @@ nav>.navbar-brand>img{
       /*font-size: 1.4em;*/
 }
 @media(max-width: 768px){
-	.bgimg{
-    	position: relative;
-    	height: 400px;
+  .bgimg{
+      position: relative;
+      height: 400px;
     }
     .context{
       text-align: center;
@@ -58,8 +59,8 @@ nav>.navbar-brand>img{
       min-width: 300px;
     }
     .shade{
-    	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    	height: 400px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      height: 400px;
     }
 }
 
