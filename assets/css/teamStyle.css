@@ -399,6 +399,7 @@ footer>.container>.container>.row{
 .social{
   list-style-type: none;
   display:inline-block;
+  padding-left: 0;
 }
 
 .social li a{
