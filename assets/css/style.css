@@ -1,8 +1,9 @@
-
 :root {
-  --domains-min-width: 20em;
+  --domains-min-width: 18em;
   --project-min-width: 20rem;
+  --dom-mob-width: 21rem;
 }
+
 @font-face {
   src: url('../fonts/Poppins/Poppins-Regular.ttf');
   font-family: Poppins;
@@ -171,14 +172,60 @@ nav>.navbar-brand>img {
   font-weight: 600;
 }
 
-.about .container .domains {
+.about .container .scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  position: absolute;
+}
+
+.about .container #mob {
+  display: none;
+}
+
+.about .container #web {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .container .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(var(--domains-min-width), 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(var(--domains-min-width), 1fr));
+  grid-gap: 1em;
 }
 
-.about .container .domains .domain {
+.about .container .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .container .flex .domain {
+  max-width: 21em;
+}
+
+.about .container .flex #d4 {
+  margin-right: -11em;
+}
+
+.about .container .flex #d5 {
+  margin-left: -11em;
+}
+
+.about .container .domain {
   background-color: white;
   margin: .6rem;
   padding: 2em;
@@ -196,26 +243,27 @@ nav>.navbar-brand>img {
   text-overflow: ellipsis;
 }
 
-.about .container .domains .domain i {
+.about .container .domain i {
   font-size: 4em;
 }
 
-.about .container .domains .domain h3 {
+.about .container .domain h3 {
   margin: 1rem;
   font-weight: 600;
 }
 
-.about .container .domains .domain p {
+.about .container .domain p {
   font-size: 1rem;
   margin-bottom: 0;
 }
 
-.about .container .domains .domain:hover {
+.about .container .domain:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
           box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
 }
+
 /**
 * "Banner" starts here
 */
@@ -733,6 +781,18 @@ footer>.container>.container>.row{
       padding: 0;
     }
 
+@media only screen and (max-width: 1200px) {
+  .about .container .domains#mob {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(var(--dom-mob-width), 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(var(--dom-mob-width), 1fr));
+  }
+  .about .container #web {
+    display: none;
+  }
+}
+    
 
 @media only screen and (max-width: 991px) {
   body {
@@ -846,6 +906,7 @@ footer>.container>.container>.row{
 @media only screen and (max-width: 430px) {
   :root {
     --project-min-width: 12rem;
+    --dom-mob-width: 13rem;
   }
   .container {
     padding: 1em; }
