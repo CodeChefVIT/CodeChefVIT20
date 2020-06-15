@@ -138,6 +138,7 @@ nav>.navbar-brand>img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: visible;
 }
 
 .about .container {
@@ -172,14 +173,25 @@ nav>.navbar-brand>img {
   font-weight: 600;
 }
 
-.about .container .scroll {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100%;
-  position: absolute;
+.about .container .gallery {
+  height: 20em !important;
 }
 
-.about .container #mob {
+.about .container .gallery-cell {
+  width: 20em;
+  height: 17em;
+  margin-right: 10px;
+  background: #8C8;
+}
+
+.about .container .gallery-cell .is-selected {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
+          box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
+}
+
+.about .container #med, .about .container #sm {
   display: none;
 }
 
@@ -782,13 +794,13 @@ footer>.container>.container>.row{
     }
 
 @media only screen and (max-width: 1200px) {
-  .about .container .domains#mob {
+  .about .container .domains#med {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(var(--dom-mob-width), 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(var(--dom-mob-width), 1fr));
   }
-  .about .container #web {
+  .about .container #web, .about .container #sm {
     display: none;
   }
 }
@@ -971,6 +983,39 @@ footer>.container>.container>.row{
 
   .context>h1{
     font-size: 1.8em;
+  }
+
+  .about {
+    margin: 3em 0;
+    overflow: visible;
+  }
+  .about .container .domains#web, .about .container .domains#med {
+    display: none;
+  }
+  .about .container #sm {
+    display: block;
+  }
+  .about .container p {
+    font-size: 1.1em;
+    text-align: justify;
+  }
+  .about .container .domains {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2em;
+  }
+  .about .container .domains .domain {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .about .container .domains .domain h3 {
+    font-size: 1em;
+  }
+  .about .container .domains .domain p {
+    font-size: 1em;
+    text-align: center;
   }
 
   .shade {

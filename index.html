@@ -17,6 +17,9 @@
     <!-- Stylesheet for On Scroll animations-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Mobile carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
     <title>CodeChef-VIT</title>
   </head>
@@ -133,7 +136,7 @@
          </div>
 
        
-         <div class="domains" id = "mob">
+         <div class="domains " id = "med">
 
              <div class="domain">
                <i class="far fa-file-code"></i>
@@ -160,6 +163,40 @@
               </div>
       
               <div class="domain" id = "d5" >
+                <i class="fas fa-code"></i>
+                <h3>Competitive Coding</h3>
+                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+              </div>
+
+         </div>
+         
+         <div class="domains gallery js-flickity" id = "sm" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+
+             <div class="domain gallery-cell">
+               <i class="far fa-file-code"></i>
+               <h3>Technical</h3>
+               <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+             </div>
+    
+             <div class="domain gallery-cell">
+               <i class="fas fa-tasks"></i>
+               <h3>Management</h3>
+               <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+             </div>
+    
+             <div class="domain gallery-cell">
+               <i class="fas fa-bezier-curve"></i>
+               <h3>Design</h3>
+               <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+              </div>
+           
+              <div class="domain gallery-cell" id = "d4" >
+                <i class="far fa-newspaper"></i>
+                <h3>Editorial</h3>
+                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+              </div>
+      
+              <div class="domain gallery-cell" id = "d5" >
                 <i class="fas fa-code"></i>
                 <h3>Competitive Coding</h3>
                 <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
@@ -464,6 +501,7 @@
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
