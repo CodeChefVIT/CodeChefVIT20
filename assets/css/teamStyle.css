@@ -111,8 +111,8 @@ nav>.navbar-brand>img{
     margin-top: 0;
   }
   .container.footer-contain{
-    padding-top:0;
-    margin-top:0;
+    padding-left:0;
+    padding-right:0;
   }
   .social{
     float: center;
@@ -123,6 +123,7 @@ nav>.navbar-brand>img{
     display: block;
     padding:0;
     padding-bottom: 0;
+    text-align: left;
   }
   .col-lg-4.footer-col{
     padding-right: 0;
@@ -144,14 +145,13 @@ nav>.navbar-brand>img{
   }
 }
 
-@media(max-width: 576px){
+/*@media(max-width: 576px){
   .col-lg-4.footer-col{
     padding-right: 0;
     margin-top: 0;
     margin-left: -180px;
     padding-bottom: 0;
     margin-bottom: 0;
-    /*display: inline-block;*/
   }
 }
 
@@ -162,9 +162,8 @@ nav>.navbar-brand>img{
     margin-left: -130px;
     padding-bottom: 0;
     margin-bottom: 0;
-    /*display: inline-block;*/
   }
-}
+}*/
 
 .text{
   margin-top: 10px;
@@ -284,15 +283,15 @@ nav>.navbar-brand>img{
 }
 
 .card-body:after{
-	content: '';
-	background: rgba(0, 154, 255, 0.65);
-	top: 100%;
-	left: 0;
+  content: '';
+  background: rgba(0, 154, 255, 0.65);
+  top: 100%;
+  left: 0;
   position: absolute;
-	z-index: 2;
-	width: 100%;
+  z-index: 2;
+  width: 100%;
   height: 100%;
-	transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .card-body:hover:after{
@@ -304,8 +303,8 @@ nav>.navbar-brand>img{
 }
 
 .card-text{
-	font-size: 20px;
-	width: 100px;
+  font-size: 20px;
+  width: 100px;
 }
 
 .row{
@@ -313,7 +312,7 @@ nav>.navbar-brand>img{
 }
 
 .row:first-child {
-	margin-top: 150px	;
+  margin-top: 150px ;
 }
 
 .col-lg-4.d-flex{
@@ -347,7 +346,7 @@ footer>div>h1 {
 .footer-list{
   list-style-type: none;
   text-align: left;
-  display: inline-block;
+  display: block;
 }
 
 .footer-list>li>a{
@@ -399,7 +398,6 @@ footer>.container>.container>.row{
 .social{
   list-style-type: none;
   display:inline-block;
-  padding-left: 0;
 }
 
 .social li a{
@@ -431,4 +429,27 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
+}
+
+/*toastr modifications*/
+
+#toast-container > .customer-info {            
+  background-color: #47B6FF;
+}
+.toast-top-center { 
+    top: 12px; 
+    left: 50%; 
+    margin-left: -150px;
+}  
+@media all and (min-width: 321px) and (max-width: 480px) { 
+    .toast-top-center { 
+        padding-right: 96px; 
+        padding-bottom: 200px;
+    } 
+}
+@media all and (min-width: 481px) and (max-width: 576px){
+  .toast-top-center {
+    padding-right: 150px;
+    padding-top: 50%;
+  }
 }
