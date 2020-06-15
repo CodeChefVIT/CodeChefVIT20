@@ -1,8 +1,9 @@
-
 :root {
-  --domains-min-width: 20em;
+  --domains-min-width: 18em;
   --project-min-width: 20rem;
+  --dom-mob-width: 21rem;
 }
+
 @font-face {
   src: url('../fonts/Poppins/Poppins-Regular.ttf');
   font-family: Poppins;
@@ -104,8 +105,7 @@ nav>.navbar-brand>img {
       border: 10px solid white; }
   .hero .text {
     padding: 4em;
-    position: absolute;
-    transform: translateY(10%); }
+    position: absolute;}
     .hero .text h1 {
       font-weight: 700;
       font-size: 3rem; }
@@ -172,14 +172,60 @@ nav>.navbar-brand>img {
   font-weight: 600;
 }
 
-.about .container .domains {
+.about .container .scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  position: absolute;
+}
+
+.about .container #mob {
+  display: none;
+}
+
+.about .container #web {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .container .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(var(--domains-min-width), 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(var(--domains-min-width), 1fr));
+  grid-gap: 1em;
 }
 
-.about .container .domains .domain {
+.about .container .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .container .flex .domain {
+  max-width: 21em;
+}
+
+.about .container .flex #d4 {
+  margin-right: -11em;
+}
+
+.about .container .flex #d5 {
+  margin-left: -11em;
+}
+
+.about .container .domain {
   background-color: white;
   margin: .6rem;
   padding: 2em;
@@ -197,26 +243,27 @@ nav>.navbar-brand>img {
   text-overflow: ellipsis;
 }
 
-.about .container .domains .domain i {
+.about .container .domain i {
   font-size: 4em;
 }
 
-.about .container .domains .domain h3 {
+.about .container .domain h3 {
   margin: 1rem;
   font-weight: 600;
 }
 
-.about .container .domains .domain p {
+.about .container .domain p {
   font-size: 1rem;
   margin-bottom: 0;
 }
 
-.about .container .domains .domain:hover {
+.about .container .domain:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
           box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
 }
+
 /**
 * "Banner" starts here
 */
@@ -382,7 +429,7 @@ nav>.navbar-brand>img {
             font-size: 1.2em; }
         .projects .container .showcase .project:after {
           content: '';
-          background: rgba(0, 0, 0, 0.65);
+          background: rgba(0, 0, 0, 0.75);
           top: 100%;
           left: 0;
           position: absolute;
@@ -428,6 +475,66 @@ nav>.navbar-brand>img {
       padding: .5em 1.3em;
       text-transform: uppercase;
       font-size: 1.7em; }
+
+
+/**
+* Gallery starts from here
+*/
+.gallery {
+  position: relative;
+  margin-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .container {
+  text-align: center;
+}
+
+.gallery .container h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding: .5rem;
+  margin-bottom: .8em;
+}
+
+.gallery .container h1::after {
+  content: '';
+  width: 4.5em;
+  height: .6rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #51BAFF;
+}
+
+.gallery .container .carousel {
+  position: relative;
+}
+
+.gallery .container .carousel:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.8);
+  height: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  bottom: 0px;
+  border-radius: 100%;
+}
 
 
 .bgimg {
@@ -674,7 +781,22 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
+
 }
+    }
+
+@media only screen and (max-width: 1200px) {
+  .about .container .domains#mob {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(var(--dom-mob-width), 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(var(--dom-mob-width), 1fr));
+  }
+  .about .container #web {
+    display: none;
+  }
+}
+    
 
 @media only screen and (max-width: 991px) {
   body {
@@ -788,6 +910,7 @@ footer>.container>.container>.row{
 @media only screen and (max-width: 430px) {
   :root {
     --project-min-width: 12rem;
+    --dom-mob-width: 13rem;
   }
   .container {
     padding: 1em; }
