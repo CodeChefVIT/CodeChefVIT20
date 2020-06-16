@@ -2,6 +2,7 @@
   --domains-min-width: 18em;
   --project-min-width: 20rem;
   --dom-mob-width: 21rem;
+  --sponsors-min-width: 20rem;
 }
 
 @font-face {
@@ -12,7 +13,8 @@
 body {
   font-family: Poppins;
   margin: 0;
-  background-color: #F4F4F4; }
+  background-color: #F4F4F4; 
+  overflow-x: hidden;}
 
 a {
   text-decoration: none;
@@ -105,7 +107,8 @@ nav>.navbar-brand>img {
       border: 10px solid white; }
   .hero .text {
     padding: 4em;
-    position: absolute;}
+    position: absolute;
+    z-index: 0;}
     .hero .text h1 {
       font-weight: 700;
       font-size: 3rem; }
@@ -400,7 +403,7 @@ nav>.navbar-brand>img {
           background-color: #47B6FF;
           border: 3px solid #009AFF;
           color: white; }
-      .projects .container .tabs .active {
+      .projects .container .tabs .activep {
         background-color: #47B6FF;
         border: 3px solid #009AFF;
         color: white; }
@@ -657,7 +660,8 @@ nav>.navbar-brand>img {
 * Sponsors starts from here
 */
 .sponsors {
-  text-align: center; }
+  text-align: center;
+  padding: 0 5em; }
   .sponsors .special {
     display: flex;
     flex-direction: column;
@@ -670,12 +674,13 @@ nav>.navbar-brand>img {
   .sponsors h4 {
     font-size: 3.5em;
     font-weight: bolder;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0 -1em }
   .sponsors .grid {
     padding: 5em;
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--sponsors-min-width), 1fr));
     justify-content: center; }
     .sponsors .grid .grid-item {
       display: flex;
@@ -683,7 +688,9 @@ nav>.navbar-brand>img {
       align-items: center;
       padding: 1.1em; }
       .sponsors .grid .grid-item img {
-        height: 6em; }
+        width: 100%;
+        max-width: 20em;
+        height: auto; }
 
 
 footer {
@@ -920,6 +927,7 @@ footer>.container>.container>.row{
   :root {
     --project-min-width: 12rem;
     --dom-mob-width: 13rem;
+    --sponsors-min-width: 15rem;
   }
   .container {
     padding: 1em; }

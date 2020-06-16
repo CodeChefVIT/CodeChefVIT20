@@ -38,9 +38,9 @@ function tabSwitch(id) {
 
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener("click", function() {
-      let current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
+      let current = document.getElementsByClassName("activep");
+      current[0].className = current[0].className.replace(" activep", "");
+      this.className += " activep";
 
     });
   }
