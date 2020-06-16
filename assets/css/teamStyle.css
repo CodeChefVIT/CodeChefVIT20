@@ -10,6 +10,7 @@ html{
 
 body{
   font-family: Poppins;
+  background-color: #F4F4F4; 
 }
 
 .bg-light{
@@ -71,6 +72,16 @@ nav>.navbar-brand>img{
     width: 100%;
     margin-right: 0;
   }
+  .navbar-nav {
+    justify-content: center;
+    align-items: flex-start; }
+    .navbar-nav li {
+      padding: 1.2em; }
+
+  .navbar-collapse {
+    z-index: 100;
+    background-color: white;
+     }
 }
 @media(max-width: 768px){
   .bgimg {
@@ -433,8 +444,8 @@ footer>.container>.container>.row{
 
 /*toastr modifications*/
 
-#toast-container > .customer-info {            
-  background-color: #47B6FF;
+#toast-container > .toast-info {            
+  background-color: rgb(41, 50, 67)!important;
 }
 .toast-top-center { 
     top: 12px; 
@@ -443,13 +454,13 @@ footer>.container>.container>.row{
 }  
 @media all and (min-width: 321px) and (max-width: 480px) { 
     .toast-top-center { 
-        padding-right: 96px; 
-        padding-bottom: 200px;
+        padding-right: 105px; 
+        padding-top: 80%;
     } 
 }
 @media all and (min-width: 481px) and (max-width: 576px){
   .toast-top-center {
     padding-right: 150px;
-    padding-top: 50%;
+    padding-top: 80%;
   }
 }

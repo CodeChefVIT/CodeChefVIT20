@@ -573,6 +573,7 @@ nav>.navbar-brand>img {
   float: right;
   font-size: 1.4em;
 }
+
 .context>h1{
   font-size: 1.8em;
 }
@@ -935,6 +936,10 @@ footer>.container>.container>.row{
   .social{
     padding-left: -20px;
   }
+
+  .project-context{
+    padding-top: 0;
+  }
    
 
   .top-view .hero .text h1 {
@@ -1122,11 +1127,8 @@ footer>.container>.container>.row{
   }
 }
 
-/*css for toastr notification*/
-/*toastr modifications*/
-
-#toast-container > .customer-info {            
-  background-color: #47B6FF;
+#toast-container > .toast-info {            
+  background-color: rgb(41, 50, 67)!important;
 }
 .toast-top-center { 
     top: 12px; 
@@ -1135,13 +1137,13 @@ footer>.container>.container>.row{
 }  
 @media all and (min-width: 321px) and (max-width: 480px) { 
     .toast-top-center { 
-        padding-right: 96px; 
-        padding-bottom: 200px;
+        padding-right: 105px; 
+        padding-top: 80%;
     } 
 }
 @media all and (min-width: 481px) and (max-width: 576px){
   .toast-top-center {
     padding-right: 150px;
-    padding-top: 50%;
+    padding-top: 80%;
   }
 }

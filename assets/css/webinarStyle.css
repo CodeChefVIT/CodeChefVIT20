@@ -4,6 +4,9 @@
 }
 body{
   font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4; 
 }
 
 /*css for navbar*/
@@ -90,7 +93,6 @@ nav>.navbar-brand>img{
   text-decoration:none;
   background-color: #2980B9;
   font-size:15px;
-  /*font-weight:bold;*/
   transition: all 0.3s ease; 
 }
 .grid-img {
@@ -133,17 +135,11 @@ nav>.navbar-brand>img{
 .web{
   padding: 20px;
 }         
-.modal{
-  position: fixed;
-  left: 0;
-  transform: translateX(-5%);
-}
 .round-button:hover {
   /*background-color: #34495E;*/
   color: #34495E;
   transform:translateY(-10px);
 }
-
 div.modal.fade.show{
   padding: 0!important; 
 }
@@ -189,8 +185,7 @@ iframe{
   iframe{
     width: 500px!important;
     height: 300px!important;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -20px;
   }
 
   .container.footer-contain{
@@ -221,7 +216,19 @@ iframe{
 @media(max-width : 530px){
   iframe{
     width: 350px!important;
-    height: 200px!important;
+    height: auto;
+    margin-left: 50px;
+  }
+  .modal-content{
+    width: 350px;
+  }
+  .modal-body{
+    width: 350px;
+  }
+}
+@media(max-width: 430px){
+  iframe{
+    margin-left: 10px;
   }
 }
 
@@ -336,4 +343,27 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
+}
+
+/*toastr modifications*/
+
+#toast-container > .toast-info {            
+  background-color: rgb(41, 50, 67)!important;
+}
+.toast-top-center { 
+    top: 12px; 
+    left: 50%; 
+    margin-left: -150px;
+}  
+@media all and (min-width: 321px) and (max-width: 480px) { 
+    .toast-top-center { 
+        padding-right: 105px; 
+        padding-top: 80%;
+    } 
+}
+@media all and (min-width: 481px) and (max-width: 576px){
+  .toast-top-center {
+    padding-right: 150px;
+    padding-top: 80%;
+  }
 }
