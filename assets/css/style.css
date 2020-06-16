@@ -460,7 +460,7 @@ nav>.navbar-brand>img {
 */
 .counter {
   position: relative;
-  margin-bottom: 10em;
+  margin-bottom: 0em;
   padding: 7em 0;
   background: url("../images/backs/techy.jpg");
   background-attachment: fixed;
@@ -495,6 +495,7 @@ nav>.navbar-brand>img {
 */
 .gallery {
   position: relative;
+  margin-top:5em;
   margin-bottom: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
