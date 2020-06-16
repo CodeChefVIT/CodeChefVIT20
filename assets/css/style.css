@@ -105,7 +105,8 @@ nav>.navbar-brand>img {
       border: 10px solid white; }
   .hero .text {
     padding: 4em;
-    position: absolute;}
+    position: absolute;
+    z-index: 0;}
     .hero .text h1 {
       font-weight: 700;
       font-size: 3rem; }
