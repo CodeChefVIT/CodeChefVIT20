@@ -16,7 +16,15 @@
 
     <!-- Stylesheet for On Scroll animations-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<<<<<<< HEAD
      
+=======
+
+    <!-- Mobile carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+>>>>>>> a7876b7d22ca68fa1ffb7916923a096dedfeb508
     <title>CodeChef-VIT</title>
   </head>
   <body>
@@ -131,40 +139,44 @@
          </div>
 
        
-         <div class="domains" id = "mob">
+        
+ 
+         <div class="domains gallery js-flickity" id = "sm" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
 
-             <div class="domain">
+             <div class="domain gallery-cell">
                <i class="far fa-file-code"></i>
                <h3>Technical</h3>
                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
              </div>
     
-             <div class="domain">
+             <div class="domain gallery-cell">
                <i class="fas fa-tasks"></i>
                <h3>Management</h3>
                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
              </div>
     
-             <div class="domain">
+             <div class="domain gallery-cell">
                <i class="fas fa-bezier-curve"></i>
                <h3>Design</h3>
                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
               </div>
            
-              <div class="domain" id = "d4" >
+              <div class="domain gallery-cell" id = "d4" >
                 <i class="far fa-newspaper"></i>
                 <h3>Editorial</h3>
                 <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
               </div>
       
-              <div class="domain" id = "d5" >
+              <div class="domain gallery-cell" id = "d5" >
                 <i class="fas fa-code"></i>
                 <h3>Competitive Coding</h3>
                 <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
               </div>
 
          </div>
-      
+       
+
+
      </div>
 
    </div>
@@ -480,6 +492,7 @@
 
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
