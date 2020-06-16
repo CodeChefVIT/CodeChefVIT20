@@ -686,9 +686,10 @@ nav>.navbar-brand>img {
         height: 6em; }
 
 
+/*styling for footer*/
+
 footer {
   position: relative;
-  text-align: center;
   background-color: #293243;
   margin-top: 150px;
 }
@@ -700,7 +701,6 @@ footer {
 }
 
 .footer-logo{
-  margin-left: -220px;
   margin-bottom: 30px;
 }
 
@@ -724,28 +724,27 @@ footer>.container>h1 {
   color: #fff;
 }
 
-.row.footer-row{
-  margin-top: 0;
-}
 
 footer>div>h3 {
   margin-top: 30px;
-  /*color: #546586;*/
   color: #fff;
   font-size: 20px;
 }
 
 .footer-img{
   padding-top: 40px;
-  width: 100px;
+  width: 200px;
 }
 
 .footer-hr{
   margin-top: 14px;
   width: 100%;
-  height: 1px;
-  border-top: solid 1px #fff!important;
+  border-top: solid 1px #fff;
   overflow: hidden;
+}
+
+footer>.container>.container{
+  text-align: center;
 }
 
 footer>.container>.container>.row>.col-lg-4.col-md-6{
@@ -763,40 +762,44 @@ footer>.container>.container>.row{
 .social{
   list-style-type: none;
   display:inline-block;
+  padding-left: 0;
 }
 
 .social li a{
   display: inline-block;
   height: 30px;
   width: 30px;
-  /*margin-left: 6px;*/
   margin-right: 6px;
   border-radius: 100%;
   background-color: #fff;
   color: #293243;
   padding:0;
+  text-align: center;
 }
+
+.social>li>a:hover, .footer-list>li>a:hover{
+  opacity: 0.85;
+} 
 
 .social li{
   float: right;
 }
 
 .footer-icon {
-  /*color: #FFF;*/
-  /*margin-right: px;*/
   margin-top: 7px;
 }
 
-.footer-row{
+.footer-contain>.row{
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer-col{
       padding: 0;
-
 }
-    }
+
+/*footer ends here*/
+    
 
 @media only screen and (max-width: 1200px) {
   .about .container .domains#med {
@@ -1031,43 +1034,14 @@ footer>.container>.container>.row{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     height: 82vh;
   }
-  .footer-list:nth-child(1){
-    margin-top: 0;
-  }
   .container.footer-contain{
-    padding-left:0;
-    padding-right: 0;
+    padding:0;
+    margin-top:0;
   }
-  .social{
-    float: center;
-    /*padding-left: 125px;*/
-    display: inline-flex;
-  }
-
   .footer-list{
     display: block;
     padding:0;
     padding-bottom: 0;
-  }
-
-  .col-lg-4.footer-col{
-    padding-right: 0;
-    margin-top: 0;
-    margin-left: -20px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    /*display: inline-block;*/
-  }
-
-  footer>.container>h3{
-    text-align: left;
-  }
-  .row.footer-row{
-    margin-top: 0;
-  }
-  footer{
-    padding-bottom: 0;
-    margin-bottom: 0;
   }
 
   #intro{
