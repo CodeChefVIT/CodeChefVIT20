@@ -6,6 +6,8 @@ body{
   font-family: Poppins;
 }
 
+/*css for navbar*/
+
 .bg-light{
   background-color: transparent!important;
 }
@@ -17,10 +19,11 @@ body{
 }
 nav>.navbar-brand>img{
   padding-left: 30px;
-
   height: 6rem;
   width: auto;
 }
+
+/*css for header*/
 .bgimg{
      background: url('../images/webinar-cover.jpeg');
     background-size:cover;
@@ -47,9 +50,9 @@ nav>.navbar-brand>img{
 .context>h1{
   font-size: 1.8em;
 }
-.row{
-  /*margin-bottom: 20px;*/
-}
+
+/*css for body*/
+
 .img-overlay {
   position: absolute;
   top: 0;
@@ -57,7 +60,7 @@ nav>.navbar-brand>img{
   left: 0;
   right: 0;
 }
-/**/
+
 .img-overlay::before {
   content: ' ';
   display: block;
@@ -69,6 +72,7 @@ nav>.navbar-brand>img{
   margin-top: 200px;
   height: auto;
 }
+
 .round-button {
   position: absolute;
   margin-left: 80px;
@@ -129,22 +133,33 @@ nav>.navbar-brand>img{
 .web{
   padding: 20px;
 }         
-
+.modal{
+  position: fixed;
+  left: 0;
+  transform: translateX(-5%);
+}
 .round-button:hover {
   /*background-color: #34495E;*/
   color: #34495E;
   transform:translateY(-10px);
 }
+
+div.modal.fade.show{
+  padding: 0!important; 
+}
 .modal-content{
+  width: 700px;
   background:transparent!important;
   border: none;
+  padding: 0!important;
 }
 .modal-body{
-  margin-left: -70px;
-  width: auto;
+  width: 700px;
+  padding: 0!important;
 }
-.player{
-  padding-right: 30px;
+iframe{
+  margin-left: auto;
+  margin-right: auto; 
 }
 .modal-header{
   border:none;
@@ -170,6 +185,14 @@ nav>.navbar-brand>img{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     height: 500px;
   }
+
+  iframe{
+    width: 500px!important;
+    height: 300px!important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .container.footer-contain{
     padding:0;
     margin-top:0;
@@ -195,10 +218,10 @@ nav>.navbar-brand>img{
     margin-bottom: 0;
   }
 }
-@media(max-width : 576px){
-  #player{
-    width: 550px;
-    height: 300px;
+@media(max-width : 530px){
+  iframe{
+    width: 350px!important;
+    height: 200px!important;
   }
 }
 
