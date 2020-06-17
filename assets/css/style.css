@@ -703,6 +703,7 @@ footer {
 
 .footer-logo{
   margin-bottom: 30px;
+  padding-left: 10px;
 }
 
 footer>div>h1 {
@@ -712,7 +713,7 @@ footer>div>h1 {
 .footer-list{
   list-style-type: none;
   text-align: left;
-  display: block;
+  display: inline-block;
 }
 
 .footer-list>li>a{
@@ -735,6 +736,10 @@ footer>div>h3 {
 .footer-img{
   padding-top: 40px;
   width: 200px;
+}
+
+.footer-list:nth-child(1){
+  width: 70.91px;
 }
 
 .footer-hr{
@@ -797,8 +802,9 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
+      width: 80px;
+      margin: 0 auto;
 }
-
 /*footer ends here*/
     
 
