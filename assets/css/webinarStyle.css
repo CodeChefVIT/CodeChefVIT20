@@ -215,6 +215,23 @@ iframe{
   }
 }
 
+@media(max-width: 350px){
+  iframe{
+    width: 300px!important;
+    height: auto;
+    /*margin-left: -10px;*/
+  }
+  .round-button{
+    margin-left: -20px;
+  }
+  .text>h2{
+    font-size: 25px;
+  }
+  .text>p{
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 991px){
   .navbar-collapse {
     z-index: 100;
