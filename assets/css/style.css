@@ -43,16 +43,15 @@ nav>.navbar-brand>img {
   width: auto;
 }
 
+
+
 .top-view {
   min-height: 100vh;
   color: white;
 }
 .custom-toggler.navbar-toggler {
      border-color: rgba(255,255,255,0.5); 
-    border-color: rgba(255,255,255,0.5);
-     border-color: rgba(255,255,255,0.5); 
-    border-color: rgba(255,255,255,0.5);
-     border-color: rgba(255,255,255,0.5); 
+     
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -364,6 +363,11 @@ nav>.navbar-brand>img {
 /**
 * "Latest Projects" starts here
 */
+
+.gt{
+  color: #363636;
+  padding:0;
+}
 .projects {
   position: relative;
   width: 100%;
@@ -411,6 +415,7 @@ nav>.navbar-brand>img {
     .projects .container h6 {
       margin-top: .5rem;
       margin-bottom: 1.1rem; }
+     
     .projects .container .showcase {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(var(--project-min-width), 1fr));
@@ -443,6 +448,11 @@ nav>.navbar-brand>img {
             text-align: left;
             font-weight: 700;
             font-size: 1.2em; }
+             .projects .container .showcase .project .text a {
+             
+              color:#51BAFF !important;
+              font-weight: 700;
+              font-size: .9em; } 
         .projects .container .showcase .project:after {
           content: '';
           background: rgba(0, 0, 0, 0.75);
