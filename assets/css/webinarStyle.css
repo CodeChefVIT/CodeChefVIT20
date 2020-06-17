@@ -377,13 +377,26 @@ footer>.container>.container>.row{
 /*toastr modifications*/
 
 #toast-container > .toast-info {            
-  background-color: rgb(41, 50, 67)!important;
+  background-color: rgb(41, 50, 67);
+  background-image: none!important;
 }
+
+#toast-container>div{
+  padding: 15px;
+  padding-left: 90px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  -moz-box-shadow: 0 0 2px #999999;
+  -webkit-box-shadow: 0 0 2px #999999;
+  box-shadow: 0 0 2px #999999;
+} 
+
 .toast-top-center { 
     top: 12px; 
     left: 50%; 
     margin-left: -150px;
-}  
+} 
 @media all and (min-width: 321px) and (max-width: 480px) { 
     .toast-top-center { 
         padding-right: 105px; 
