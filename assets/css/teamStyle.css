@@ -10,7 +10,8 @@ html{
 
 body{
   font-family: Poppins;
-  background-color: #F4F4F4; 
+  background-color: #F4F4F4;
+  
 }
 
 .bg-light{
@@ -34,14 +35,14 @@ nav>.navbar-brand>img{
      background: url('../images/team-cover.jpeg');
     background-size:cover;
     width:100%;
-    height:82vh;
+    height:87vh;
     background-repeat:no-repeat;
 }
 
 .shade {
      width: 100%;
-    height: 82vh;
-    clip-path:polygon(58% 0%,50% 100%,100% 100%,100% 0%);
+    height: 87vh;
+    clip-path:polygon(55% 0%,47% 100%,100% 100%,100% 0%);
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
 }
@@ -72,7 +73,46 @@ nav>.navbar-brand>img{
     width: 100%;
     margin-right: 0;
   }
+
   .navbar-nav {
+    justify-content: center;
+    align-items:flex-end;
+  } 
+
+  .navbar-collapse {
+    z-index: 100;
+    background-color: #F4F4F4;
+     }
+     .navbar-light .navbar-nav .nav-link.indexnav{
+    color: #000;
+  
+   }
+   .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    padding-top: 10px;
+   
+   }
+   
+.card-body:after{
+	content: '';
+	background: rgba(0, 154, 255, 0.65);
+	top: 100%;
+	left: 0;
+  position: absolute;
+	z-index: 2;
+	width: 100%;
+  height: 100%;
+	transition: all .2s ease-in;
+}
+
+.card-body:hover:after{
+  top:0;
+}
+
+.card-body:hover .text{
+  display:block;
+}
+  /* .navbar-nav {
     justify-content: center;
     align-items: flex-start; }
     .navbar-nav li {
@@ -81,12 +121,12 @@ nav>.navbar-brand>img{
   .navbar-collapse {
     z-index: 100;
     background-color: white;
-     }
+     } */
 }
 @media(max-width: 768px){
   .bgimg {
     position: relative;
-    height: 500px;
+    height: 87vh;
   }
   .context {
     text-align: center;
@@ -97,31 +137,15 @@ nav>.navbar-brand>img{
   }
   .shade {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 500px;
+    height: 87vh;
   }
    .context>h1{
     font-size: 1.8em;
   }
-  .card-body:after{
-  content: '';
-  background: rgba(0, 154, 255, 0.1);
-  left: 0;
-  top:0!important;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  }
-  .card-body:hover:after{
-  top:0!important;
-  }
-  .card-body .text{
-    display: block;
-  }
-  .container.footer-contain{
-    padding:0;
-    margin-top:0;
-  }
+ 
+  .footer-list:nth-child(1){
+    margin-top: 0;}
+ 
   .footer-list{
     display: block;
     padding:0;
