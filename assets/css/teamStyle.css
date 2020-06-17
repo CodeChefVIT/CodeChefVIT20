@@ -210,50 +210,50 @@ nav>.navbar-brand>img{
 /*adding background image to cards*/
 
 .c1{
-   background: url('../images/team/KUNAL2.jpg');
+   background: url('../images/team/kunal.jpg');
 }
 .c2{
-   background: url('../images/team/RAJAT3.jpg') center center;
+   background: url('../images/team/rajat.jpg') center center;
 }
 .c3{
-   background: url('../images/team/Akshat Gupta3.jpg') ;
+   background: url('../images/team/akshat.jpg') ;
 }
 .c4{
-   background: url('../images/team/Muskan2.jpg') center center ;
+   background: url('../images/team/muskan.jpg') center center ;
 }
 .c5{
-   background: url('../images/team/Ishan Gupta2.jpg') center ;
+   background: url('../images/team/ishan.jpg') center ;
 }
 .c6{
-   background: url('../images/team/Nishi_Jain2.jpg') ;
+   background: url('../images/team/nishi.jpg') ;
 }
 .c7{
-   background: url('../images/team/Vansh Goel2.jpg') ;
+   background: url('../images/team/vansh.jpg') ;
 }
 .c8{
 
-   background: url('../images/team/DIPTO2.jpg') ;
+   background: url('../images/team/dipto.jpg') ;
 }
 .c9{
-   background: url('../images/team/Shreya Chaterjee3.jpg') ;
+   background: url('../images/team/shreya.jpg') ;
 }
 .c10{
-   background: url('../images/team/Kshitiz2.jpg') ;
+   background: url('../images/team/kshitiz.jpg') ;
 }
 .c11{
-   background: url('../images/team/Devang Pandey3.jpg') ;
+   background: url('../images/team/devang.jpg') ;
 }
 .c12{
-   background: url('../images/team/Anuj Kapoor2.jpg') ;
+   background: url('../images/team/anuj.jpg') ;
 }
 .c13{
-   background: url('../images/team/navyaa_sharma2.jpg') ;
+   background: url('../images/team/navyaa.jpg') ;
 }
 .c14{
-   background: url('../images/team/Priyank Kaushik2.jpg') ;
+   background: url('../images/team/priyank.jpg') ;
 }
 .c15{
-   background: url('../images/team/Anmol Pant3.jpg');
+   background: url('../images/team/anmol.jpg');
 }
 
 /*adding card properties*/
