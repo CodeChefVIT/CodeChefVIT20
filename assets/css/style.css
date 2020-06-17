@@ -108,7 +108,8 @@ nav>.navbar-brand>img {
   .hero .text {
     padding: 4em;
     position: absolute;
-    z-index: 0;}
+    z-index: 0;
+    animation: slideTop 1.2s forwards;}
     .hero .text h1 {
       font-weight: 700;
       font-size: 3rem; }
@@ -1149,5 +1150,19 @@ footer>.container>.container>.row{
   .toast-top-center {
     padding-right: 150px;
     padding-top: 80%;
+  }
+}
+
+
+@keyframes slideTop {
+  
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
