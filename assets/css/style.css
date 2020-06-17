@@ -32,7 +32,7 @@ h6 {
 }
 .navbar-light .navbar-nav .nav-link{
   color: #000;
-  padding-top: 45px;
+   padding-top: 45px;
   padding-right: 20px;
 }
 .navbar-light .navbar-nav .nav-link.indexnav{
@@ -45,12 +45,15 @@ nav>.navbar-brand>img {
   width: auto;
 }
 
+
+
 .top-view {
   min-height: 100vh;
   color: white;
 }
 .custom-toggler.navbar-toggler {
-    border-color: rgba(255,255,255,0.5);
+     border-color: rgba(255,255,255,0.5); 
+     
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -111,7 +114,7 @@ nav>.navbar-brand>img {
     z-index: 0;}
     .hero .text h1 {
       font-weight: 700;
-      font-size: 3rem; }
+      font-size: 3rem; } 
       .hero .text h1 span {
         color: #2980B9; }
     .hero .text p {
@@ -363,6 +366,11 @@ nav>.navbar-brand>img {
 /**
 * "Latest Projects" starts here
 */
+
+.gt{
+  color: #363636;
+  padding:0;
+}
 .projects {
   position: relative;
   width: 100%;
@@ -410,6 +418,7 @@ nav>.navbar-brand>img {
     .projects .container h6 {
       margin-top: .5rem;
       margin-bottom: 1.1rem; }
+     
     .projects .container .showcase {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(var(--project-min-width), 1fr));
@@ -417,7 +426,7 @@ nav>.navbar-brand>img {
       .projects .container .showcase .project {
         position: relative;
         width: 100%;
-        height: 21em;
+        height: 22.5em;
         background-color: #c4c4c4;
         padding: 2em;
         display: flex;
@@ -442,6 +451,11 @@ nav>.navbar-brand>img {
             text-align: left;
             font-weight: 700;
             font-size: 1.2em; }
+             .projects .container .showcase .project .text a {
+             
+              color:#51BAFF !important;
+              font-weight: 700;
+              font-size: .9em; } 
         .projects .container .showcase .project:after {
           content: '';
           background: rgba(0, 0, 0, 0.75);
@@ -452,10 +466,12 @@ nav>.navbar-brand>img {
           width: 100%;
           height: 100%;
           transition: all .2s ease-in; }
-        .projects .container .showcase .project:hover:after {
-          top: 0; }
+         .projects .container .showcase .project:hover:after {
+          top: 0; } 
         .projects .container .showcase .project:hover .text {
-          display: block; }
+          display: block;
+          
+         }
 
 /**
 * "Counter" starts here
@@ -557,14 +573,14 @@ nav>.navbar-brand>img {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 82vh;
+  height: 87vh;
   background-repeat: no-repeat;
 }
 
 .shade {
   width: 100%;
-  height: 82vh;
-  clip-path: polygon(58% 0%, 50% 100%, 100% 100%, 100% 0%);
+  height: 87vh;
+  clip-path: polygon(55% 0%, 47% 100%, 100% 100%, 100% 0%);
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
 }
@@ -834,17 +850,32 @@ footer>.container>.container>.row{
 
   .navbar-nav {
     justify-content: center;
-    align-items: flex-start; }
-    .navbar-nav li {
-      padding: 1.2em; }
+    align-items:flex-end;
+  } 
 
   .navbar-collapse {
     z-index: 100;
-    background-color: white;
+    background-color: #F4F4F4;
+   
      }
      .navbar-light .navbar-nav .nav-link.indexnav{
     color: #000;
+  
    }
+   .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    padding-top: 10px;
+   
+   }
+   .bgimg {
+    position: relative;
+    height: 87vh;
+  }
+   
+  .shade {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 87vh;
+  }
 
 
   .hero {
@@ -883,11 +914,10 @@ footer>.container>.container>.row{
     .blogs .container {
       margin-left: 0;
       margin-right: 0; }
-
-  .projects .container .showcase .project:after {
-    top: 0 !important; }
-  .projects .container .showcase .project .text {
-    display: block; }
+   /* .projects .container .showcase .project:after {
+    top: 0 ; }  
+    .projects .container .showcase .project .text {
+    display: block; }  */
 
   .counter {
     padding: 3em 0; }
@@ -905,6 +935,8 @@ footer>.container>.container>.row{
 
 
 @media only screen and (max-width: 578px) {
+  
+  
   .container {
     padding: 2em; }
 
@@ -995,10 +1027,7 @@ footer>.container>.container>.row{
 
 @media(max-width: 768px) {
 
-  .bgimg {
-    position: relative;
-    height: 82vh;
-  }
+ 
 
   .context {
     text-align: center;
@@ -1045,10 +1074,10 @@ footer>.container>.container>.row{
     text-align: center;
   }
 
-  .shade {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 82vh;
+  .footer-list:nth-child(1){
+    margin-top: 0;
   }
+ 
   .container.footer-contain{
     padding:0;
     margin-top:0;
