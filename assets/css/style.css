@@ -10,11 +10,129 @@
   font-family: Poppins;
 }
 
+@font-face {
+  font-family: 'PoppinsBlack';
+  src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'PoppinsSemiBold';
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+
 body {
   font-family: Poppins;
   margin: 0;
   background-color: #F4F4F4; 
   overflow-x: hidden;}
+
+/**
+*  404 page styles
+*/
+#square {
+  position: absolute;
+  width: 408.52px;
+  height: 397.93px;
+  left: -9em;
+  top: -6em;
+  border: 17px solid #D5D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(-33.05deg);
+          transform: rotate(-33.05deg);
+}
+
+#circle {
+  position: absolute;
+  width: 488px;
+  height: 493px;
+  left: 45px;
+  bottom: -17em;
+  border-radius: 50%;
+  border: 17px solid #D5D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#triangle {
+  position: absolute;
+  width: 437px;
+  height: 437px;
+  right: -17em;
+  bottom: 4em;
+  border: 17px solid #D5D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.errorTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 2em;
+}
+
+.errorTop img {
+  height: 5em;
+  width: auto;
+}
+
+.errorText {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.errorText h1 {
+  font-family: PoppinsBlack;
+  font-size: 15em;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.errorText h3 {
+  font-family: PoppinsBold;
+  font-size: 6.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.errorText h4 {
+  font-family: PoppinsSemiBold;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.errorText h4 a {
+  text-transform: uppercase;
+  color: #00C2FF;
+}
+
+/**
+* 404 page styles end
+*/
 
 a {
   text-decoration: none;
