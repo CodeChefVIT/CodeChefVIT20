@@ -11,6 +11,7 @@ html{
 body{
   font-family: Poppins;
   background-color: #F4F4F4;
+  
 }
 
 .bg-light{
@@ -111,6 +112,16 @@ nav>.navbar-brand>img{
 .card-body:hover .text{
   display:block;
 }
+  /* .navbar-nav {
+    justify-content: center;
+    align-items: flex-start; }
+    .navbar-nav li {
+      padding: 1.2em; }
+
+  .navbar-collapse {
+    z-index: 100;
+    background-color: white;
+     } */
 }
 @media(max-width: 768px){
   .bgimg {
@@ -133,63 +144,16 @@ nav>.navbar-brand>img{
   }
  
   .footer-list:nth-child(1){
-    margin-top: 0;
-  }
-  .container.footer-contain{
-    padding-top:0;
-    margin-top:0;
-  }
-  .social{
-    float: center;
-    /*padding-left: 125px;*/
-    display: inline-flex;
-  }
+    margin-top: 0;}
+ 
   .footer-list{
     display: block;
     padding:0;
     padding-bottom: 0;
   }
-  .col-lg-4.footer-col{
-    padding-right: 0;
-    margin-top: 0;
-    margin-left: -215px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    /*display: inline-block;*/
-  }
-  footer>.container>h3{
-    text-align: left;
-  }
-  .row.footer-row{
-    margin-top: 0;
-  }
-  footer{
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
+  
 }
 
-@media(max-width: 576px){
-  .col-lg-4.footer-col{
-    padding-right: 0;
-    margin-top: 0;
-    margin-left: -180px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    /*display: inline-block;*/
-  }
-}
-
-@media(max-width: 430px){
-  .col-lg-4.footer-col{
-    padding-right: 0;
-    margin-top: 0;
-    margin-left: -130px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    /*display: inline-block;*/
-  }
-}
 
 .text{
   margin-top: 10px;
@@ -309,15 +273,15 @@ nav>.navbar-brand>img{
 }
 
 .card-body:after{
-	content: '';
-	background: rgba(0, 154, 255, 0.65);
-	top: 100%;
-	left: 0;
+  content: '';
+  background: rgba(0, 154, 255, 0.65);
+  top: 100%;
+  left: 0;
   position: absolute;
-	z-index: 2;
-	width: 100%;
+  z-index: 2;
+  width: 100%;
   height: 100%;
-	transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .card-body:hover:after{
@@ -329,8 +293,8 @@ nav>.navbar-brand>img{
 }
 
 .card-text{
-	font-size: 20px;
-	width: 100px;
+  font-size: 20px;
+  width: 100px;
 }
 
 .row{
@@ -338,7 +302,7 @@ nav>.navbar-brand>img{
 }
 
 .row:first-child {
-	margin-top: 150px	;
+  margin-top: 150px ;
 }
 
 .col-lg-4.d-flex{
@@ -347,9 +311,10 @@ nav>.navbar-brand>img{
   margin-top: 30px;
 }
 
+/*styling for footer*/
+
 footer {
   position: relative;
-  text-align: center;
   background-color: #293243;
   margin-top: 150px;
 }
@@ -361,8 +326,8 @@ footer {
 }
 
 .footer-logo{
-  margin-left: -220px;
   margin-bottom: 30px;
+  padding-left: 10px;
 }
 
 footer>div>h1 {
@@ -385,28 +350,31 @@ footer>.container>h1 {
   color: #fff;
 }
 
-.row.footer-row{
-  margin-top: 0;
-}
 
 footer>div>h3 {
   margin-top: 30px;
-  /*color: #546586;*/
   color: #fff;
   font-size: 20px;
 }
 
 .footer-img{
   padding-top: 40px;
-  width: 100px;
+  width: 200px;
+}
+
+.footer-list:nth-child(1){
+  width: 70.91px;
 }
 
 .footer-hr{
   margin-top: 14px;
   width: 100%;
-  height: 1px;
-  border-top: solid 1px #fff!important;
+  border-top: solid 1px #fff;
   overflow: hidden;
+}
+
+footer>.container>.container{
+  text-align: center;
 }
 
 footer>.container>.container>.row>.col-lg-4.col-md-6{
@@ -424,35 +392,76 @@ footer>.container>.container>.row{
 .social{
   list-style-type: none;
   display:inline-block;
+  padding-left: 0;
 }
 
 .social li a{
   display: inline-block;
   height: 30px;
   width: 30px;
-  /*margin-left: 6px;*/
   margin-right: 6px;
   border-radius: 100%;
   background-color: #fff;
   color: #293243;
   padding:0;
+  text-align: center;
 }
+
+.social>li>a:hover, .footer-list>li>a:hover{
+  opacity: 0.85;
+} 
 
 .social li{
   float: right;
 }
 
 .footer-icon {
-  /*color: #FFF;*/
-  /*margin-right: px;*/
   margin-top: 7px;
 }
 
-.footer-row{
+.footer-contain>.row{
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer-col{
       padding: 0;
+      width: 80px;
+      margin: 0 auto;
+}
+
+/*toastr modifications*/
+
+#toast-container > .toast-info {            
+  background-color: rgb(41, 50, 67);
+  background-image: none!important;
+}
+
+#toast-container>div{
+  padding: 15px;
+  padding-left: 90px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  -moz-box-shadow: 0 0 2px #999999;
+  -webkit-box-shadow: 0 0 2px #999999;
+  box-shadow: 0 0 2px #999999;
+} 
+
+.toast-top-center { 
+    top: 12px; 
+    left: 50%; 
+    margin-left: -150px;
+} 
+@media all and (min-width: 321px) and (max-width: 480px) { 
+    .toast-top-center { 
+        padding-right: 105px; 
+        padding-top: 80%;
+    } 
+}
+@media all and (min-width: 481px) and (max-width: 576px){
+  .toast-top-center {
+    padding-right: 150px;
+    padding-top: 80%;
+  }
 }
