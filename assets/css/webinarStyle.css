@@ -48,9 +48,7 @@ nav>.navbar-brand>img{
 .context>h1{
   font-size: 1.8em;
 }
-.row{
-  /*margin-bottom: 20px;*/
-}
+
 .img-overlay {
   position: absolute;
   top: 0;
@@ -151,26 +149,7 @@ nav>.navbar-brand>img{
   border:none;
 }
 
-@media(max-width:991px){
-  .navbar-nav {
-    justify-content: center;
-    align-items:flex-end;
-  } 
 
-  .navbar-collapse {
-    z-index: 100;
-    background-color: #F4F4F4;
-     }
-     .navbar-light .navbar-nav .nav-link.indexnav{
-    color: #000;
-  
-   }
-   .navbar-light .navbar-nav .nav-link {
-    color: #000;
-    padding-top: 10px;
-   
-   }
-}
 @media(max-width: 768px){
 .bgimg {
     position: relative;
@@ -258,10 +237,25 @@ nav>.navbar-brand>img{
 }
 
 @media only screen and (max-width: 991px){
-.navbar-nav li {
-    padding: 1.2em;
-  }
-}
+
+  .navbar-nav {
+    justify-content: center;
+    align-items:flex-end;
+  } 
+
+  .navbar-collapse {
+    z-index: 100;
+    background-color: #F4F4F4;
+     }
+     .navbar-light .navbar-nav .nav-link.indexnav{
+    color: #000;
+  
+   }
+   .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    padding-top: 10px;
+   
+   }
 footer {
   position: relative;
   text-align: center;
