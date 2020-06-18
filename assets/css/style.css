@@ -227,10 +227,6 @@ nav>.navbar-brand>img {
       height: auto;
       border: 10px solid white; }
       
-      .hero #medNav {
-        display: none;
-      }
-      
   .hero .text {
     padding: 4em;
     position: absolute;
@@ -252,6 +248,10 @@ nav>.navbar-brand>img {
     .hero .text a:hover {
       opacity: .5;
       text-decoration: none; }
+
+#medNav {
+  display: none;
+}
 
 /**
 * "About Us" section starts here
