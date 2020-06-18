@@ -1060,6 +1060,7 @@ footer>.container>.container>.row{
 .hero .nav__toggle:hover, .hero .nav__toggle:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .hero .nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1075,7 +1076,7 @@ footer>.container>.container>.row{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   z-index: 5;
   padding: 0;
