@@ -546,16 +546,19 @@ nav>.navbar-brand>img {
     .projects .container .showcase {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(var(--project-min-width), 1fr));
-      grid-gap: .5rem; }
+      grid-gap: 1em; }
       .projects .container .showcase .project {
         position: relative;
+        max-width: 21em;
         width: 100%;
         height: 22.5em;
         background-color: #c4c4c4;
         padding: 2em;
         display: flex;
         align-items: flex-end;
-        overflow: hidden; }
+        overflow: hidden; 
+        margin-left: auto;
+        margin-right: auto;}
         .projects .container .showcase .project .text {
           display: none;
           position: absolute;
@@ -965,6 +968,16 @@ footer>.container>.container>.row{
   .about .container #web, .about .container #sm {
     display: none;
   }
+
+  .projects .container .showcase .project:nth-child(odd) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .projects .container .showcase .project:nth-child(even) {
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
     
 
@@ -1258,7 +1271,14 @@ footer>.container>.container>.row{
         .counter .container div h5 {
           background: none; }
         .counter .container div:last-child {
-          margin-bottom: 0; } }
+          margin-bottom: 0; } 
+  
+  .showcase .project {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+        
+  }
 
 
 @media only screen and (max-width: 578px) {
@@ -1398,7 +1418,8 @@ footer>.container>.container>.row{
 
 
 @media(max-width: 768px) {
-    /**
+
+  /**
   *   404 page css
   */
   #circle {
