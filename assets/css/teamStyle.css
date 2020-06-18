@@ -210,16 +210,16 @@ nav>.navbar-brand>img{
 /*adding background image to cards*/
 
 .c1{
-   background: url('../images/team/kunal.jpg');
+   background: url('../images/team/kunal1.jpg');
 }
 .c2{
-   background: url('../images/team/rajat.jpg') center center;
+   background: url('../images/team/rajat1.jpg') center center;
 }
 .c3{
    background: url('../images/team/akshat.jpg') ;
 }
 .c4{
-   background: url('../images/team/muskan.jpg') center center ;
+   background: url('../images/team/muskan1.jpg') center center ;
 }
 .c5{
    background: url('../images/team/ishan.jpg') center ;
@@ -232,13 +232,13 @@ nav>.navbar-brand>img{
 }
 .c8{
 
-   background: url('../images/team/dipto.jpg') ;
+   background: url('../images/team/dipto1.jpg') ;
 }
 .c9{
    background: url('../images/team/shreya.jpg') ;
 }
 .c10{
-   background: url('../images/team/kshitiz.jpg') ;
+   background: url('../images/team/kshitiz1.jpg') ;
 }
 .c11{
    background: url('../images/team/devang.jpg') ;
