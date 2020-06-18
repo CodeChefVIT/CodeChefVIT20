@@ -48,7 +48,7 @@
           </video>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" style="background-color: transparent!important;position: absolute;top:0;width: 100%">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style="background-color: transparent!important;position: absolute;top:0;width: 100%">
             <a class="navbar-brand" href="index.html"><img src="assets/images/logos/ccwhite.png" style="width:auto; height:3.5rem;bottom: 0"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);  background-color: #F4F4F4;">
               <span class="navbar-toggler-icon" ></span>
@@ -80,6 +80,42 @@
                   </li>
                   </ul>
             </div>
+        </nav>
+
+        <!-- Navbar for small devices-->
+
+        <nav id="medNav" class="nav" role="navigation">
+
+          <a href="/index" class="medLogo"><img src="assets/images/logos/ccwhite.png" alt="CodeChef-VIT"></a>
+      
+          <!-- ACTUAL NAVIGATION MENU -->
+          <ul class="nav__menu" id="menu" tabindex="-1" style = "list-style: none;" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="/index" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="/events" class="nav__link">Events</a></li>
+            <li class="nav__item"><a href="/blog" class="nav__link">Blog</a></li>
+            <li class="nav__item"><a href="/webinars" class="nav__link">Webinars</a></li>
+            <li class="nav__item"><a href="/projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="/team" class="nav__link">Team</a></li>
+            <li class="nav__item"><a href="/sponsors" class="nav__link">Sponsors</a></li>
+          </ul>
+          
+          <!-- MENU TOGGLE BUTTON -->
+          <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+              <title>Toggle Menu</title>
+              <g>
+                <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+              </g>
+            </svg>
+          </a>
+          
+          <!-- ANIMATED BACKGROUND ELEMENT -->
+          <div class="splash"></div>
+          
         </nav>
 
         <div class="text">
