@@ -1,5 +1,3 @@
-AOS.init();
-
 var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
 var i = 0;
 
