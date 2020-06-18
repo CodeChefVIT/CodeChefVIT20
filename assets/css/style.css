@@ -227,10 +227,6 @@ nav>.navbar-brand>img {
       height: auto;
       border: 10px solid white; }
       
-      .hero #medNav {
-        display: none;
-      }
-      
   .hero .text {
     padding: 4em;
     position: absolute;
@@ -252,6 +248,10 @@ nav>.navbar-brand>img {
     .hero .text a:hover {
       opacity: .5;
       text-decoration: none; }
+
+#medNav {
+  display: none;
+}
 
 /**
 * "About Us" section starts here
@@ -360,11 +360,11 @@ nav>.navbar-brand>img {
 }
 
 .about .container .flex #d4 {
-  margin-right: -11em;
+  margin-right: -160px;
 }
 
 .about .container .flex #d5 {
-  margin-left: -11em;
+  margin-left: -160px;
 }
 
 .about .container .domain {
