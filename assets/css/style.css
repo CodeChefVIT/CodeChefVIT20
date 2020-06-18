@@ -1301,6 +1301,35 @@ footer>.container>.container>.row{
     --dom-mob-width: 13rem;
     --sponsors-min-width: 15rem;
   }
+
+  /**
+  *   404 page css
+  */
+  #square {
+    top: -7em;
+    left: -20em;
+  }
+  #triangle {
+    right: -23em;
+  }
+
+  .errorTop {
+    width: 100%;
+    padding: 2em 0 0 0;
+    justify-content: center !important;
+  }
+
+  div.errorText h1 {
+    font-size: 10em !important;
+  }
+  div.errorText h3 {
+    font-size: 4em !important;
+    line-height: 1.2em;
+  }
+  div.errorText h4 {
+    font-size: 2em !important;
+  }
+
   .container {
     padding: 1em; }
   footer>.container {
@@ -1340,6 +1369,22 @@ footer>.container>.container>.row{
   :root {
     --domains-min-width: 12em;
   }
+    /**
+  *   404 page css
+  */
+  #square, #triangle, #circle {
+    display: none;
+  }
+  div.errorText h1 {
+    font-size: 7em !important;
+  }
+  div.errorText h3 {
+    font-size: 3em !important;
+  }
+  div.errorText h4 {
+    font-size: 2em !important;
+    margin-top: 1em !important;
+  }
 
   .projects .tabs {
     flex-direction: column; }
@@ -1352,7 +1397,22 @@ footer>.container>.container>.row{
 
 
 @media(max-width: 768px) {
-
+    /**
+  *   404 page css
+  */
+  #circle {
+    left: -10em;
+  }
+  div.errorText h1 {
+    font-size: 12em;
+  }
+  div.errorText h3 {
+    font-size: 5em;
+    line-height: 1.2em;
+  }
+  div.errorText h4 {
+    font-size: 2em;
+  }
  
 
   .context {
