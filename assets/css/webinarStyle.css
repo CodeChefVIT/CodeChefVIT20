@@ -405,7 +405,7 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
-      width: 80px;
+      width: auto;
       margin: 0 auto;
 }
 
