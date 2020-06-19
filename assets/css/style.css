@@ -32,9 +32,9 @@ body {
   background-color: #F4F4F4; 
   overflow-x: hidden;}
 
-
+ 
   /* Loader */
-#loader {
+/* #loader {
   position: fixed;
   width: 96px;
   height: 96px;
@@ -144,7 +144,7 @@ body {
       stroke-dasharray: 89, 200;
       stroke-dashoffset: -136px;
   }
-}
+} */ 
 /**
 *  404 page styles
 */

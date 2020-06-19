@@ -1,23 +1,23 @@
 var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
 var i = 0;
 
-//loader
-(function ($) {
-  "use strict";
+// //loader
+// (function ($) {
+//   "use strict";
 
-  // Loader
-  $(function () {
-      var loader = function () {
-          setTimeout(function () {
-              if ($('#loader').length > 0) {
-                  $('#loader').removeClass('show');
-              }
-          }, 1);
-      };
-      loader();
-  });
+//   // Loader
+//   $(function () {
+//       var loader = function () {
+//           setTimeout(function () {
+//               if ($('#loader').length > 0) {
+//                   $('#loader').removeClass('show');
+//               }
+//           }, 1);
+//       };
+//       loader();
+//   });
 
-})(jQuery);
+// })(jQuery);
 // JS for Navbar
 const nav = document.querySelector('#medNav');
 const menu = document.querySelector('#menu');
