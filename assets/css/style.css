@@ -546,7 +546,8 @@ nav>.navbar-brand>img {
     .projects .container .showcase {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(var(--project-min-width), 1fr));
-      grid-gap: 1em; }
+      grid-gap: 1em; 
+      padding: 2em}
       .projects .container .showcase .project {
         position: relative;
         max-width: 21em;
