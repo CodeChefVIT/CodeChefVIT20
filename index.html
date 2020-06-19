@@ -101,6 +101,11 @@
               '0 0, 100% 100%, 0 100%',
               '100% 0, 100% 100%, 0 100%'
             ));
+            :doodle(:hover) { --s: 1 }
+
+transition: .5s cubic-bezier(.175, .885, .32, 1.275);
+transition-delay: @rand(500ms);
+transform: translateY(calc(var(--s) * 100%));
           </css-doodle>
             
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style="background-color: transparent!important;position: absolute;top:0;width: 100%">
