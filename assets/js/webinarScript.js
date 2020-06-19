@@ -91,3 +91,7 @@
     });
   });
 }
+
+if(document.getElementById("overlay").style.display==="none"){
+  document.getElementById("youtube-video").attr("src",document.getElementById("youtube-video").attr('src'));
+}

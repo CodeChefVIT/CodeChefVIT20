@@ -115,10 +115,12 @@ function tabSwitch(id) {
 
 
 function on() {
+  document.getElementById("youtube-video").setAttribute("src","https://www.youtube.com/embed/wYDTHujmThc");
   document.getElementById("overlay").style.display = "block";
 }
 
 function off() {
+  document.getElementById("youtube-video").setAttribute("src","");
   document.getElementById("overlay").style.display = "none";
 }
 
