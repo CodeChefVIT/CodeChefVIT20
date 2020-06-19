@@ -1006,12 +1006,16 @@ footer>.container>.container>.row{
    }
    .bgimg {
     position: relative;
-    height: 87vh;
+    height: 100vh;
+  }
+
+  .bgimg h1{
+    margin-top: 10vh;
   }
    
   .shade {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 87vh;
+    height: 100vh;
   }
 
 
@@ -1120,13 +1124,8 @@ footer>.container>.container>.row{
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
 }
-<<<<<<< HEAD
-.hero .nav__link {
-  color: rgb(41, 50, 67);
-=======
 .nav__link {
-  color: white;
->>>>>>> 48a483640e4a0eeae25e35a60705017ce60de257
+  color: rgb(41, 50, 67);
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -1183,11 +1182,7 @@ footer>.container>.container>.row{
   display: block;
   position: absolute;
   border-radius: 50%;
-<<<<<<< HEAD
   background-color: #f4f4f4;
-=======
-  background-color: #2980B9;
->>>>>>> 48a483640e4a0eeae25e35a60705017ce60de257
   width: 284vmax;
   height: 284vmax;
   top: -142vmax;
