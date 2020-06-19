@@ -32,6 +32,119 @@ body {
   background-color: #F4F4F4; 
   overflow-x: hidden;}
 
+ 
+  /* Loader */
+/* #loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  -webkit-box-shadow: 0 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  -o-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  z-index: 9000000;
+}
+
+#loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: white;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#loader.show {
+  -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+#loader .circular {
+  -webkit-animation: loader-rotate 2s linear infinite;
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes loader-rotate {
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-rotate {
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-dash {
+  0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+  }
+
+  50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+  }
+
+  100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -136px;
+  }
+}
+
+@keyframes loader-dash {
+  0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+  }
+
+  50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+  }
+
+  100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -136px;
+  }
+} */ 
 /**
 *  404 page styles
 */
@@ -837,6 +950,170 @@ nav>.navbar-brand>img {
         max-width: 20em;
         height: auto; }
 
+/**
+*Team starts from here
+*/
+
+.card-body>.text{
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+
+.card-body>.text>h1{
+  font-weight: bolder;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.card-body>.text>h5{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card-body>.text>p{
+  padding: 7px;
+}
+
+.fb{
+  color: #2980B9;
+  padding : 0;
+}
+
+.gt{
+  color: #363636;
+  padding:0;
+}
+
+.in{
+  color:#FF007A;
+  padding:0;
+}
+
+.ln{
+  color:#0075B3;
+  padding:0;
+}
+
+.card-body>.text>a>span>.fab{
+  color: #fff;
+}
+
+.card-body>.text>a>span>.fab:hover{
+  color: #fff;
+}
+
+/*adding background image to cards*/
+
+.c1{
+   background: url('../images/team/kunal1.jpg');
+}
+.c2{
+   background: url('../images/team/rajat1.jpg') center center;
+}
+.c3{
+   background: url('../images/team/akshat.jpg') ;
+}
+.c4{
+   background: url('../images/team/muskan1.jpg') center center ;
+}
+.c5{
+   background: url('../images/team/ishan.jpg') center ;
+}
+.c6{
+   background: url('../images/team/nishi.jpg') ;
+}
+.c7{
+   background: url('../images/team/vansh.jpg') ;
+}
+.c8{
+
+   background: url('../images/team/dipto1.jpg') ;
+}
+.c9{
+   background: url('../images/team/shreya.jpg') ;
+}
+.c10{
+   background: url('../images/team/kshitiz1.jpg') ;
+}
+.c11{
+   background: url('../images/team/devang.jpg') ;
+}
+.c12{
+   background: url('../images/team/anuj.jpg') ;
+}
+.c13{
+   background: url('../images/team/navyaa.jpg') ;
+}
+.c14{
+   background: url('../images/team/priyank.jpg') ;
+}
+.c15{
+   background: url('../images/team/anmol.jpg');
+}
+
+/*adding card properties*/
+.card{
+  border: transparent;
+  overflow: hidden;
+  box-shadow: 4px 9px 9px rgba(0, 0, 0, 0.3);
+}
+
+.card-body{
+  height: 450px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body:after{
+  content: '';
+  background: rgba(0, 154, 255, 0.65);
+  top: 100%;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transition: all .2s ease-in;
+}
+
+.card-body:hover:after{
+  top:0;
+}
+
+.card-body:hover .text{
+  display:block;
+}
+
+.card-text{
+  font-size: 20px;
+  width: 100px;
+}
+
+.team-row{
+  margin-top: 1.2em;
+}
+
+.team-row:first-child {
+  margin-top: 150px ;
+}
+
+.col-lg-4.d-flex{
+  /*width: 100%;*/
+  height: 100%;
+  margin-top: 30px;
+}
+
+
+
+
+
+
 
 /*styling for footer*/
 
@@ -953,7 +1230,7 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
-      width: 80px;
+      width: auto;
       margin: 0 auto;
 }
 /*footer ends here*/
@@ -969,6 +1246,9 @@ footer>.container>.container>.row{
   .about .container #web, .about .container #sm {
     display: none;
   }
+  .card-body .text{
+    width: 300px;
+    margin-right: 50px;
 
   .projects .container .showcase .project:nth-child(odd) {
     margin-left: auto;
@@ -1007,12 +1287,16 @@ footer>.container>.container>.row{
    }
    .bgimg {
     position: relative;
-    height: 87vh;
+    height: 100vh;
+  }
+
+  .bgimg h1{
+    margin-top: 10vh;
   }
    
   .shade {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 87vh;
+    height: 100vh;
   }
 
 
@@ -1179,7 +1463,7 @@ footer>.container>.container>.row{
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: #2980B9;
+  background-color:#2980B9;
   width: 284vmax;
   height: 284vmax;
   top: -142vmax;
@@ -1273,7 +1557,26 @@ footer>.container>.container>.row{
         .counter .container div h5 {
           background: none; }
         .counter .container div:last-child {
-          margin-bottom: 0; } 
+          margin-bottom: 0; }
+
+   .card-body:after{
+  content: '';
+  background: rgba(0, 154, 255, 0.65);
+  top: 100%;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transition: all .2s ease-in;
+}
+  .card-body:hover:after{
+  top:0;
+}
+.card-body:hover .text{
+  display:block;
+   margin-left: auto;
+  margin-right: auto;
+}
   
   .showcase .project {
     margin-left: auto !important;
@@ -1416,6 +1719,12 @@ footer>.container>.container>.row{
       padding: .8em 0 !important; }
   .projects .showcase .project .text {
     padding: 1.2em !important; } 
+    .card-body>.text{
+    font-size: 0.8em;
+    width: 200px;
+    margin-right: 40px;
+  }
+
   }
 
 
