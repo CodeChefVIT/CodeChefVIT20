@@ -1238,7 +1238,7 @@ footer>.container>.container>.row{
           transform: translateY(-200px);
 }
 .nav__link {
-  color: rgb(41, 50, 67);
+  color: white;
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -1295,7 +1295,7 @@ footer>.container>.container>.row{
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: #f4f4f4;
+  background-color:#2980B9;
   width: 284vmax;
   height: 284vmax;
   top: -142vmax;
