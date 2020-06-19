@@ -350,10 +350,7 @@ opacity: 1;
 
 }
 @media(max-width: 768px){
-  .bgimg {
-    position: relative;
-    height: 87vh;
-  }
+  
   .context {
     text-align: center;
     margin-top: 30px;
@@ -361,10 +358,7 @@ opacity: 1;
     font-size: 1.4em;
     float: none;
   }
-  .shade {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    height: 87vh;
-  }
+ 
    .context>h1{
     font-size: 1.8em;
   }
