@@ -32,14 +32,14 @@ nav>.navbar-brand>img{
   height: 6rem;
   width: auto;
 }
-
+/*
 .bgimg{
      background: url('../images/team-cover.jpeg');
     background-size:cover;
     width:100%;
     height:87vh;
     background-repeat:no-repeat;
-}
+}*/
 
 .shade {
      width: 100%;
@@ -62,20 +62,26 @@ nav>.navbar-brand>img{
   font-size: 1.8em;
 }
 
-@media(max-width: 1200px)
-{
-  .card-body .text{
-    width: 300px;
-    margin-right: 50px;
-  }
-}
 @media(max-width: 991px)
 {
+
+ 
+  .navbar-nav {
+    justify-content: center;
+    align-items:flex-end;
+  } 
+
+  .navbar-collapse {
+    z-index: 100;
+    background-color: #F4F4F4;
+     }
+     .navbar-light .navbar-nav .nav-link.indexnav{
+    color: #000;
+
   .card-body .text{
     width: 100%;
     margin-right: 0;
   }
-
   
    
 .card-body:after{
@@ -94,7 +100,7 @@ nav>.navbar-brand>img{
   top:0;
 }
 
-.card-body:hover .text{
+.card-body:hover>.text{
   display:block;
 }
 .navbar-nav {
@@ -374,28 +380,36 @@ opacity: 1;
   
 }
 
+@media(max-width: 350px){
+  .card-body>.text{
+    font-size: 0.8em;
+    width: 200px;
+    margin-right: 40px;
+  }
+}
 
-.text{
+
+.card-body>.text{
   margin-top: 10px;
   text-align: center;
   display: none;
   position: relative;
-  z-index: 3;
+  z-index: 10;
   color: #fff;
 }
 
-.text>h1{
+.card-body>.text>h1{
   font-weight: bolder;
   font-size: 25px;
   text-transform: uppercase;
 }
 
-.text>h5{
+.card-body>.text>h5{
   font-weight: 600;
   font-size: 20px;
 }
 
-.text>p{
+.card-body>.text>p{
   padding: 7px;
 }
 
@@ -419,11 +433,11 @@ opacity: 1;
   padding:0;
 }
 
-.text>a>span>.fab{
+.card-body>.text>a>span>.fab{
   color: #fff;
 }
 
-.text>a>span>.fab:hover{
+.card-body>.text>a>span>.fab:hover{
   color: #fff;
 }
 
@@ -517,11 +531,11 @@ opacity: 1;
   width: 100px;
 }
 
-.row{
+.team-row{
   margin-top: 1.2em;
 }
 
-.row:first-child {
+.team-row:first-child {
   margin-top: 150px ;
 }
 
@@ -597,11 +611,11 @@ footer>.container>.container{
   text-align: center;
 }
 
-footer>.container>.container>.row>.col-lg-4.col-md-6{
+footer>.container>.container>.team-row>.col-lg-4.col-md-6{
   padding-bottom: 0;
 }
 
-footer>.container>.container>.row{
+footer>.container>.container>.team-row{
   margin-top: 0;
 }
 
@@ -646,7 +660,7 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
-      width: 80px;
+      width: auto;
       margin: 0 auto;
 }
 
