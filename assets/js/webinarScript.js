@@ -13,22 +13,22 @@
         switch(i)
         {
           case 0:
-          videoIdHolder.push('bD9qAFnA7K8');
+          videoIdHolder.push('iOmHEbMexqI');
           break;
           case 1:
-          videoIdHolder.push('xOdNqz9VNhQ');
+          videoIdHolder.push('U3Ewkyw9I5U');
           break;
           case 2:
-          videoIdHolder.push('kHXU4FiC2B0');
+          videoIdHolder.push('T76Pke4cJlw');
           break;
           case 3:
-          videoIdHolder.push('t1HOY7Rp6xU');
+          videoIdHolder.push('MfK9u9y63xc');
           break;
           case 4:
-          videoIdHolder.push('nJSqbUbE94k');
+          videoIdHolder.push('83Od9fAySvE');
           break;
           case 5:
-          videoIdHolder.push('m8adYJxkCqk');
+          videoIdHolder.push('bD9qAFnA7K8');
           break;
 
         }
