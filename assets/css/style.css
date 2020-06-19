@@ -1108,7 +1108,7 @@ footer>.container>.container>.row{
           transform: translateY(-200px);
 }
 .hero .nav__link {
-  color: white;
+  color: rgb(41, 50, 67);
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -1164,7 +1164,7 @@ footer>.container>.container>.row{
   display: block;
   position: absolute;
   border-radius: 50%;
-  background-color: #368887;
+  background-color: #f4f4f4;
   width: 284vmax;
   height: 284vmax;
   top: -142vmax;
