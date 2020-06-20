@@ -15,10 +15,12 @@ body{
 #medNav {
   display: none;
 }
+.h2{
 
+}
 .navbar-light .navbar-nav .nav-link{
   color: #000000;
-  padding-top: 45px;
+
   padding-right: 20px;
 }
 nav>.navbar-brand>img{
@@ -28,17 +30,17 @@ nav>.navbar-brand>img{
 }
 
 /*css for header*/
-.bgimg{
-     background: url('../images/webinar-cover.jpeg');
+.bgimg{ 
     background-size:cover;
     width:100%;
-    height:87vh;
+    height:89vh;
+    background-position: center;
     
     background-repeat:no-repeat;
 }
 .shade {
      width: 100%;
-    height: 87vh;
+    height: 89vh;
     clip-path:polygon(55% 0%,47% 100%,100% 100%,100% 0%);
       background: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -115,14 +117,13 @@ nav>.navbar-brand>img{
             width: auto;
             height: 300px;
             background-size: cover;
-            background-position: left; 
-            background-image: url('../images/backs/cpp_Banner.jpg');
+            background-position: center; 
             box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
           }
 
 .content-box {
             position: absolute;
-            left: 40%;
+            left: 45%;
             /*top: -1px;*/
             background: url('../images/backs/bg-feature-slant.svg') no-repeat left bottom;
             background-size: auto 100%;
@@ -161,8 +162,8 @@ iframe{
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      width: 450px;
-      height: 300px;
+      width: 700px;
+      height: 500px;
 }
 .modal-header{
   border:none;
@@ -191,7 +192,7 @@ iframe{
   iframe{
     width: 500px!important;
     height: 300px!important;
-    margin-left: -20px;
+    /*margin-left: -20px;*/
   }
 
   .container.footer-contain{
@@ -204,39 +205,17 @@ iframe{
     padding-bottom: 0;
   }
 }
-@media(max-width : 530px){
-  iframe{
-    width: 350px!important;
-    height: auto;
-    margin-left: 50px;
-  }
-  .modal-content{
-    width: 350px;
-  }
-  .modal-body{
-    width: 350px;
-  }
-}
-@media(max-width: 430px){
-  iframe{
-    margin-left: 10px;
-  }
-}
 
 @media(max-width: 350px){
-  iframe{
-    width: 300px!important;
-    height: auto;
-    /*margin-left: -10px;*/
-  }
+  
   .round-button{
-    margin-left: -20px;
-  }
+    margin-left: 100px!important;
+   }
   .text>h2{
-    font-size: 25px;
+    font-size: 15px;
   }
   .text>p{
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 
@@ -519,6 +498,18 @@ iframe{
 
   .round-button>i{
     font-size: 30px;
+  }
+
+  iframe{
+    width: 350px!important;
+    height: 200px!important;
+  }
+
+  .text>h2{
+    font-size: 20px;
+  }
+  .text>p{
+    font-size: 15px;
   }
 }
 

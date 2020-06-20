@@ -1,23 +1,6 @@
 var countDate = new Date('Sept 1, 2020 00:00:00').getTime();
 var i = 0;
 
-// //loader
-// (function ($) {
-//   "use strict";
-
-//   // Loader
-//   $(function () {
-//       var loader = function () {
-//           setTimeout(function () {
-//               if ($('#loader').length > 0) {
-//                   $('#loader').removeClass('show');
-//               }
-//           }, 1);
-//       };
-//       loader();
-//   });
-
-// })(jQuery);
 // JS for Navbar
 const nav = document.querySelector('#medNav');
 const menu = document.querySelector('#menu');
@@ -115,10 +98,12 @@ function tabSwitch(id) {
 
 
 function on() {
+  document.getElementById("youtube-video").setAttribute("src","https://www.youtube.com/embed/wYDTHujmThc");
   document.getElementById("overlay").style.display = "block";
 }
 
 function off() {
+  document.getElementById("youtube-video").setAttribute("src","");
   document.getElementById("overlay").style.display = "none";
 }
 
