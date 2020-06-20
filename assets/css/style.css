@@ -218,14 +218,14 @@ nav>.navbar-brand>img {
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 20;
     cursor: pointer; }
-    .hero #overlay video {
+    .hero #overlay iframe {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       width: 70%;
-      height: auto;
+      height: 70%;
       border: 10px solid white; }
       
       .hero css-doodle {
@@ -739,11 +739,12 @@ nav>.navbar-brand>img {
   position: relative;
   padding-top: 14%;
   float: right;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .context>h1{
   font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
 .grid-img {
@@ -1641,6 +1642,11 @@ footer>.container>.container>.row{
     margin-right: 40px;
   }
 
+  .context>p{
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
   }
 
 
@@ -1769,6 +1775,10 @@ footer>.container>.container>.row{
       font-size: 1em;
       text-align: center;
     }
+     iframe{
+    width: 70%;
+    height: 40%!important;
+  }
 
 }
 
