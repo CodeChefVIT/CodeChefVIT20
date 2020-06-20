@@ -146,18 +146,23 @@ div.modal.fade.show{
   padding: 0!important; 
 }
 .modal-content{
-  width: 700px;
+/*  width: 700px;*/
   background:transparent!important;
   border: none;
-  padding: 0!important;
+/*  padding: 0!important;*/
 }
-.modal-body{
+/*.modal-body{
   width: 700px;
   padding: 0!important;
-}
+}*/
 iframe{
-  margin-left: auto;
-  margin-right: auto; 
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 450px;
+      height: 300px;
 }
 .modal-header{
   border:none;
@@ -215,6 +220,23 @@ iframe{
 @media(max-width: 430px){
   iframe{
     margin-left: 10px;
+  }
+}
+
+@media(max-width: 350px){
+  iframe{
+    width: 300px!important;
+    height: auto;
+    /*margin-left: -10px;*/
+  }
+  .round-button{
+    margin-left: -20px;
+  }
+  .text>h2{
+    font-size: 25px;
+  }
+  .text>p{
+    font-size: 15px;
   }
 }
 
@@ -621,7 +643,7 @@ footer>.container>.container>.row{
 
 .footer-col{
       padding: 0;
-      width: 80px;
+      width: auto;
       margin: 0 auto;
 }
 
