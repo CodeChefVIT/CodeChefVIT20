@@ -15,10 +15,12 @@ body{
 #medNav {
   display: none;
 }
+.h2{
 
+}
 .navbar-light .navbar-nav .nav-link{
   color: #000000;
-  padding-top: 45px;
+  padding-top: 18px;
   padding-right: 20px;
 }
 nav>.navbar-brand>img{
@@ -31,14 +33,14 @@ nav>.navbar-brand>img{
 .bgimg{ 
     background-size:cover;
     width:100%;
-    height:87vh;
+    height:89vh;
     background-position: center;
     
     background-repeat:no-repeat;
 }
 .shade {
      width: 100%;
-    height: 87vh;
+    height: 89vh;
     clip-path:polygon(55% 0%,47% 100%,100% 100%,100% 0%);
       background: rgba(0, 0, 0, 0.8);
     position: absolute;
