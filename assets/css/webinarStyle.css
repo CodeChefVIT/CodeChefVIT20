@@ -28,11 +28,11 @@ nav>.navbar-brand>img{
 }
 
 /*css for header*/
-.bgimg{
-     background: url('../images/webinar-cover.jpeg');
+.bgimg{ 
     background-size:cover;
     width:100%;
     height:87vh;
+    background-position: center;
     
     background-repeat:no-repeat;
 }
@@ -115,14 +115,13 @@ nav>.navbar-brand>img{
             width: auto;
             height: 300px;
             background-size: cover;
-            background-position: left; 
-            background-image: url('../images/backs/cpp_Banner.jpg');
+            background-position: center; 
             box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
           }
 
 .content-box {
             position: absolute;
-            left: 40%;
+            left: 45%;
             /*top: -1px;*/
             background: url('../images/backs/bg-feature-slant.svg') no-repeat left bottom;
             background-size: auto 100%;
