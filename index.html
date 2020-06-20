@@ -71,20 +71,43 @@
     <div class="top-view">
 
       <div class="hero">
-
-        <!-- The video -->
-        <video autoplay muted loop id="intro">
-          <source src="assets/video/introVideo.mp4" type="video/mp4">
-        </video>
-
-        <div id="vidOverlay"></div>
-
-        <div id="overlay" onclick="off()">
-          <video autoplay muted loop>
+        
+        <!-- The video 
+          <video autoplay muted loop id="intro">
             <source src="assets/video/introVideo.mp4" type="video/mp4">
-          </video>
-        </div>
+            </video>
+            
+            <div id="vidOverlay"></div>
+            
+            <div id="overlay" onclick="off()">
+              <video autoplay muted loop>
+                <source src="assets/video/introVideo.mp4" type="video/mp4">
+                </video>
+              </div>
+          -->
 
+          <css-doodle>
+            :doodle {
+              @grid: 18 / 100vmax;
+              background: #0a0c27;
+            }
+            --hue: calc(180 + 1.5 * @row * @col);
+            background: hsl(var(--hue), 50%, 70%);
+            margin: -.5px;
+            transition: @r(.5s) ease;
+            clip-path: polygon(@pick(
+              '0 0, 100% 0, 100% 100%',
+              '0 0, 100% 0, 0 100%',
+              '0 0, 100% 100%, 0 100%',
+              '100% 0, 100% 100%, 0 100%'
+            ));
+            :doodle(:hover) { --s: 1 }
+
+transition: .5s cubic-bezier(.175, .885, .32, 1.275);
+transition-delay: @rand(500ms);
+transform: translateY(calc(var(--s) * 100%));
+          </css-doodle>
+            
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style="background-color: transparent!important;position: absolute;top:0;width: 100%">
             <a class="navbar-brand" href="/"><img src="assets/images/logos/ccwhite.png" style="width:auto; height:3.5rem;bottom: 0"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);  background-color: #F4F4F4;">
@@ -607,6 +630,8 @@
     </script>
 
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> <!-- Slider js-->
     <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script> <!-- Css-doodle -->
