@@ -151,7 +151,7 @@ h6 {
 }
 .navbar-light .navbar-nav .nav-link{
   color: #000;
-   padding-top: 18px;
+   /* padding-top: 15px; */
   padding-right: 20px;
 }
 .navbar-light .navbar-nav .nav-link.indexnav{
