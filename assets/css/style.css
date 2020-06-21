@@ -370,6 +370,10 @@ navbar bar scroll up effect */
         z-index: 0;
       }
 
+      #medDoodle, #smDoodle {
+        display: none;
+      }
+
       .hero css-doodle:after {
         content: '';
         position: absolute;
@@ -1709,6 +1713,14 @@ footer>.container>.container>.row{
     font-size: 2em !important;
   }
 
+  #smDoodle {
+    display: block !important;
+  }
+
+  #medDoodle, #webDoodle {
+    display: none;
+  }
+
   .container {
     padding: 1em; }
   footer>.container {
@@ -1805,12 +1817,12 @@ footer>.container>.container>.row{
     font-size: 2em;
   }
 
-  .top-view .hero {
-    background-color: #234982;
-  }
-   
-  .top-view .hero css-doodle {
+  #webDoodle, #smDoodle {
     display: none;
+  }
+
+  #medDoodle {
+    display: block;
   }
 
   .context {
@@ -1874,10 +1886,6 @@ footer>.container>.container>.row{
 
   #intro{
     display: none;
-  }
-
-  .top-view .hero {
-    background-color: #234982;
   }
   .top-view .hero #intro, .top-view .hero #vidOverlay {
     display: none;
