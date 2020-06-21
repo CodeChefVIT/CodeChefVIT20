@@ -296,10 +296,11 @@ iframe{
   display: block !important;
 }
 .nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  height:4.5em;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,7 +308,7 @@ iframe{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 .nav .medLogo {
   padding-left: 1em;
