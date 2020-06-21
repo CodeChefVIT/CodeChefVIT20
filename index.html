@@ -75,9 +75,10 @@
         <div id="overlay" onclick="off()">
           <iframe id="youtube-video" src="https://www.youtube.com/embed/wYDTHujmThc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-          <css-doodle>
+        
+          <css-doodle  id = "webDoodle">
             :doodle {
-              @grid: 18 / 100vmax;
+              @grid: 18 / 100em;
               background: #0a0c27;
             }
             --hue: calc(180 + 1.5 * @row * @col);
@@ -92,9 +93,43 @@
             ));
             :doodle(:hover) { --s: 1 }
 
-transition: .5s cubic-bezier(.175, .885, .32, 1.275);
-transition-delay: @rand(500ms);
-transform: translateY(calc(var(--s) * 100%));
+            transition: .5s cubic-bezier(.175, .885, .32, 1.275);
+            transition-delay: @rand(500ms);
+            transform: translateY(calc(var(--s) * 100%));
+          </css-doodle>
+        
+          <css-doodle  id = "medDoodle">
+            :doodle {
+              @grid: 8 / 100em;
+              background: #0a0c27;
+            }
+            --hue: calc(180 + 1.5 * @row * @col);
+            background: hsl(var(--hue), 30%, 60%);
+            margin: -.5px;
+            transition: @r(.5s) ease;
+            clip-path: polygon(@pick(
+              '0 0, 100% 0, 100% 100%',
+              '0 0, 100% 0, 0 100%',
+              '0 0, 100% 100%, 0 100%',
+              '100% 0, 100% 100%, 0 100%'
+            ));
+          </css-doodle>
+                  
+          <css-doodle  id = "smDoodle">
+            :doodle {
+              @grid: 5 / 100em;
+              background: #0a0c27;
+            }
+            --hue: calc(180 + 1.5 * @row * @col);
+            background: hsl(var(--hue), 30%, 60%);
+            margin: -.5px;
+            transition: @r(.5s) ease;
+            clip-path: polygon(@pick(
+              '0 0, 100% 0, 100% 100%',
+              '0 0, 100% 0, 0 100%',
+              '0 0, 100% 100%, 0 100%',
+              '100% 0, 100% 100%, 0 100%'
+            ));
           </css-doodle>
             
 
