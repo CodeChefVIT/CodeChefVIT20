@@ -218,14 +218,14 @@ nav>.navbar-brand>img {
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 20;
     cursor: pointer; }
-    .hero #overlay video {
+    .hero #overlay iframe {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       width: 70%;
-      height: auto;
+      height: 70%;
       border: 10px solid white; }
       
       .hero css-doodle {
@@ -566,11 +566,10 @@ nav>.navbar-brand>img {
     .projects .container .showcase {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(var(--project-min-width), 1fr));
-      grid-gap: 1em; 
-      padding: 2em}
+      grid-gap: 1em;}
       .projects .container .showcase .project {
         position: relative;
-        max-width: 21em;
+        max-width: 22.5em;
         width: 100%;
         height: 22.5em;
         background-color: #c4c4c4;
@@ -739,11 +738,12 @@ nav>.navbar-brand>img {
   position: relative;
   padding-top: 14%;
   float: right;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .context>h1{
   font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
 .grid-img {
@@ -1159,7 +1159,7 @@ footer>.container>.container>.row{
   }
 
   .projects .container .showcase {
-    padding: 0 8em;
+    padding: 0 6em;
   }
   
   .projects .container .showcase .project:nth-child(odd) {
@@ -1442,7 +1442,7 @@ footer>.container>.container>.row{
 }
 
 .projects .container .showcase {
-  padding: 0 2em;
+  padding: 0;
 }
 
 .banner .left {
@@ -1605,7 +1605,7 @@ footer>.container>.container>.row{
         margin-bottom: 1em !important; }
 
       .projects .container {
-        padding: 2em; } }
+        padding: 1em; } }
 
 @media only screen and (max-width: 350px) {
   :root {
@@ -1639,6 +1639,11 @@ footer>.container>.container>.row{
     font-size: 0.8em;
     width: 200px;
     margin-right: 40px;
+  }
+
+  .context>p{
+    font-size: 0.9em;
+    padding: 10px;
   }
 
   }
@@ -1769,6 +1774,10 @@ footer>.container>.container>.row{
       font-size: 1em;
       text-align: center;
     }
+     iframe{
+    width: 70%;
+    height: 40%!important;
+  }
 
 }
 
