@@ -192,7 +192,7 @@ navbar bar scroll up effect */
   color: white;
 }
 .custom-toggler.navbar-toggler {
-     border-color: rgba(255,255,255,0.5); 
+     border-color: rgba(255,255,255,0.5);  
      
 }
 .custom-toggler .navbar-toggler-icon {

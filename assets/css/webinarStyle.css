@@ -239,6 +239,9 @@ iframe{
 }
 
 @media only screen and (max-width: 991px){
+  body{
+    padding-top:0px !important;
+  }
   .navbar-nav {
     justify-content: center;
     align-items:flex-end;
