@@ -1254,10 +1254,11 @@ footer>.container>.container>.row{
         display: block !important;
       }
       .nav {
-        position: absolute;
+        position:fixed;
   width: 100%;
   top: 0;
   left: 0;
+  height:4.5em;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1265,7 +1266,7 @@ footer>.container>.container>.row{
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 1em;
+  padding-top: 0.5em;  
 }
 .nav .medLogo {
   padding-left: 1em;
@@ -1289,6 +1290,7 @@ footer>.container>.container>.row{
   -webkit-transition: background-color .15s linear;
   transition: background-color .15s linear;
 }
+
 .nav__toggle:hover, .hero .nav__toggle:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
