@@ -463,12 +463,12 @@ navbar bar scroll up effect */
 }
 
 .about .container .gallery {
-  height: 20em !important;
+  height: 22em !important;
 }
 
 .about .container .gallery-cell {
   width: 20em;
-  height: 17em;
+  height: 20em;
   margin-right: 10px;
   background: #8C8;
 }
@@ -563,6 +563,10 @@ navbar bar scroll up effect */
           transform: scale(1.1);
   -webkit-box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
           box-shadow: 0px 13px 20px rgba(135, 135, 135, 0.25);
+}
+
+.flickity-viewport {
+  height: 22em !important;
 }
 
 /**
