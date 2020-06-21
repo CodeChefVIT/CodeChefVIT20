@@ -30,7 +30,8 @@ body {
   font-family: Poppins;
   margin: 0;
   background-color: #F4F4F4; 
-  overflow-x: hidden;}
+  overflow-x: hidden;
+}
 
  
 /*  
@@ -148,11 +149,15 @@ h6 {
 
 .bg-light {
   background-color: transparent !important;
+
 }
-.navbar-light .navbar-nav .nav-link{
+.bg-light.scrolled-up{
+  background-color: #F4F4F4 !important;
+}
+ .navbar-light .navbar-nav .nav-link{
   color: #000;
-   /* padding-top: 15px; */
-  padding-right: 20px;
+    /* padding-top: 15px;  */
+   padding-right: 20px;
 }
 .navbar-light .navbar-nav .nav-link.indexnav{
     color: #fff;
@@ -162,8 +167,24 @@ nav>.navbar-brand>img {
   padding-left: 30px;
   height: 6rem;
   width: auto;
-}
 
+}  
+/* 
+navbar bar scroll up effect */
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+
+}
 
 
 .top-view {
@@ -171,7 +192,7 @@ nav>.navbar-brand>img {
   color: white;
 }
 .custom-toggler.navbar-toggler {
-     border-color: rgba(255,255,255,0.5); 
+     border-color: rgba(255,255,255,0.5);  
      
 }
 .custom-toggler .navbar-toggler-icon {
@@ -1176,7 +1197,8 @@ footer>.container>.container>.row{
 
 @media only screen and (max-width: 991px) {
   body {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+  padding-top: 0px !important;}
     
     .navbar-nav {
       justify-content: center;
@@ -1226,16 +1248,17 @@ footer>.container>.container>.row{
       }
       
       #webNav {
-        display: none;
+        display: none;;
       }
       #medNav {
         display: block !important;
       }
       .nav {
-        position: absolute;
+        position:fixed;
   width: 100%;
   top: 0;
   left: 0;
+  height:4.5em;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1243,7 +1266,7 @@ footer>.container>.container>.row{
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 1em;
+  padding-top: 0.5em;  
 }
 .nav .medLogo {
   padding-left: 1em;
@@ -1267,6 +1290,7 @@ footer>.container>.container>.row{
   -webkit-transition: background-color .15s linear;
   transition: background-color .15s linear;
 }
+
 .nav__toggle:hover, .hero .nav__toggle:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }

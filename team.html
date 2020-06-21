@@ -53,47 +53,50 @@
 
 		  <!-- Stylesheet for custom CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	  
+		<style>
+			.nav.scrolled-up{
+  background-color: rgb(0,0,0,0.8) !important;
+ 
+}
+		</style>
 
 	</head>
 	<body>
 		<!-- navbar begins here -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id="webNav">
-  			<a class="navbar-brand" href="/"><img src="assets/images/logos/cclogo.png" style="width:auto; height:3.5rem;bottom: 0" alt="logo"></a>
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  			</button>
-
-  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto mt-md-n1 float-right">
-						<li class="nav-item">
-							<a class="nav-link" href="/">Home</a>
-						</li>
-					
-						<li class="nav-item">
-									<a class="nav-link" href="events.html">Events</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="blog.html">Blog</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="webinars.html">Webinars</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="projects.html">Projects</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link active" href="team.html">Team</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="sponsors.html">Sponsors</a>
-							</li>
-							</ul>
-  			</div>
-		</nav>
+		<nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light" id="webNav">
+			<a class="navbar-brand" href="/"><img src="assets/images/logos/cclogo.png" alt="logo" style="width:auto; height:3.5rem;bottom: 0"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+				<ul class="navbar-nav ml-auto mt-md-n1   float-right">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="events.html">Events</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="webinars.html">Webinars</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link active" href="projects.html">Projects</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="team.html">Team</a>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="sponsors.html">Sponsors</a>
+					</li>
+					</ul>
+			</div> <!-- navbar-collapse.// -->
+		  </nav>
 		<!-- navbar ends here -->
 
-		<nav id="medNav" class="nav" role="navigation">
+		<nav id="medNav" class="nav smart-scroll" role="navigation">
 
 			<a href="/index" class="medLogo"><img src="assets/images/logos/ccwhite.png" alt="CodeChef-VIT"></a>
 		
@@ -485,7 +488,7 @@
  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity= "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-        
+        <script type="text/javascript" src="assets/js/nav.js"></script>
         <script type="text/javascript">
         	toastr.options = {
   "debug": false,
