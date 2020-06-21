@@ -11,6 +11,7 @@ body{
 
 #medNav {
   display: none;
+  z-index: 100;
 }
 .bg-light{
   background-color: transparent!important;

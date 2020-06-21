@@ -405,6 +405,7 @@ navbar bar scroll up effect */
 
 #medNav {
   display: none;
+  z-index: 100;
 }
 
 /**
