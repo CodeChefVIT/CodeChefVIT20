@@ -204,10 +204,7 @@ body {
   padding: 2em;
 }
 
-.errorTop img {
-  height: 5em;
-  width: auto;
-}
+
 
 .errorText {
   position: absolute;
@@ -218,27 +215,15 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.errorText h1 {
-  font-family: PoppinsBlack;
-  font-size: 15em;
-  margin: 0;
-  padding: 0;
-  line-height: 1em;
-}
-
-.errorText h3 {
-  font-family: PoppinsBold;
-  font-size: 6.5em;
-  margin: 0;
-  padding: 0;
-}
-
 .errorText h4 {
-  font-family: PoppinsSemiBold;
-  font-size: 3em;
+  font-family: PoppinsBold;
+  font-size: 5.5em;
   margin: 0;
   padding: 0;
+ 
 }
+
+
 
 .errorText h4 a {
   text-transform: uppercase;
@@ -1870,7 +1855,7 @@ footer>.container>.container>.row{
     font-size: 1em;
   }
   .about .container .domains .domain p {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
   }
 
@@ -1919,10 +1904,7 @@ footer>.container>.container>.row{
     .about .container .domains .domain h3 {
       font-size: 1em;
     }
-    .about .container .domains .domain p {
-      font-size: 1em;
-      text-align: center;
-    }
+
      iframe{
     width: 70%;
     height: 40%!important;
