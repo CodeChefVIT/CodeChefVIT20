@@ -9,15 +9,17 @@ body{
 
 /*css for navbar*/
 
-.bg-light{
-  background-color: transparent!important;
-}
 #medNav {
   display: none;
 }
-.h2{
-
+.bg-light{
+  background-color: transparent!important;
 }
+.bg-light.scrolled-up{
+  background-color: #F4F4F4 !important;
+}
+
+
 .navbar-light .navbar-nav .nav-link{
   color: #000000;
 
@@ -27,6 +29,23 @@ nav>.navbar-brand>img{
   padding-left: 30px;
   height: 6rem;
   width: auto;
+}
+
+/* 
+navbar bar scroll up effect */
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+
 }
 
 /*css for header*/
