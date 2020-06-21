@@ -566,11 +566,10 @@ nav>.navbar-brand>img {
     .projects .container .showcase {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(var(--project-min-width), 1fr));
-      grid-gap: 1em; 
-      padding: 2em}
+      grid-gap: 1em;}
       .projects .container .showcase .project {
         position: relative;
-        max-width: 21em;
+        max-width: 22.5em;
         width: 100%;
         height: 22.5em;
         background-color: #c4c4c4;
@@ -1160,7 +1159,7 @@ footer>.container>.container>.row{
   }
 
   .projects .container .showcase {
-    padding: 0 8em;
+    padding: 0 6em;
   }
   
   .projects .container .showcase .project:nth-child(odd) {
@@ -1443,7 +1442,7 @@ footer>.container>.container>.row{
 }
 
 .projects .container .showcase {
-  padding: 0 2em;
+  padding: 0;
 }
 
 .banner .left {
@@ -1606,7 +1605,7 @@ footer>.container>.container>.row{
         margin-bottom: 1em !important; }
 
       .projects .container {
-        padding: 2em; } }
+        padding: 1em; } }
 
 @media only screen and (max-width: 350px) {
   :root {
