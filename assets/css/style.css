@@ -275,6 +275,7 @@ navbar bar scroll up effect */
   right: 0;
   left: 0;
   z-index: 1030;
+ 
 }
 .scrolled-down{
    transform:translateY(-100%); transition: all 0.3s ease-in-out;
@@ -304,7 +305,8 @@ navbar bar scroll up effect */
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; }
+  overflow-y: hidden;
+}
   .hero #intro {
     position: absolute;
     min-height: 100%;
