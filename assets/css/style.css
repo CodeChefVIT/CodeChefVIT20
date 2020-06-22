@@ -1579,33 +1579,7 @@ footer>.container>.container>.row {
 
   .nav__item {
     opacity: 0;
-    -webkit-transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
-    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
-  }
-
-  .nav__item:nth-child(1) {
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
-  }
-
-  .nav__item:nth-child(2) {
-    -webkit-transform: translateY(-80px);
-    transform: translateY(-80px);
-  }
-
-  .nav__item:nth-child(3) {
-    -webkit-transform: translateY(-120px);
-    transform: translateY(-120px);
-  }
-
-  .nav__item:nth-child(4) {
-    -webkit-transform: translateY(-160px);
-    transform: translateY(-160px);
-  }
-
-  .nav__item:nth-child(5) {
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
+    transition: opacity 0.2s 2s ease;
   }
 
   .nav__link {
@@ -1735,10 +1709,14 @@ footer>.container>.container>.row {
 
   .nav:target .nav__item,
   .nav--open .nav__item {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    animation: delay .4s .3s forwards;
   }
+
+  @keyframes delay{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
 
   .about .container p {
     font-size: 1.2em;
