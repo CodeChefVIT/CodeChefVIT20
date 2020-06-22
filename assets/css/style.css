@@ -1675,6 +1675,10 @@ footer>.container>.container>.row{
     --dom-mob-width: 13rem;
     --sponsors-min-width: 15rem;
   }
+  .hero .text h1 span{
+    display:block;
+    
+  }
 
   /**
   *   404 page css
@@ -1767,7 +1771,9 @@ footer>.container>.container>.row{
     font-size: 2em !important;
     margin-top: 1em !important;
   }
-
+  .hero .text h1 span{
+    display:block;
+  }
   .projects .tabs {
     flex-direction: column; }
     .projects .tabs .tab {

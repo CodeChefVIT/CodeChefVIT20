@@ -83,7 +83,7 @@
           <iframe id="youtube-video" src="https://www.youtube.com/embed/wYDTHujmThc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
-          <css-doodle  id = "webDoodle">
+           <css-doodle  id = "webDoodle">
             :doodle {
               @grid: 18 / 100vmax;
               background: #0a0c27;
@@ -137,8 +137,8 @@
               '0 0, 100% 100%, 0 100%',
               '100% 0, 100% 100%, 0 100%'
             ));
-          </css-doodle>
-        
+          </css-doodle> 
+         
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style = "position: absolute; top:0; left:0;
         width: 100%">
           <a class="navbar-brand" href="/"><img src="assets/images/logos/ccwhite.png" style="width:auto; height:3.5rem;bottom: 0"></a>
@@ -212,12 +212,15 @@
           
         </nav>
 
-        <div class="text">
-					<h1 id="text">We are <span>Coders</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
+        
+        <div class="text" style="z-index: 9;">
+          <h1> 
+            We are &nbsp; <span class="txt-type" data-wait="3000" data-words='["Learners","Coders","Family"]'></span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
           <a href="#" onclick="on()"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
+          </h1>
+          
         </div>
-
       </div>
 
 		</div>
@@ -670,6 +673,7 @@
     <!--First jQuery, then Popper.js, then Bootstrap JS -->
      
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/typing.js"></script>
     <script type="text/javascript" src="assets/js/preloader.js"></script>
     <!-- nav bar scroll -->
     <script>
