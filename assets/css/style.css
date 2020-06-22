@@ -265,7 +265,7 @@ h6 {
 
 }
 .bg-light.scrolled-up{
-  background-color: #f4f4f4 !important;
+  background-color: #F4F4F4 !important;
 }
  .navbar-light .navbar-nav .nav-link{
   color: #000;
@@ -751,7 +751,8 @@ navbar bar scroll up effect */
          .projects .container .showcase .project:hover:after {
           top: 0; } 
         .projects .container .showcase .project:hover .text {
-          display: block;          
+          display: block;
+
          }
 
 /**
@@ -1345,6 +1346,9 @@ footer>.container>.container>.row{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       height: 100vh;
     }
+    .context{
+      text-align: center;
+    }
     
     
     .hero {
@@ -1854,7 +1858,7 @@ footer>.container>.container>.row{
     font-size: 1em;
   }
   .about .container .domains .domain p {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
   }
 
