@@ -8,9 +8,11 @@
                 if ($('#loader').length > 0) {
                     $('#loader').removeClass('show');
                 }
-            }, 2500);
+            }, 2000);
         };
         loader();
     });
 
 })(jQuery);
+
+console.clear();

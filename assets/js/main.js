@@ -7,12 +7,11 @@ const menu = document.querySelector('#menu');
 const menuToggle = document.querySelector('.nav__toggle');
 let isMenuOpen = false;
 
-
 // TOGGLE MENU ACTIVE STATE
 menuToggle.addEventListener('click', e => {
   e.preventDefault();
   isMenuOpen = !isMenuOpen;
-  
+
   // toggle a11y attributes and active class
   menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
   menu.hidden = !isMenuOpen;
@@ -25,7 +24,7 @@ nav.addEventListener('keydown', e => {
   if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
     return;
   }
-  
+
   // listen for tab press and move focus
   // if we're on either end of the navigation
   const menuLinks = menu.querySelectorAll('.nav__item');
@@ -43,30 +42,7 @@ nav.addEventListener('keydown', e => {
   }
 });
 
-
-//Function to display Countdown in banner
-
-function countDown() {
-  let now = new Date().getTime();
-  let gap = countDate - now;
-
-  let second = 1000;
-  let min = second * 60;
-  let hour = min * 60;
-  let day = hour * 24;
-  let week = day * 7;
-
-  let w = Math.floor(gap / (week));
-  let d = Math.floor(gap % (week) / (day));
-  let h = Math.floor(gap % (day) / (hour));
-
-  document.getElementById('wk').innerText = w;
-  document.getElementById('day').innerText = d;
-  document.getElementById('hr').innerText = h;
-}
-
 // function for the "latest projects"  section
-
 function tabSwitch(id) {
 
   let all = document.getElementsByClassName('project');
@@ -76,7 +52,7 @@ function tabSwitch(id) {
   let tabs = document.getElementsByClassName('tab');
 
   for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", function() {
+    tabs[i].addEventListener("click", function () {
       let current = document.getElementsByClassName("activep");
       current[0].className = current[0].className.replace(" activep", "");
       this.className += " activep";
@@ -84,29 +60,28 @@ function tabSwitch(id) {
     });
   }
 
-  for(let i = 0; i<all.length; i++){
+  for (let i = 0; i < all.length; i++) {
     all[i].style.display = "block";
   }
 
-  for(let i = 0; i<elems.length; i++){
+  for (let i = 0; i < elems.length; i++) {
     elems[i].style.display = "none";
 
   }
 
-}  //function end
-
-
+}
 
 function on() {
-  document.getElementById("youtube-video").setAttribute("src","https://www.youtube.com/embed/wYDTHujmThc");
+  document.getElementById("youtube-video").setAttribute("src", "https://www.youtube.com/embed/wYDTHujmThc");
   document.getElementById("overlay").style.display = "block";
 }
 
 function off() {
-  document.getElementById("youtube-video").setAttribute("src","");
+  document.getElementById("youtube-video").setAttribute("src", "");
   document.getElementById("overlay").style.display = "none";
 }
 
-setInterval(() => countDown(), 1000);
-
 tabSwitch('none');
+
+
+console.clear();
