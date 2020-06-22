@@ -64,7 +64,6 @@
     <link rel="icon" type="image/png" href="./assets/images/title.png" />
     <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
 
-
     <title>Home || CodeChef-VIT</title>
   </head>
   <body>
@@ -83,7 +82,7 @@
           <iframe id="youtube-video" src="https://www.youtube.com/embed/wYDTHujmThc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
-          <css-doodle  id = "webDoodle">
+           <css-doodle  id = "webDoodle">
             :doodle {
               @grid: 18 / 100vmax;
               background: #0a0c27;
@@ -137,9 +136,9 @@
               '0 0, 100% 100%, 0 100%',
               '100% 0, 100% 100%, 0 100%'
             ));
-          </css-doodle>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style = "position: absolute; top:0; left:0;
+          </css-doodle> 
+         
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom " id = "webNav" style = "position:absolute; top:0; left:0;
         width: 100%">
           <a class="navbar-brand" href="/"><img src="assets/images/logos/ccwhite.png" style="width:auto; height:3.5rem;bottom: 0"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);  background-color: #F4F4F4;">
@@ -212,12 +211,15 @@
           
         </nav>
 
-        <div class="text">
-					<h1 id="text">We are <span>Coders</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
+        
+        <div class="text" style="z-index: 9;">
+          <h1> 
+            We are <span class="txt-type" data-wait="3000" data-words='["Coders","Learners","Developers","Techies","Family"]'></span></h1>
+           
           <a href="#" onclick="on()"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
+          </h1>
+          
         </div>
-
       </div>
 
 		</div>
@@ -238,7 +240,7 @@
              <div class="domain">
                <i class="far fa-file-code"></i>
                <h3>Technical</h3>
-               <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+               <p>Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
              </div>
     
              <div class="domain">
@@ -259,7 +261,7 @@
               <div class="domain" id = "d4" >
                 <i class="far fa-newspaper"></i>
                 <h3>Editorial</h3>
-                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+                <p>From blogging to project documentation, from technical and web content writing to event descriptions, our editorial team does it all to perfection.</p>
               </div>
       
               <div class="domain" id = "d5" >
@@ -276,7 +278,7 @@
             <div class="domain">
               <i class="far fa-file-code"></i>
               <h3>Technical</h3>
-              <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+              <p>Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
             </div>
   
             <div class="domain">
@@ -294,7 +296,7 @@
             <div class="domain" id = "d4" >
               <i class="far fa-newspaper"></i>
               <h3>Editorial</h3>
-              <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+              <p>From blogging to project documentation, from technical and web content writing to event descriptions, our editorial team does it all to perfection.</p>
             </div>
     
             <div class="domain" id = "d5" >
@@ -311,7 +313,7 @@
              <div class="domain gallery-cell">
                <i class="far fa-file-code"></i>
                <h3>Technical</h3>
-               <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+               <p>Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
              </div>
     
              <div class="domain gallery-cell">
@@ -329,7 +331,7 @@
               <div class="domain gallery-cell" id = "d4" >
                 <i class="far fa-newspaper"></i>
                 <h3>Editorial</h3>
-                <p>From basics of Web Development to advanced Machine Learning, we do it all</p>
+                <p>From blogging to project documentation, from technical and web content writing to event descriptions, our editorial team does it all to perfection.</p>
               </div>
       
               <div class="domain gallery-cell" id = "d5" >
@@ -647,7 +649,7 @@
         </div>
     </footer>
   
-    
+  
 
   <!-- footer ends here -->
 
@@ -670,25 +672,9 @@
     <!--First jQuery, then Popper.js, then Bootstrap JS -->
      
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/typing.js"></script>
     <script type="text/javascript" src="assets/js/preloader.js"></script>
-    <!-- nav bar scroll -->
-    <script>
-     
-      // detect scroll top or down
-      if ($('.smart-scroll').length > 0) { // check if element exists
-          var last_scroll_top = 0;
-          $(window).on('scroll', function() {
-              scroll_top = $(this).scrollTop();
-              if(scroll_top < last_scroll_top) {
-                  $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-              }
-              else {
-                  $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-              }
-              last_scroll_top = scroll_top;
-          });
-      }
-         </script>
+
 
      <!-- Scripts for toastr notification -->
 

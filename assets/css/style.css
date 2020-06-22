@@ -267,22 +267,7 @@ nav>.navbar-brand>img {
   width: auto;
 
 }  
-/* 
-navbar bar scroll up effect */
-.smart-scroll{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.3s ease-in-out;
-}
-.scrolled-up{
-   transform:translateY(0); transition: all 0.3s ease-in-out;
 
-}
 
 
 .top-view {
@@ -304,7 +289,8 @@ navbar bar scroll up effect */
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
   .hero #intro {
     position: absolute;
     min-height: 100%;
@@ -373,6 +359,7 @@ navbar bar scroll up effect */
   .hero .text {
     padding: 4em;
     position: absolute;
+    left: 0;
     z-index: 2;
     animation: slideTop 1.2s forwards;}
     .hero .text h1 {
@@ -1681,6 +1668,10 @@ footer>.container>.container>.row{
     --dom-mob-width: 13rem;
     --sponsors-min-width: 15rem;
   }
+  .hero .text h1 span{
+    display:block;
+    
+  }
 
   /**
   *   404 page css
@@ -1773,7 +1764,9 @@ footer>.container>.container>.row{
     font-size: 2em !important;
     margin-top: 1em !important;
   }
-
+  .hero .text h1 span{
+    display:block;
+  }
   .projects .tabs {
     flex-direction: column; }
     .projects .tabs .tab {
@@ -1781,8 +1774,9 @@ footer>.container>.container>.row{
       padding: .8em 0 !important; }
   .projects .showcase .project .text {
     padding: 1.2em !important; } 
+  
     .card-body>.text{
-<<<<<<< HEAD
+
     font-size: 0.8em;
     width: 200px;
     margin-right: 40px;

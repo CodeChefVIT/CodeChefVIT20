@@ -146,22 +146,7 @@ nav>.navbar-brand>img{
   width: auto;
 }
 
-/* 
-navbar bar scroll up effect */
-.smart-scroll{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.3s ease-in-out;
-}
-.scrolled-up{
-   transform:translateY(0); transition: all 0.3s ease-in-out;
 
-}
 
 /*css for header*/
 .bgimg{ 
@@ -415,7 +400,7 @@ iframe{
   display: block !important;
 }
 .nav {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
