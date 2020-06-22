@@ -293,7 +293,7 @@ nav>.navbar-brand>img {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .hero #intro {
@@ -1815,7 +1815,10 @@ footer>.container>.container>.row {
   .container {
     padding: 2em;
   }
+  .hero .text h1 span {
+    display: block;
 
+  }
   footer>.container>.container {
     padding-bottom: 0;
     margin-bottom: 0;
