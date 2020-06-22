@@ -1839,7 +1839,7 @@ footer>.container>.container>.row{
     font-size: 1em;
   }
   .about .container .domains .domain p {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
   }
 
@@ -1892,10 +1892,7 @@ footer>.container>.container>.row{
     .about .container .domains .domain h3 {
       font-size: 1em;
     }
-    .about .container .domains .domain p {
-      font-size: 1em;
-      text-align: center;
-    }
+
      iframe{
     width: 70%;
     height: 40%!important;
