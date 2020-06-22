@@ -152,7 +152,7 @@ h6 {
 
 }
 .bg-light.scrolled-up{
-  background-color: #F4F4F4 !important;
+  background-color: #f4f4f4 !important;
 }
  .navbar-light .navbar-nav .nav-link{
   color: #000;
@@ -637,8 +637,7 @@ navbar bar scroll up effect */
          .projects .container .showcase .project:hover:after {
           top: 0; } 
         .projects .container .showcase .project:hover .text {
-          display: block;
-          
+          display: block;          
          }
 
 /**
