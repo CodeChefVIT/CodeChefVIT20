@@ -64,24 +64,35 @@
     <link rel="icon" type="image/png" href="./assets/images/title.png" />
     <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
 <style>
-  #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  #scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
 }
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:rgb(255,255,255,0.3);
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
 }
 </style>
 
@@ -261,7 +272,7 @@
              <div class="domain">
                <i class="far fa-file-code"></i>
                <h3>Technical</h3>
-               <p>Be it web development, machine learning, image processing, blockchain ,DevOps, cyber security, etc. Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
+               <p>Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
              </div>
     
              <div class="domain">
@@ -299,7 +310,7 @@
             <div class="domain">
               <i class="far fa-file-code"></i>
               <h3>Technical</h3>
-              <p>Be it web development, machine learning, image processing, blockchain ,DevOps, cyber security, etc. Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
+              <p>Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
             </div>
   
             <div class="domain">
@@ -334,7 +345,7 @@
              <div class="domain gallery-cell">
                <i class="far fa-file-code"></i>
                <h3>Technical</h3>
-               <p>Be it web development, machine learning, image processing, blockchain ,DevOps, cyber security, etc. Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
+               <p>Here at CodeChef-VIT we love to make stuff that makes life easier and take great pride in our tech team that converts these mere ideas into working and usable implementations.</p>
              </div>
     
              <div class="domain gallery-cell">
@@ -602,7 +613,7 @@
 <!--"Latest Projects" ends here-->
 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 
 <!-- footer -->
  <footer>
@@ -670,7 +681,7 @@
         </div>
     </footer>
   
-    
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
 
   <!-- footer ends here -->
 
@@ -697,24 +708,19 @@
     <script type="text/javascript" src="assets/js/preloader.js"></script>
 
 <script>
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
 </script>
 
      <!-- Scripts for toastr notification -->
