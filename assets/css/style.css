@@ -250,7 +250,7 @@ h6 {
 
 }
 .bg-light.scrolled-up{
-  background-color: #f4f4f4 !important;
+  background-color: #F4F4F4 !important;
 }
  .navbar-light .navbar-nav .nav-link{
   color: #000;
@@ -539,6 +539,10 @@ nav>.navbar-brand>img {
 .flickity-viewport {
   height: 22em !important;
 }
+.flickity-button.flickity-prev-next-button.next, .flickity-button.flickity-prev-next-button.previous {
+    background: hsla(0,0%,100%,.3);
+    opacity: 0.7;
+}
 
 /**
 * "Banner" starts here
@@ -730,7 +734,8 @@ nav>.navbar-brand>img {
          .projects .container .showcase .project:hover:after {
           top: 0; } 
         .projects .container .showcase .project:hover .text {
-          display: block;          
+          display: block;
+
          }
 
 /**
@@ -1324,6 +1329,9 @@ footer>.container>.container>.row{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       height: 100vh;
     }
+    .context{
+      text-align: center;
+    }
     
     
     .hero {
@@ -1766,16 +1774,90 @@ footer>.container>.container>.row{
   .projects .showcase .project .text {
     padding: 1.2em !important; } 
     .card-body>.text{
-      font-size: 0.8em;
-      width: 200px;
-      margin-right: 40px;
-    }
-    
-    .context>p{
-      font-size: 0.9em;
-      padding: 10px;
-    }
-    
+<<<<<<< HEAD
+    font-size: 0.8em;
+    width: 200px;
+    margin-right: 40px;
+  }
+
+  .context>p{
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  }
+
+
+@media(max-width: 768px) {
+
+  /**
+  *   404 page css
+  */
+  #circle {
+    left: -10em;
+  }
+  div.errorText h1 {
+    font-size: 12em;
+  }
+  div.errorText h3 {
+    font-size: 5em;
+    line-height: 1.2em;
+  }
+  div.errorText h4 {
+    font-size: 2em;
+  }
+
+  .top-view .hero {
+    background-color: #234982;
+  }
+   
+  .top-view .hero css-doodle {
+    display: none;
+  }
+
+  .context {
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 1.4em;
+    float: none;
+  }
+
+  .context>h1{
+    font-size: 1.8em;
+  }
+
+  .about {
+    margin: 3em 0;
+    overflow: visible;
+  }
+  .about .container .domains#web, .about .container .domains#med {
+    display: none;
+  }
+  .about .container #sm {
+    display: block;
+  }
+  .about .container p {
+    font-size: 1.1em;
+    text-align: justify;
+  }
+  .about .container .domains {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2em;
+  }
+  .about .container .domains .domain {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .about .container .domains .domain h3 {
+    font-size: 1em;
+  }
+  .about .container .domains .domain p {
+    font-size: 0.8em;
+    text-align: center;
   }
   
   
