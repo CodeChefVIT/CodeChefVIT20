@@ -553,6 +553,10 @@ navbar bar scroll up effect */
 .flickity-viewport {
   height: 22em !important;
 }
+.flickity-button.flickity-prev-next-button.next, .flickity-button.flickity-prev-next-button.previous {
+    background: hsla(0,0%,100%,.3);
+    opacity: 0.7;
+}
 
 /**
 * "Banner" starts here
