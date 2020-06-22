@@ -64,18 +64,6 @@
     <link rel="icon" type="image/png" href="./assets/images/title.png" />
     <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
 
-    <style>
-      .bg-light.scrolled-up{
-  background-color:rgb(0,0,0,0.8) !important;
-}
-
-.nav.scrolled-up{
-  background-color: rgb(0,0,0,0.8) !important;
- 
-}
-
-    </style>
-
 
     <title>Home || CodeChef-VIT</title>
   </head>
@@ -151,7 +139,8 @@
             ));
           </css-doodle>
         
-        <nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style = "position: absolute; top:0; left:0;
+        width: 100%">
           <a class="navbar-brand" href="/"><img src="assets/images/logos/ccwhite.png" style="width:auto; height:3.5rem;bottom: 0"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);  background-color: #F4F4F4;">
             <span class="navbar-toggler-icon" ></span>
@@ -188,7 +177,7 @@
        
         <!-- Navbar for small devices-->
 
-        <nav id="medNav" class="nav smart-scroll" role="navigation">
+        <nav id="medNav" class="nav" role="navigation">
 
           <a href="/" class="medLogo"><img src="assets/images/logos/ccwhite.png" alt="CodeChef-VIT"></a>
       
@@ -224,7 +213,7 @@
         </nav>
 
         <div class="text">
-          <h1>We are <span>Coders</span></h1>
+					<h1 id="text">We are <span>Coders</span></h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero, sodales ultrices quis et rhoncus scelerisque nibh mi molestie. </p>
           <a href="#" onclick="on()"><img src="assets/images/logos/play.png" alt=""><span>Play Video</span></a>
         </div>
@@ -680,7 +669,6 @@
 
     <!--First jQuery, then Popper.js, then Bootstrap JS -->
      
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/preloader.js"></script>
     <!-- nav bar scroll -->
