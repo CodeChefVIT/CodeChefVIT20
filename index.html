@@ -63,7 +63,27 @@
 
     <link rel="icon" type="image/png" href="./assets/images/title.png" />
     <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
+<style>
+  #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
 
     <title>Home || CodeChef-VIT</title>
   </head>
@@ -139,7 +159,7 @@
             ));
           </css-doodle> 
          
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom" id = "webNav" style = "position: absolute; top:0; left:0;
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom " id = "webNav" style = "position:absolute; top:0; left:0;
         width: 100%">
           <a class="navbar-brand" href="/"><img src="assets/images/logos/ccwhite.png" style="width:auto; height:3.5rem;bottom: 0"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255,255,255,0.5);  background-color: #F4F4F4;">
@@ -582,7 +602,7 @@
 <!--"Latest Projects" ends here-->
 
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <!-- footer -->
  <footer>
@@ -675,24 +695,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/typing.js"></script>
     <script type="text/javascript" src="assets/js/preloader.js"></script>
-    <!-- nav bar scroll -->
-    <script>
-     
-      // detect scroll top or down
-      if ($('.smart-scroll').length > 0) { // check if element exists
-          var last_scroll_top = 0;
-          $(window).on('scroll', function() {
-              scroll_top = $(this).scrollTop();
-              if(scroll_top < last_scroll_top) {
-                  $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-              }
-              else {
-                  $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-              }
-              last_scroll_top = scroll_top;
-          });
-      }
-         </script>
+
+<script>
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
      <!-- Scripts for toastr notification -->
 

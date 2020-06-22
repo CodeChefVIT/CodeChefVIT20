@@ -359,6 +359,7 @@ nav>.navbar-brand>img {
   .hero .text {
     padding: 4em;
     position: absolute;
+    left: 0;
     z-index: 2;
     animation: slideTop 1.2s forwards;}
     .hero .text h1 {
@@ -1773,8 +1774,9 @@ footer>.container>.container>.row{
       padding: .8em 0 !important; }
   .projects .showcase .project .text {
     padding: 1.2em !important; } 
+  
     .card-body>.text{
-<<<<<<< HEAD
+
     font-size: 0.8em;
     width: 200px;
     margin-right: 40px;

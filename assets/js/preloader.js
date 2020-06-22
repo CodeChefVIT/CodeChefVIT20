@@ -8,7 +8,7 @@
                 if ($('#loader').length > 0) {
                     $('#loader').removeClass('show');
                 }
-            }, 2000);
+            }, 2500);
         };
         loader();
     });
