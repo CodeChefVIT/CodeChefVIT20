@@ -390,6 +390,10 @@ iframe{
     height: 100vh;
   }
 
+  .context{
+    text-align: center;
+  }
+
 
   .hero {
     min-height: 100vh;
