@@ -460,10 +460,15 @@ nav>.navbar-brand>img {
 
 .about .container h2 {
   font-weight: 600;
+  margin-top: 1.5em;
 }
 
 .about .container .gallery {
   height: 22em !important;
+}
+
+.flickity-button {
+  display: none;
 }
 
 .about .container .gallery-cell {
@@ -2030,6 +2035,7 @@ footer>.container>.container>.row {
 
   .about .container #sm {
     display: block;
+    margin-top: 1em;
   }
 
   .about .container p {
