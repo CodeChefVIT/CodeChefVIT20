@@ -1822,7 +1822,16 @@ footer>.container>.container>.row {
   }
   .hero .text h1 span {
     display: block;
-
+  }
+  .hero .text h1 {
+    white-space: pre;
+  }
+  .hero .text h1 span.txt::before {
+    content: " ";
+    white-space: pre;
+  }
+  .hero .text a img{
+    margin-left: 10px;
   }
   footer>.container>.container {
     padding-bottom: 0;
