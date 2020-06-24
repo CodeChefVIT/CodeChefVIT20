@@ -91,7 +91,7 @@
         <iframe id="youtube-video" src="https://www.youtube.com/embed/wYDTHujmThc" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-
+ 
       <css-doodle id="webDoodle">
         :doodle {
         @grid: 18 / 100vmax;
@@ -109,10 +109,10 @@
         ));
         :doodle(:hover) { --s: 1 }
 
-        transition: .5s cubic-bezier(.175, .885, .32, 1.275);
+        transition: .1s cubic-bezier(.175, .885, .32, 1.275);
         transition-delay: @rand(500ms);
         transform: translateY(calc(var(--s) * 100%));
-      </css-doodle>
+      </css-doodle> 
 
       <css-doodle id="medDoodle">
         :doodle {
@@ -306,7 +306,7 @@
       </div>
 
       <div class="domains gallery js-flickity" id="sm"
-        data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+        data-flickity-options='{ "cellAlign": "left", "contain": true}'>
         <div class="domain gallery-cell">
           <i class="far fa-file-code"></i>
           <h3>Technical</h3>
