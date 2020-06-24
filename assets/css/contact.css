@@ -1,0 +1,212 @@
+@font-face {
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+    font-family: Poppins;
+}
+  
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --white:#2c2c2c;
+  --red: #e31b23;
+  --bodyColor: #f4f4f4;
+  --borderFormEls: hsl(0, 0%, 10%);
+  --bgFormEls: #fff;
+  --bgFormElsFocus: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+   font-family: Poppins;
+  font-size: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button
+{
+  cursor: pointer;
+}
+
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none;
+}
+
+/*Remove dotted outline from selected option on Firefox*/
+/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
+/*We use !important to override the color set for the select on line 99*/
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  
+  background: var(--bodyColor);
+  color: var(--white);
+  
+}
+
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.my-form button {
+  width: 50%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  font-weight: bold;
+  margin-top: 70px;
+  background-color: #293243;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+  border: 1px solid var(--borderFormEls);
+  border-radius: 10px;
+ /* transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+  transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);*/
+}
+
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+  transform: translate(-50%, -50%);
+}
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+  transform: translateX(110%);
+}
+
+.my-form button:hover{
+  background-color: #2980B9;
+   -webkit-transition: background-color 500ms ease-in-out;
+    -ms-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
+
+}
+
+.form>div{
+  position: relative;
+  height: 90px;
+  width: 50%;
+  overflow-x: hidden;
+  margin-top: 30px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form>div>input{
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  color: #2980B9;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.form>div>label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.form>div>label::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2980B9;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.form-label{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + label span,
+.form input:valid + label span{
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2980B9;
+}
+
+.form input:focus + label::after,
+.form input:valid + label::after{
+  transform: translateX(0%);
+}
+
+.center{
+  border: solid black 1px;
+  border-radius: 30px;
+  height: 95%; width: 50%; 
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 80px; 
+  background-color: #fff; 
+  box-shadow: 1px 1px 1000px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+@media(max-width: 991px){
+  .center{
+    width: 80%;
+  }
+}
+
+@media(max-width: 578px){
+  .center{
+    width: 95%;
+  }
+  .form div{
+    width: 100%; 
+  }
+  .form div label{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 400px){
+  .my-form button{
+    width: 135px;
+  }
+}
