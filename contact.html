@@ -61,6 +61,10 @@
   <link rel="icon" type="image/png" href="./assets/images/title.png" />
   <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
   
 
 </head>
@@ -98,6 +102,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/sponsors">Sponsors</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact us</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -114,6 +121,7 @@
       <li class="nav__item"><a href="/projects" class="nav__link">Projects</a></li>
       <li class="nav__item"><a href="/team" class="nav__link">Team</a></li>
       <li class="nav__item"><a href="/sponsors" class="nav__link">Sponsors</a></li>
+      <li class="nav__item"><a href="/contact" class="nav__link">Contact Us</a></li>
     </ul>
     <!-- MENU TOGGLE BUTTON -->
     <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
@@ -143,58 +151,49 @@
           latest upcoming technologies and frameworks in diverse domains to the student community.</p>
       </div>
     </div>
+      <main class="wrap">
+        <div class="container px-5 pt-0 mb-5">
+            <div class=" center mt-5" style="margin-bottom: 50px;">
+                <h4 class="heading" style="color: #293243;">Get in Touch</h4>
+            </div>
+            <form class="col s12">
+                <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">person</i>
+                        <input id="name" type="text" class="black-text" required>
+                        <label for="name" class="black-text">Name</label>
+                    </div>
+                </div>
+                <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">email</i>
+                        <input id="email" type="email" class="black-text" required="">
+                        <label for="email" class="black-text">Email</label>
+                    </div>
+                </div>
+                <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">phone</i>
+                        <input id="phone" type="text" class="black-text" required>
+                        <label for="phone" class="black-text">Number</label>
+                    </div>
+                </div>
+                 <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">edit</i>
+                        <input id="domain" type="text" class="black-text" required>
+                        <label for="domain" class="black-text">What would you like to learn next?</label>
+                    </div>
+                </div>
+                <center>
+                <button class="btn waves-effect waves-effect btn-CC-black z-depth-0" type="button" id="signup"  onclick="contact()">Submit</button> 
     
-
-<div class="center">
-    <form class="my-form">
-        <div class="container" id="update">
-            <br>
-            <br>
-            <br>
-          <h1 style="text-align: center;"><strong>Get in touch!</strong></h1>
-          <ul>
-            <div class="container">
-      <div class="form">
-        <div class="name-input">
-           <input type="text" name="name" required autocomplete="off">
-           <label for="name" class="name-label">
-             <span class="form-label"><i class="fas fa-user"></i> Name</span>
-           </label>
+              
+              </center>
+            </form>
         </div>
-        <div class="email-input">
-           <input type="email" name="email" required autocomplete="off">
-           <label for="email" class="email-label">
-             <span class="form-label"><i class="fas fa-envelope"></i> Email</span>
-           </label>
-        </div>
-        <div class="name-input">
-           <input type="text" name="number" required autocomplete="off">
-           <label for="number" class="number-label">
-             <span class="form-label"><i class="fas fa-phone-alt"></i> Number</span>
-           </label>
-        </div>
-        <div class="name-input">
-           <input type="text-area" name="msg" required autocomplete="off">
-           <label for="msg" class="msg-label">
-             <span class="form-label">What would you like to learn next?</span>
-           </label>
-        </div>
-        
-      </div>
-   
-            <li>
-                <button class="btn-grid" type="submit">
-                  <span class="back">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#fff;"><path d="M19 9.062s-5.188-.333-7 1.938c2-4.896 7-5.938 7-5.938v-2l5 4-5 4.019v-2.019zm-18.974 14.938h23.947l-11.973-11.607-11.974 11.607zm1.673-14l10.291-7.488 3.053 2.218c.712-.459 1.391-.805 1.953-1.054l-5.006-3.637-11.99 8.725v12.476l7.352-7.127-5.653-4.113zm15.753 4.892l6.548 6.348v-11.612l-6.548 5.264z"/></svg>
-                  </span>
-                  <span class="front">SUBMIT</span>
-                </button><br><br><br>
-              </div>
-            </li>    
-          </ul>
-        </div>
-      </form>
-    </div>
+    </main>
+    <!-- </div> -->
 
 
 
@@ -291,6 +290,7 @@
 </body>
 
 <script type="text/javascript" src="assets/js/preloader.js"></script>
+<script type="text/javascript" src="assets/js/contact.js"></script>
 
 <!-- Scripts for toastr notification -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
@@ -311,16 +311,6 @@
   });
 </script>
 
-<script>
-    const checkbox = document.querySelector('.my-form input[type="checkbox"]');
-const btns = document.querySelectorAll(".my-form button");
 
-checkbox.addEventListener("change", function() {
-  const checked = this.checked;
-  for (const btn of btns) {
-    checked ? (btn.disabled = false) : (btn.disabled = true);
-  }
-});
-</script>
 
 </html>
