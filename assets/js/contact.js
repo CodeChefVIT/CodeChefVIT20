@@ -1,5 +1,5 @@
 
-window.onload = function register()
+function register()
 {
     var data={
         name:document.getElementById('name').value,
