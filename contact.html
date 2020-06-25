@@ -61,6 +61,10 @@
   <link rel="icon" type="image/png" href="./assets/images/title.png" />
   <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
   
 
 </head>
@@ -145,8 +149,8 @@
     </div>
     
 
-<div class="center">
-    <form class="my-form">
+<!-- <div class="center"> -->
+    <!-- <form class="my-form">
         <div class="container" id="update">
             <br>
             <br>
@@ -193,8 +197,64 @@
             </li>    
           </ul>
         </div>
-      </form>
-    </div>
+      </form> -->
+      <main class="wrap">
+        <div class="container px-5 pt-0 mb-5">
+            <div class=" center mt-5" style="margin-bottom: 50px;">
+                <h4 class="heading">Get in Touch</h4>
+            </div>
+            <form class="col s12">
+                <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">person</i>
+                        <input id="name" type="text" class="black-text" required>
+                        <label for="name" class="black-text">Name</label>
+                    </div>
+                </div>
+                <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">email</i>
+                        <input id="email" type="email" class="black-text" required="">
+                        <label for="email" class="black-text">Email</label>
+                    </div>
+                </div>
+                <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">phone</i>
+                        <input id="number" type="text" class="black-text" required>
+                        <label for="number" class="black-text">Number</label>
+                    </div>
+                </div>
+                 <div class="row center mt-n3">
+                    <div class="input-field center mx-auto">
+                        <i class="material-icons prefix black-text">edit</i>
+                        <input id="domain" type="text" class="black-text" required>
+                        <label for="domain" class="black-text">Domain</label>
+                    </div>
+                </div>
+               <!--  <div class="row center">
+                    <button class="btn waves-effect waves-light btn-CC-black z-depth-0" type="button" id="signup" onclick="register()">Register</button>
+                </div>
+                <div class="row center">
+                    <p class="heading"> - or - </p>
+                </div>
+                <div class="row center mt-n3">
+                    <a href="/signin.html"><button class="btn waves-effect btn-CC-black-inverse z-depth-0"
+                            type="button">Sign
+                            In</button></a>
+                </div> -->
+                <center>
+                   <button class="btn-grid" type="submit">
+                  <span class="back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#fff;"><path d="M19 9.062s-5.188-.333-7 1.938c2-4.896 7-5.938 7-5.938v-2l5 4-5 4.019v-2.019zm-18.974 14.938h23.947l-11.973-11.607-11.974 11.607zm1.673-14l10.291-7.488 3.053 2.218c.712-.459 1.391-.805 1.953-1.054l-5.006-3.637-11.99 8.725v12.476l7.352-7.127-5.653-4.113zm15.753 4.892l6.548 6.348v-11.612l-6.548 5.264z"/></svg>
+                  </span>
+                  <span class="front">SUBMIT</span>
+                </button><br><br><br>
+                </center>
+            </form>
+        </div>
+    </main>
+    <!-- </div> -->
 
 
 
@@ -321,6 +381,7 @@ checkbox.addEventListener("change", function() {
     checked ? (btn.disabled = false) : (btn.disabled = true);
   }
 });
+
 </script>
 
 </html>
