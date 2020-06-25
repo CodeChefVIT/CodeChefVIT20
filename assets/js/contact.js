@@ -1,5 +1,5 @@
 
-function register()
+window.onload = function register()
 {
     var data={
         name:document.getElementById('name').value,
@@ -8,8 +8,12 @@ function register()
         domain:document.getElementById('domain').value
     }
     var xh = new XMLHttpRequest();
+   
+
     xh.open("POST", "https://backendwebcc.herokuapp.com/contact", true)
     xh.setRequestHeader('Content-Type', 'application/json')
+    
+ 
     xh.send(JSON.stringify(data))
     xh.onload=function(){
         if(this.status==201)
