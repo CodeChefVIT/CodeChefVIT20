@@ -156,25 +156,25 @@
             <div class="container">
       <div class="form">
         <div class="name-input">
-           <input type="text" name="name" required autocomplete="off">
+           <input type="text" name="name" id="name" required autocomplete="off">
            <label for="name" class="name-label">
              <span class="form-label"><i class="fas fa-user"></i> Name</span>
            </label>
         </div>
         <div class="email-input">
-           <input type="email" name="email" required autocomplete="off">
+           <input type="email" name="email" id="email" required autocomplete="off">
            <label for="email" class="email-label">
              <span class="form-label"><i class="fas fa-envelope"></i> Email</span>
            </label>
         </div>
         <div class="name-input">
-           <input type="text" name="number" required autocomplete="off">
+           <input type="text" name="number" id="phone" required autocomplete="off">
            <label for="number" class="number-label">
              <span class="form-label"><i class="fas fa-phone-alt"></i> Number</span>
            </label>
         </div>
         <div class="name-input">
-           <input type="text-area" name="msg" required autocomplete="off">
+           <input type="text-area" name="msg" id="domain" required autocomplete="off">
            <label for="msg" class="msg-label">
              <span class="form-label">What would you like to learn next?</span>
            </label>
@@ -183,7 +183,7 @@
       </div>
    
             <li>
-                <button class="btn-grid" type="submit">
+                <button class="btn-grid" type="submit" onclick="register()">
                   <span class="back">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#fff;"><path d="M19 9.062s-5.188-.333-7 1.938c2-4.896 7-5.938 7-5.938v-2l5 4-5 4.019v-2.019zm-18.974 14.938h23.947l-11.973-11.607-11.974 11.607zm1.673-14l10.291-7.488 3.053 2.218c.712-.459 1.391-.805 1.953-1.054l-5.006-3.637-11.99 8.725v12.476l7.352-7.127-5.653-4.113zm15.753 4.892l6.548 6.348v-11.612l-6.548 5.264z"/></svg>
                   </span>
@@ -292,6 +292,9 @@
 
 <script type="text/javascript" src="assets/js/preloader.js"></script>
 
+
+
+
 <!-- Scripts for toastr notification -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
@@ -311,16 +314,8 @@
   });
 </script>
 
-<script>
-    const checkbox = document.querySelector('.my-form input[type="checkbox"]');
-const btns = document.querySelectorAll(".my-form button");
 
-checkbox.addEventListener("change", function() {
-  const checked = this.checked;
-  for (const btn of btns) {
-    checked ? (btn.disabled = false) : (btn.disabled = true);
-  }
-});
-</script>
+<!-- connected api with backend -->
+<script src="assets/js/contact.js"></script>
 
 </html>
