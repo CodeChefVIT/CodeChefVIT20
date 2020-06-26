@@ -1,5 +1,5 @@
 
-function register()
+function contact()
 {
     var data={
         name:document.getElementById('name').value,
@@ -9,7 +9,6 @@ function register()
     }
     var xh = new XMLHttpRequest();
    
-
     xh.open("POST", "https://backendwebcc.herokuapp.com/contact", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     
