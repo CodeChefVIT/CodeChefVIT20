@@ -63,7 +63,6 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   
 
@@ -147,59 +146,101 @@
       </div>
       <div class="context col col-sm-12 col-md-12 col-lg-5">
         <h1>Connect with us</h1>
-        <p>CodeChef-VIT actively organizes numerous in core and external webinars to impart technical knowledge on the
-          latest upcoming technologies and frameworks in diverse domains to the student community.</p>
+        <p>Got the zeal to learn? We got you covered.
+          CodeChef-VIT organises regular webinars on diverse domains ranging from Competitive Coding, DSA, Web Dev, App Dev and ML to Cloud Computing, image processing, flutter, DevOps, etc. 
+          Drop in your credentials and always stay updated about our upcoming webinars and events via emails and text messages.</p>
       </div>
     </div>
-      <main class="wrap">
-        <div class="container px-5 pt-0 mb-5">
+    
+          
+          <center>
             <div class=" center mt-5" style="margin-bottom: 50px;">
                 <h4 class="heading" style="color: #293243;">Get in Touch</h4>
             </div>
-            <form class="col s12">
-                <div class="row center mt-n3">
-                    <div class="input-field center mx-auto">
-                        <i class="material-icons prefix black-text">person</i>
-                        <input id="name" type="text" class="black-text" required>
-                        <label for="name" class="black-text">Name</label>
-                    </div>
-                </div>
-                <div class="row center mt-n3">
-                    <div class="input-field center mx-auto">
-                        <i class="material-icons prefix black-text">email</i>
-                        <input id="email" type="email" class="black-text" required="">
-                        <label for="email" class="black-text">Email</label>
-                    </div>
-                </div>
-                <div class="row center mt-n3">
-                    <div class="input-field center mx-auto">
-                        <i class="material-icons prefix black-text">phone</i>
-                        <input id="phone" type="text" class="black-text" required>
-                        <label for="phone" class="black-text">Number</label>
-                    </div>
-                </div>
-                 <div class="row center mt-n3">
-                    <div class="input-field center mx-auto">
-                        <i class="material-icons prefix black-text">edit</i>
-                        <input id="domain" type="text" class="black-text" required>
-                        <label for="domain" class="black-text">What would you like to learn next?</label>
-                    </div>
-                </div>
-                <center>
-                <button class="btn waves-effect waves-effect btn-CC-black z-depth-0" type="button" id="signup"  onclick="contact()">Submit</button> 
-    
-              
-              </center>
-            </form>
+
+
+        <div class="form">
+
+          <div class="fields">
+            <i class="material-icons prefix black-text">person</i>
+            <input id="name" type="text" name="name" autocomplete="off" required>
+            <label for="name" class="label-name">
+              <span class="content-name">Name</span>
+            </label>
+          </div>
+
+          <div class="fields">
+            <i class="material-icons prefix black-text">email</i>
+            <input id="email" type="email" name="name" autocomplete="off" required>
+            <label for="email" class="label-name">
+              <span class="content-name">E-mail</span>
+            </label>
+          </div>
+
+          <div class="fields">
+            <i class="material-icons prefix black-text">phone</i>
+            <input id="phone" type="text" name="name" autocomplete="off" required>
+            <label for="phone" class="label-name">
+              <span class="content-name">Number</span>
+            </label>
+          </div>
+
+          <div class="fields">
+            <i class="material-icons prefix black-text">edit</i>
+            <input id="domain" type="text" name="name" autocomplete="off" required>
+            <label for="domain" class="label-name">
+              <span class="content-name">What would you like to learn next?</span>
+            </label>
+          </div>
         </div>
-    </main>
-    <!-- </div> -->
+         </div>
+
+          <center>
+            <button class="btn waves-effect waves-effect btn-CC-black z-depth-0" type="button" id="signup"  onclick="contact()">Submit</button> 
+          </center>
+        </center>
+        
+        <!-- </div> -->
 
 
+        <!--<form class="col s12">
+            <div class="row center mt-n3">
+                <div class="input-field center mx-auto">
+                    <i class="material-icons prefix black-text">person</i>
+                    <input id="name" type="text" class="black-text" required>
+                    <label for="name" class="black-text">Name</label>
+                </div>
+            </div>
+            <div class="row center mt-n3">
+                <div class="input-field center mx-auto">
+                    <i class="material-icons prefix black-text">email</i>
+                    <input id="email" type="email" class="black-text" required="">
+                    <label for="email" class="black-text">Email</label>
+                </div>
+            </div>
+            <div class="row center mt-n3">
+                <div class="input-field center mx-auto">
+                    <i class="material-icons prefix black-text">phone</i>
+                    <input id="phone" type="text" class="black-text" required>
+                    <label for="phone" class="black-text">Number</label>
+                </div>
+            </div>
+             <div class="row center mt-n3">
+                <div class="input-field center mx-auto">
+                    <i class="material-icons prefix black-text">edit</i>
+                    <input id="domain" type="text" class="black-text" required>
+                    <label for="domain" class="black-text">What would you like to learn next?</label>
+                </div>
+              </div>
+            <center>
+    
+          
+          </center>
+        </form> -->
+        
+        
 
-
-
-     <!-- Footer -->
+        <!-- Footer -->
   <footer>
     <div class="container">
       <!-- Logo and Text -->
@@ -208,7 +249,7 @@
         <p class="footer-text">CodeChef-VIT is a non-commercial organisation with a goal is to provide a platform for
           programmers and developers everywhere to meet, compete and have fun. At CodeChef-VIT, we believe in the words
           of Matt Mullenweg - “Technology is best when it brings people together”.</p>
-      </div>
+        </div>
       <!-- Explore Links -->
       <div class="container footer-contain">
         <div class="row">
