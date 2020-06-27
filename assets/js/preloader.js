@@ -1,18 +1,10 @@
-(function ($) {
-    "use strict";
 
-    // Loader
-    $(function () {
-        var loader = function () {
-            setTimeout(function () {
-                if ($('#loader').length > 0) {
-                    $('#loader').removeClass('show');
-                }
-            }, 2000);
-        };
-        loader();
-    });
 
-})(jQuery);
-
-console.clear();
+	// Play initial animations on page load.
+	$(function () {
+		setTimeout(function () {
+			$('#preloader').fadeOut('slow', function () {
+				$(this).remove();
+			});
+		}, 2000);
+	});
