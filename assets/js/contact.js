@@ -27,13 +27,12 @@ function contact()
     xh.send(JSON.stringify(data))
     xh.onload=function(){
         if(!validateForm()){
-            alert('Failed! Try again')
-            window.location.replace('contact.html')
+            window.location.replace('contact.html');
         }
         else if(this.status==201)
         {
-            alert('Thanks for contacting!')
-            window.location.replace('contact.html')
+            alert('Thanks for contacting!');
+            window.location.replace('contact.html');
         }
 }
 }

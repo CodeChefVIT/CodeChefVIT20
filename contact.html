@@ -173,7 +173,7 @@
 
           <div class="fields">
             <i class="material-icons prefix black-text">email</i>
-            <input id="email" type="email" name="name" autocomplete="off" required pattern = ".+@.+" placeholder= " ">
+            <input id="email" type="email" name="name" autocomplete="off" required pattern = ".+@.+" placeholder= " " oninput="setCustomValidity('')">
             <label for="email" class="label-name">
               <span class="content-name">E-mail</span>
             </label>
@@ -181,7 +181,7 @@
 
           <div class="fields">
             <i class="material-icons prefix black-text">phone</i>
-            <input id="phone" type="tel" name="name" autocomplete="off" required pattern="[0-9]{10}" placeholder=" ">
+            <input id="phone" type="tel" name="name" autocomplete="off" required pattern="[0-9]{10}" placeholder=" " oninput="setCustomValidity('')">
             <label for="phone" class="label-name">
               <span class="content-name">Number</span>
             </label>
