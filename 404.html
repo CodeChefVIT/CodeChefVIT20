@@ -39,7 +39,7 @@
     content="CodeChef-VIT is a non-commercial organisation with a goal is to provide a platform for programmers and developers everywhere to meet, compete and have fun.">
   <link rel="canonical" href="https://www.codechefvit.com/404">
 
-  <title>Error || CodeChef-VIT</title>
+  
 
   <!-- Stylesheet for toastr notification -->
   <link rel="stylesheet" type="text/css"
@@ -54,12 +54,18 @@
 
   <link rel="icon" type="image/png" href="./assets/images/title.png" />
   <link rel="apple-touch-icon" type="image/png" href="./assets/images/title.png" />
-
+<style>
+  body{
+    height:100vh;
+  }
+</style>
   <title>Error || CodeChef-VIT</title>
 
 </head>
 
-<body style="background: #E8E8E8; text-align: center;overflow-y:hidden; padding-top: 0;">
+<body class="homepage is-preload" style="background: #E8E8E8; text-align: center;overflow-y:hidden; padding-top: 0;">
+
+  <div id="preloader"></div>
 
   <!-- Vectors -->
   <div id="square"></div>
@@ -82,11 +88,6 @@
         <a href="/"><button type="button" class="btn btn-primary btn-lg">Home</button></a>
   </div>
 
-  <!-- Loader -->
-  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#107BE5" /></svg></div>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"

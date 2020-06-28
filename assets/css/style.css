@@ -9,6 +9,30 @@
 body{
   padding-top: 80px;
 }
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+div#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	height: 100%;
+	width: 100%;
+	overflow: visible;
+	background: #0E0C0D url('../preloader.gif') no-repeat center center;
+	margin: 0;
+}
 /* Navbar Custom */
 .navbar-custom {
   background-color: rgba(0, 0, 0, 0.548);
