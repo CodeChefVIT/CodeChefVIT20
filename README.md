@@ -6,7 +6,7 @@
 > Official website for CodeChef-VIT for 2020-21.
 
 ## Screenshots
-<img src="https://github.com/CodeChefVIT/CodeChefVIT20/blob/master/assets/images/index.png" alt="Project Screenshots">
+<img src="https://github.com/CodeChefVIT/CodeChefVIT20/assets/images/index.png" alt="Project Screenshots">
 
 ## Contributors
 - <a href="https://github.com/KondaHemanth">Sesha Hemanth Konda</a>
