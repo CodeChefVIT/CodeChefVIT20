@@ -1,4 +1,15 @@
-
+function validateForm(){
+     var name = document.getElementById('name');
+     var email = document.getElementById('email');
+     var phone = document.getElementById('phone');
+     var domain = document.getElementById('domain');
+     if (!(name.oninvalid)||(email.oninvalid)||(phone.oninvalid)||(domain.oninvalid))
+     {
+        alert("Please fill valid details !");
+        return false;
+     }
+     return true;
+}
 function contact()
 {
     var data={
@@ -15,13 +26,13 @@ function contact()
  
     xh.send(JSON.stringify(data))
     xh.onload=function(){
-        if(this.status==201)
-        {
-            alert('Thanks for contacting!')
+        if(!validateForm()){
+            alert('Failed! Try again')
             window.location.replace('contact.html')
         }
-        else{
-            alert('Failed! Try again')
+        else if(this.status==201)
+        {
+            alert('Thanks for contacting!')
             window.location.replace('contact.html')
         }
 }
