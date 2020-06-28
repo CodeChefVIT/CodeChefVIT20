@@ -43,7 +43,7 @@ div#preloader {
 	height: 100%;
 	width: 100%;
 	overflow: visible;
-	background: #0E0C0D url('../preloader.gif') no-repeat center center;
+	background: white url('../loader.gif') no-repeat center center;
 	margin: 0;
 }
 a {
