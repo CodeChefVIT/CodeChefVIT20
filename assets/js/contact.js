@@ -20,7 +20,7 @@ function contact()
     }
     var xh = new XMLHttpRequest();
    
-    xh.open("POST", "https://backendwebcc.herokuapp.com/contact", true)
+    xh.open("POST", "https://backendcc.herokuapp.com/contact", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     
  
