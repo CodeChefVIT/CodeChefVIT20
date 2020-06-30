@@ -2297,6 +2297,11 @@ footer>.container>.container>.row {
   background-image: none !important;
 }
 
+#toast-container>.toast-error, 
+#toast-container>.toast-success {
+  background-image: none!important;
+}
+
 #toast-container>div {
   padding: 15px;
   padding-left: 90px;
