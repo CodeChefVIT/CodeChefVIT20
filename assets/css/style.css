@@ -30,7 +30,7 @@ div#preloader {
 	height: 100%;
 	width: 100%;
 	overflow: visible;
-	background: white url('../loader.gif') no-repeat center center;
+	background: #fbfbfb url('../loader.gif') no-repeat center center;
 	margin: 0;
 }
 /* Navbar Custom */
