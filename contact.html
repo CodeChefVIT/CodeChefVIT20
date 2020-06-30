@@ -55,8 +55,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/webinarStyle.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/webinarStyle.css"> -->
 
 
   <link rel="icon" type="image/png" href="./assets/images/title.png" />
@@ -165,7 +165,7 @@
 
           <div class="fields">
             <i class="material-icons prefix black-text">person</i>
-            <input id="name" type="text" name="name" autocomplete="off" required>
+            <input id="name" type="text" name="name" autocomplete="off" required pattern= ".*\S.*" placeholder=" ">
             <label for="name" class="label-name">
               <span class="content-name">Name</span>
             </label>
@@ -173,7 +173,7 @@
 
           <div class="fields">
             <i class="material-icons prefix black-text">email</i>
-            <input id="email" type="email" name="name" autocomplete="off" required>
+            <input id="email" type="email" name="name" autocomplete="off" required pattern = ".+@.+" placeholder= " " oninput="setCustomValidity('')">
             <label for="email" class="label-name">
               <span class="content-name">E-mail</span>
             </label>
@@ -181,7 +181,7 @@
 
           <div class="fields">
             <i class="material-icons prefix black-text">phone</i>
-            <input id="phone" type="text" name="name" autocomplete="off" required>
+            <input id="phone" type="tel" name="name" autocomplete="off" required pattern="[0-9]{10}" placeholder=" " oninput="setCustomValidity('')">
             <label for="phone" class="label-name">
               <span class="content-name">Number</span>
             </label>
@@ -189,7 +189,7 @@
 
           <div class="fields">
             <i class="material-icons prefix black-text">edit</i>
-            <input id="domain" type="text" name="name" autocomplete="off" required>
+            <input id="domain" type="text" name="name" autocomplete="off" required pattern= ".*\S.*" placeholder=" ">
             <label for="domain" class="label-name">
               <span class="content-name">What would you like to learn next?</span>
             </label>
