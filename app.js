@@ -1,7 +1,9 @@
 const express=require("express");
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
+var validator = require('validator')
 const User = require('./model/data');
+
 const cors=require('cors')
 require('dotenv').config()
 
