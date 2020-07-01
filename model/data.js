@@ -11,7 +11,11 @@ const userSchema =new mongoose.Schema({
     email: {
             type:String,
             required:true,
-            
+            validate(user) {
+                if (!validator.isEmail(user)) {
+                    throw new Error('invalid email')
+                }
+            }
 },
     phone:{
         type:String,

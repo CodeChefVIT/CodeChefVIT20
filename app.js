@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB,{
   useUnifiedTopology:true,
   useCreateIndex:true
 })
-
+var bigError1 = []
 router.post('/contact', (req, res) => {
 
 
@@ -27,8 +27,27 @@ router.post('/contact', (req, res) => {
       email:req.body.email,
       phone:req.body.phone,
       domain:req.body.domain,
-  })
+  }) 
+  bigError1 = []
+  let errors = []
+  if (phone.length != 10) {
+      errors.push({
+          text: "Invalid phone number"
+      })
+  }
+  if (!validator.isEmail(uemail)) {
+      errors.push({
+          text: "Invalid email"
+      })
+  }
   
+  if (errors.length > 0) {
+    bigError1 = errors
+    
+    res.sendStatus(400).json({
+      error:errors
+    })
+} else {
  
     newdata.save((err,success)=>{
       if(err)
@@ -45,8 +64,9 @@ router.post('/contact', (req, res) => {
   console.log(newdata)
   
   
- 
+  }
 })
+
 
 
   const PORT = process.env.PORT || 5000;
