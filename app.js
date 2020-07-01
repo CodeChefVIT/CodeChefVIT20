@@ -35,7 +35,7 @@ router.post('/contact', (req, res) => {
           text: "Invalid phone number"
       })
   }
-  if (!validator.isEmail(uemail)) {
+  if (!validator.isEmail(email)) {
       errors.push({
           text: "Invalid email"
       })
