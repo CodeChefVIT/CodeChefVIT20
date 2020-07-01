@@ -28,8 +28,9 @@ router.post('/contact', (req, res) => {
       phone:req.body.phone,
       domain:req.body.domain,
   })
-  console.log(newdata)
-  newdata.save((err,success)=>{
+  
+  if (phone.length == 10) {
+    newdata.save((err,success)=>{
       if(err)
       {
           res.sendStatus(400).json({
@@ -41,6 +42,14 @@ router.post('/contact', (req, res) => {
         res.status(201).json({message:"Thanks for contacting"})
       }
   })
+  
+}else{
+  res.sendStatus(400).json({
+    error:err
+
+})
+}
+  console.log(newdata)
   
   
  

@@ -1,4 +1,5 @@
 const mongoose= require('mongoose')
+var validator = require('validator')
 
 
 
@@ -9,12 +10,17 @@ const userSchema =new mongoose.Schema({
     },
     email: {
             type:String,
-            reqired:true
-    },
+            reqired:true,
+            validate(user) {
+                if (!validator.isEmail(user)) {
+                    throw new Error('invalid email')
+                }
+    }
+},
     phone:{
         type:String,
         required:true,
-        maxlength: 10
+        maxlength: 10,
     },
 
     domain:{
