@@ -20,9 +20,10 @@ mongoose.connect(process.env.MONGODB,{
   useUnifiedTopology:true,
   useCreateIndex:true
 })
-var bigError1 = []
-router.post('/contact', (req, res) => {
 
+
+// var bigError1 = []
+router.post('/contact', (req, res) => {
 
      let newdata=new User({
       name:req.body.name,
@@ -30,26 +31,42 @@ router.post('/contact', (req, res) => {
       phone:req.body.phone,
       domain:req.body.domain,
   }) 
-  bigError1 = []
-  let errors = []
-  if (phone.length != 10) {
-      errors.push({
-          text: "Invalid phone number"
-      })
+  if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null) {
+    return res.json({"responseCode" : 1,"responseDesc" : "Please select captcha"});
   }
-  if (!validator.isEmail(email)) {
-      errors.push({
-          text: "Invalid email"
-      })
-  }
+  // Put your secret key here.
+  var secretKey = process.env.SECRETKEY;
+  // req.connection.remoteAddress will provide IP address of connected user.
+  var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+  // Hitting GET request to the URL, Google will respond with success or error scenario.
+  request(verificationUrl,function(error,response,body) {
+    body = JSON.parse(body);
+    // Success will be true or false depending upon captcha validation.
+    if(body.success !== undefined && !body.success) {
+      return res.json({"responseCode" : 1,"responseDesc" : "Failed captcha verification"});
+    }
+    res.json({"responseCode" : 0,"responseDesc" : "Sucess"});
+  });
+//   bigError1 = []
+//   let errors = []
+//   if (phone.length != 10) {
+//       errors.push({
+//           text: "Invalid phone number"
+//       })
+//   }
+//   if (!validator.isEmail(email)) {
+//       errors.push({
+//           text: "Invalid email"
+//       })
+//   }
   
-  if (errors.length > 0) {
-    bigError1 = errors
+//   if (errors.length > 0) {
+//     bigError1 = errors
     
-    res.sendStatus(400).json({
-      error:errors
-    })
-} else {
+//     res.sendStatus(400).json({
+//       error:errors
+//     })
+// } else {
  
     newdata.save((err,success)=>{
       if(err)
@@ -66,8 +83,8 @@ router.post('/contact', (req, res) => {
   console.log(newdata)
   
   
-  }
-})
+  })
+// })
 
 
 
