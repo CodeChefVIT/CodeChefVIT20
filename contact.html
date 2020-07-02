@@ -161,7 +161,7 @@
             </div>
 
 
-        <div class="form">
+        <div class="form" id="comment_form">
 
           <div class="fields">
             <i class="material-icons prefix black-text">person</i>
@@ -196,6 +196,7 @@
           </div>
         </div>
          </div>
+         <div class="g-recaptcha" data-sitekey="6LebSawZAAAAAFNR2zDGbGVurB8zitlUJ4BmXANk"></div><br>
 
           <center>
             <button class="btn waves-effect waves-effect btn-CC-black z-depth-0" type="button" id="signup"  onclick="contact()">Submit</button> 
@@ -298,6 +299,26 @@
 <!-- Scripts for toastr notification -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
+<!-- recaptcha -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#comment_form').submit(function() {
+      $(this).ajaxSubmit({
+        error: function(xhr) {
+          status('Error: ' + xhr.status);
+        },
+       success: function(response) {
+        console.log(response);
+       }
+      });
+      //Very important line, it disable the page refresh.
+      return false;
+    });
+  });
+</script>
 <!-- Code for toastr notification -->
 <script type="text/javascript">
   toastr.options = {
