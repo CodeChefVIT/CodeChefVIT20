@@ -1,7 +1,7 @@
 const express=require("express");
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
-var captcha=require('../middleware/captcha')
+var captcha=require('./middleware/captcha')
 var validator = require('validator')
 const User = require('./model/data');
 
