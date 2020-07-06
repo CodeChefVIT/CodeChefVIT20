@@ -1,7 +1,10 @@
 const express=require("express");
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
+var captcha=require('./middleware/captcha')
+var validator = require('validator')
 const User = require('./model/data');
+
 const cors=require('cors')
 require('dotenv').config()
 
@@ -19,17 +22,39 @@ mongoose.connect(process.env.MONGODB,{
   useCreateIndex:true
 })
 
-router.post('/contact', (req, res) => {
 
+// var bigError1 = []
+router.post('/contact', captcha,(req, res) => {
 
      let newdata=new User({
       name:req.body.name,
       email:req.body.email,
       phone:req.body.phone,
       domain:req.body.domain,
-  })
-  console.log(newdata)
-  newdata.save((err,success)=>{
+  }) 
+  
+//   bigError1 = []
+//   let errors = []
+//   if (phone.length != 10) {
+//       errors.push({
+//           text: "Invalid phone number"
+//       })
+//   }
+//   if (!validator.isEmail(email)) {
+//       errors.push({
+//           text: "Invalid email"
+//       })
+//   }
+  
+//   if (errors.length > 0) {
+//     bigError1 = errors
+    
+//     res.sendStatus(400).json({
+//       error:errors
+//     })
+// } else {
+ 
+    newdata.save((err,success)=>{
       if(err)
       {
           res.sendStatus(400).json({
@@ -40,11 +65,13 @@ router.post('/contact', (req, res) => {
       else{
         res.status(201).json({message:"Thanks for contacting"})
       }
+    })
+  console.log(newdata)
+  
+  
   })
-  
-  
- 
-})
+// })
+
 
 
   const PORT = process.env.PORT || 5000;
