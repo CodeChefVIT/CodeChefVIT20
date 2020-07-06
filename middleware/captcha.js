@@ -16,11 +16,10 @@ var verifyCaptcha = (req, res, next) => {
 
         if (body.success !== undefined && !body.success) {
             console.log(body)
-            return res.json({
+            return res.status(401).json({
                 status: false
             });
         }
-        console.log('abcd')
         next();
     });
 };
