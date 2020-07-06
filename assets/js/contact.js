@@ -9,11 +9,17 @@ function validateForm(){
 }
 function contact()
 {
-    var data={
+    grecaptcha.ready(() => {
+        grecaptcha.execute('6LebSawZAAAAAFNR2zDGbGVurB8zitlUJ4BmXANk', {
+            action: '/'
+        }).then((token) => {
+
+        var data={
         name:document.getElementById('name').value,
         email:document.getElementById('email').value,
         phone:document.getElementById('phone').value,
-        domain:document.getElementById('domain').value
+        domain:document.getElementById('domain').value,
+        recaptcha: token
     }
     var xh = new XMLHttpRequest();
    
@@ -38,5 +44,10 @@ function contact()
             toastr.error('Failed! Try again');
             // window.location.replace('contact.html');
         }
+    }
+})
+    })
 }
-}
+
+
+
