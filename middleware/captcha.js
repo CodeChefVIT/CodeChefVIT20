@@ -16,7 +16,7 @@ var verifyCaptcha = (req, res, next) => {
 
         if (body.success !== undefined && !body.success) {
             console.log(body)
-            return res.status(401).json({
+             res.status(401).json({
                 status: false
             });
         }
