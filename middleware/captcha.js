@@ -13,12 +13,12 @@ var verifyCaptcha = (req, res, next) => {
 
     request(verificationUrl, (error, response, body) => {
         body = JSON.parse(body);
-
         if (body.success !== undefined && !body.success) {
             console.log(body)
-            return res.json({
+            return res.status(401).json({
                 status: false
             });
+        
         }
         console.log('abcd')
         next();
