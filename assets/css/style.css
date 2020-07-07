@@ -2094,12 +2094,12 @@ footer>.container>.container>.row {
     text-align: center;
     margin-top: 30px;
     position: absolute;
-    font-size: 1.4em;
+    font-size: 1.2em;
     float: none;
   }
 
   .context>h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   .about {
@@ -2170,10 +2170,6 @@ footer>.container>.container>.row {
     position: absolute;
     font-size: 1.4em;
     float: none;
-  }
-
-  .context>h1 {
-    font-size: 1.8em;
   }
 
   .about {
