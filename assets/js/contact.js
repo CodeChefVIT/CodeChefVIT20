@@ -5,7 +5,13 @@ function validateForm(){
      var domain = document.getElementById('domain');
      console.log(email.checkValidity());
      console.log(phone.checkValidity());
-     return((email.checkValidity())&&(phone.checkValidity()));
+     if(document.getElementById('name') && document.getElementById('email') && document.getElementById('phone') && document.getElementById('domain') && email.checkValidity() && phone.checkValidity())
+     {
+         contact()
+     }
+     else{
+         alert('Please fill complete details!')
+     }
 }
 function contact()
 {
@@ -25,17 +31,9 @@ function contact()
    
     xh.open("POST", "https://backendcc.herokuapp.com/contact", true)
     xh.setRequestHeader('Content-Type', 'application/json')
-    
- 
     xh.send(JSON.stringify(data))
      xh.onload=function(){
-        console.log('return value ' + validateForm());
-       if(!validateForm())
-       {
-        toastr.error('Enter valid details !');
-       }
-      
-        else if(this.status==201)
+        if(this.status==201)
         {
             toastr.success('Thanks for contacting !');
             // window.location.replace('contact.html');
