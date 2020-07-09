@@ -28,7 +28,7 @@ function contact()
         recaptcha: token
     }
     var xh = new XMLHttpRequest();
-   
+    console.log(data)
     xh.open("POST", "https://backendcc.herokuapp.com/contact", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
