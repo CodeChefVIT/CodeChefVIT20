@@ -10,7 +10,7 @@ function validateForm(){
          contact()
      }
      else{
-         alert('Please fill complete details!')
+         toastr.error('Please fill complete details!')
      }
 }
 function contact()
@@ -36,7 +36,7 @@ function contact()
      xh.onload=function(){
         if(this.status==201)
         {
-            alert('Thanks for contacting !');
+            toastr.success('Thanks for contacting !');
             window.location.reload();
         }
         else{
