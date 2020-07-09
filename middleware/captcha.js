@@ -15,12 +15,11 @@ var verifyCaptcha = (req, res, next) => {
         body = JSON.parse(body);
         if (body.success !== undefined && !body.success) {
             console.log(body)
-            return res.status(401).json({
+             res.status(401).json({
                 status: false
             });
         
         }
-        console.log('abcd')
         next();
     });
 };
