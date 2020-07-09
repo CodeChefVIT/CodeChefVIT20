@@ -15,6 +15,7 @@ function validateForm(){
 }
 function contact()
 {
+    document.getElementById('signup').disable=true
     grecaptcha.ready(() => {
         grecaptcha.execute('6LebSawZAAAAAFNR2zDGbGVurB8zitlUJ4BmXANk', {
             action: '/'
@@ -36,6 +37,10 @@ function contact()
         if(this.status==201)
         {
             toastr.success('Thanks for contacting !');
+            document.getElementById('name').value=''
+            document.getElementById('email').value=''
+            document.getElementById('phone').value=''
+            document.getElementById('domain').value=''
             // window.location.replace('contact.html');
         }
         else{
