@@ -1,5 +1,5 @@
 const mongoose= require('mongoose')
-var validator = require('validator')
+
 
 
 
@@ -11,16 +11,13 @@ const userSchema =new mongoose.Schema({
     email: {
             type:String,
             required:true,
-            validate(user) {
-                if (!validator.isEmail(user)) {
-                    throw new Error('invalid email')
-                }
-            }
+            match: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
+    
 },
     phone:{
         type:String,
         required:true,
-        maxlength: 10,
+         match: /^([7-9][0-9]{9})$/g,
     },
 
     domain:{
@@ -30,7 +27,7 @@ const userSchema =new mongoose.Schema({
     
     createdAt:{
         type:Date,
-        default : Date.now
+        default : Date.now()
     },
 })
 
