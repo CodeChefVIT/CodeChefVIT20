@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGODB,{
 
 
 // var bigError1 = []
-router.post('/contact', captcha,(req, res) => {
+router.post('/contact',(req, res) => {
 
      let newdata=new User({
       name:req.body.name,
