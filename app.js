@@ -33,26 +33,7 @@ router.post('/contact', captcha,(req, res) => {
       domain:req.body.domain,
   }) 
   
-//   bigError1 = []
-//   let errors = []
-//   if (phone.length != 10) {
-//       errors.push({
-//           text: "Invalid phone number"
-//       })
-//   }
-//   if (!validator.isEmail(email)) {
-//       errors.push({
-//           text: "Invalid email"
-//       })
-//   }
-  
-//   if (errors.length > 0) {
-//     bigError1 = errors
-    
-//     res.sendStatus(400).json({
-//       error:errors
-//     })
-// } else {
+
  
     newdata.save((err,success)=>{
       if(err)
