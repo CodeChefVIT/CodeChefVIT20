@@ -36,7 +36,7 @@ function contact()
      xh.onload=function(){
         if(this.status==201)
         {
-            toastr.success('Thanks for contacting !');
+            alert('Thanks for contacting !');
             window.location.reload();
         }
         else{
