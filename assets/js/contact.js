@@ -37,11 +37,7 @@ function contact()
         if(this.status==201)
         {
             toastr.success('Thanks for contacting !');
-            document.getElementById('name').value=''
-            document.getElementById('email').value=''
-            document.getElementById('phone').value=''
-            document.getElementById('domain').value=''
-            // window.location.replace('contact.html');
+            window.location.reload();
         }
         else{
             toastr.error('Failed! Try again');
