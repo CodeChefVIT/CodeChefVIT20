@@ -11,13 +11,13 @@ const userSchema =new mongoose.Schema({
     email: {
             type:String,
             required:true,
-            // match: /[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'+/=?^_`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
+             match: /[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'+/=?^_`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
     
 },
     phone:{
         type:String,
         required:true,
-        // match: /^([7-9][0-9]{9})$/g,
+         match: /^([7-9][0-9]{9})$/g,
     },
 
     domain:{
