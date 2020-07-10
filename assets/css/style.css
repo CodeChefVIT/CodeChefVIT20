@@ -24,11 +24,11 @@ div#preloader {
 }
 /* Navbar Custom */
 .navbar-custom {
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .navbar-custom-alt {
-  background-color: rgba(245, 245, 245, 0.781);
+  background-color: rgba(245, 245, 245,1);
   -webkit-box-shadow: 0 3px 8px -6px black;
   -moz-box-shadow: 0 3px 8px -6px black;
   box-shadow: 0 3px 8px -6px black;
