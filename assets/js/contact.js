@@ -3,8 +3,7 @@ function validateForm(){
      var email = document.getElementById('email');
      var phone = document.getElementById('phone');
      var domain = document.getElementById('domain');
-     console.log(email.checkValidity());
-     console.log(phone.checkValidity());
+  
      if(document.getElementById('name') && document.getElementById('email') && document.getElementById('phone') && document.getElementById('domain') && email.checkValidity() && phone.checkValidity())
      {
          contact()
@@ -29,7 +28,7 @@ function contact()
         recaptcha: token
     }
     var xh = new XMLHttpRequest();
-    console.log(data)
+ 
     xh.open("POST", "https://backendcc.herokuapp.com/contact", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
@@ -41,7 +40,7 @@ function contact()
         }
         else{
             toastr.error('Failed! Try again');
-            // window.location.replace('contact.html');
+            
         }
     }
 })
