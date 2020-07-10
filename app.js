@@ -24,32 +24,29 @@ mongoose.connect(process.env.MONGODB,{
 })
 
 
-
 app.post('/contact',captcha,(req, res) => {
 
-     const newdata=new User({
+     var newdata=new User({
       name:req.body.name,
       email:req.body.email,
       phone:req.body.phone,
       domain:req.body.domain,
   }) 
-  
-
- 
+  console.log(req.body)
     newdata.save((err,success)=>{
       if(err)
       {
         console.log(err)
-          res.sendStatus(400).json({
+          return res.status(400).json({
               error:err.toString() 
        
           })
       }
       else{
-        res.status(201).json({message:"Thanks for contacting"})
+        console.log(success)
+        return res.status(201).json({message:"Thanks for contacting"})
       }
     })
-  console.log(newdata)
 
 
 })
@@ -57,6 +54,6 @@ app.post('/contact',captcha,(req, res) => {
 
 
 
-  const PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
