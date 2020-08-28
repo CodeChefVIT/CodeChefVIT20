@@ -42,7 +42,6 @@ function onYouTubeIframeAPIReady() {
         'onStateChange': onPlayerStateChange
       }
     });
-    console.log(player[i].videoId);
   }
 } //ith player is replaced by corresponding iframe 
 
