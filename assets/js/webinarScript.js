@@ -57,22 +57,6 @@ function onPlayerStateChange(event) {
 
 }
 
-// $(document).ready(function(){
-//   for(i=1;i<=6;i++){
-//     $(('#wb'+i)).each(function(){
-
-//         $(this).on('click', function(){
-
-//             // $(this).find('iframe').attr('src', '');
-//             // $(this).find('iframe').attr('src', src);
-//             player.pauseVideo();
-
-//         });
-//     });
-//   }
-
-// });
-
 //attach event listeners for playing and pausing on closing modal to each button
 
 for (i = 1; i <= 6; i++) {
