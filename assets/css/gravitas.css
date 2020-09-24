@@ -1,0 +1,40 @@
+.tab {
+    display: none;
+}
+
+.step {
+    display: inline-block;
+    width: 25%;
+    margin: 5px;
+    max-width: 200px;
+    padding: 7px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
+.step.active {
+    background-color: #444;
+    border: 1px solid #333;
+    box-shadow: 1px 1px 3px #000;
+}
+.step:focus {
+    outline: none;
+}
+.active {
+    display: block;
+}
+
+.step:hover {
+    background-color: #444;
+    box-shadow: 4px 3px 7px #6667;
+}
+
+@media all and (max-width: 600px) {
+    .step {
+        width: 80%;
+        max-width: 300px;
+    }
+}
