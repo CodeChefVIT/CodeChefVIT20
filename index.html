@@ -217,6 +217,17 @@
         <div class="splash"></div>
       </nav>
 
+      <div class="announcement open">
+        <div class="wrapper">
+          <label class="announcement__close">&#x2715;</label>
+          <h1 class="announcement__title">Welcome to CodeChef-VIT!</h1>
+          <p>We’re looking for like minded people with the will to learn and build widely used projects, organise sold
+            out events and design beautiful posters & videos!</p>
+          <p class="text-center">Register today on <a href="https://cet.codechefvit.com" target="_blank"><u>Common
+                Entry Test</u></a>.</p>
+        </div>
+      </div>
+
       <!-- Hero Content -->
       <div class="text" style="z-index: 9;">
         <h1> We are <span class="txt-type" data-wait="3000"
@@ -677,6 +688,13 @@
     }
 
     setInterval(() => countDown(), 1000);
+  </script>
+
+  <script>
+    $('.announcement__close').click(function () {
+      $(".announcement, .content").removeClass("open");
+      $(".announcement, .content").addClass("close");
+    });
   </script>
 
 </body>
