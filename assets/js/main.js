@@ -1,4 +1,4 @@
-var countDate = new Date('September 17, 2021 00:00:00').getTime();
+var countDate = new Date('September 30, 2021 00:00:00').getTime();
 var i = 0;
 
 // JS for Navbar
