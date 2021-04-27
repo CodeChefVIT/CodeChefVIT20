@@ -368,9 +368,9 @@
         </div>
         <div class="right" data-aos="fade-left">
           <div class="countdown">
-            <div id="wk"> </div>
             <div id="day"> </div>
             <div id="hr"> </div>
+            <div id="mn"> </div>
           </div>
         </div>
       </div>
@@ -667,6 +667,7 @@
   </script>
 
   <script>
+    var countDate = new Date('April 30, 2021 18:00:00').getTime();
     //Function to display Countdown in banner
     function countDown() {
       let now = new Date().getTime();
@@ -676,13 +677,12 @@
       let min = second * 60;
       let hour = min * 60;
       let day = hour * 24;
-      let week = day * 7;
 
-      let w = Math.floor(gap / (week));
-      let d = Math.floor(gap % (week) / (day));
+      let d = Math.floor(gap / (day));
       let h = Math.floor(gap % (day) / (hour));
+      let w = Math.floor(gap % (hour) / (min));
 
-      document.getElementById('wk').innerText = w;
+      document.getElementById('mn').innerText = w;
       document.getElementById('day').innerText = d;
       document.getElementById('hr').innerText = h;
     }
